@@ -1,2 +1,2 @@
 # Bingo
-Serving old OoT Bingo versions through GitHub Pages
+Serving the current and older OoT Bingo versions through GitHub Pages
