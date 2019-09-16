@@ -62,7 +62,7 @@ body {
   padding-bottom: 16px;
 }
 header {
-  background: url("http://c15111086.r86.cf2.rackcdn.com/texture_bar2.jpg") top center;
+  background: url("//c15111086.r86.cf2.rackcdn.com/texture_bar2.jpg") top center;
   border-bottom: 1px #424242 dotted;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
@@ -102,7 +102,7 @@ footer .container {
   padding-bottom: 28px;
 }
 #logo {
-  background: url("http://c15111086.r86.cf2.rackcdn.com/srl_350px.png") no-repeat;
+  background: url("//c15111086.r86.cf2.rackcdn.com/srl_350px.png") no-repeat;
   display: block;
   overflow: hidden;
   width: 350px;
@@ -153,19 +153,19 @@ nav ul li {
   padding: 0;
 }
 nav ul li a {
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png");
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png");
   background-color: #424242;
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -webkit-gradient(linear, left top, left bottom, from(#424242), to(#303030));
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -webkit-gradient(linear, left top, left bottom, from(#424242), to(#303030));
   /* Saf4+, Chrome */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -webkit-linear-gradient(top, #424242, #303030);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -webkit-linear-gradient(top, #424242, #303030);
   /* Chrome 10+, Saf5.1+, iOS 5+ */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -moz-linear-gradient(top, #424242, #303030);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -moz-linear-gradient(top, #424242, #303030);
   /* FF3.6 */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -ms-linear-gradient(top, #424242, #303030);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -ms-linear-gradient(top, #424242, #303030);
   /* IE10 */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -o-linear-gradient(top, #424242, #303030);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -o-linear-gradient(top, #424242, #303030);
   /* Opera 11.10+ */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), linear-gradient(to bottom, #424242, #303030);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), linear-gradient(to bottom, #424242, #303030);
   border-width: 1px 0px 1px 1px;
   border-style: solid;
   border-color: #4c4c4c #000000 #000000 #474747;
@@ -193,17 +193,17 @@ nav ul li a {
 }
 nav ul li a:hover {
   background-color: #3c70df;
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -webkit-gradient(linear, left top, left bottom, from(#3c70df), to(#235cd4));
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -webkit-gradient(linear, left top, left bottom, from(#3c70df), to(#235cd4));
   /* Saf4+, Chrome */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -webkit-linear-gradient(top, #3c70df, #235cd4);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -webkit-linear-gradient(top, #3c70df, #235cd4);
   /* Chrome 10+, Saf5.1+, iOS 5+ */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -moz-linear-gradient(top, #3c70df, #235cd4);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -moz-linear-gradient(top, #3c70df, #235cd4);
   /* FF3.6 */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -ms-linear-gradient(top, #3c70df, #235cd4);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -ms-linear-gradient(top, #3c70df, #235cd4);
   /* IE10 */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -o-linear-gradient(top, #3c70df, #235cd4);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -o-linear-gradient(top, #3c70df, #235cd4);
   /* Opera 11.10+ */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), linear-gradient(to bottom, #3c70df, #235cd4);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), linear-gradient(to bottom, #3c70df, #235cd4);
   border-width: 1px 0px 1px 1px;
   border-style: solid;
   border-color: #4e7de2 #102a63 #102a63 #4576e0;
@@ -211,17 +211,17 @@ nav ul li a:hover {
 }
 nav ul li a:active {
   background-color: #1448b3;
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -webkit-gradient(linear, left top, left bottom, from(#1448b3), to(#103b93));
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -webkit-gradient(linear, left top, left bottom, from(#1448b3), to(#103b93));
   /* Saf4+, Chrome */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -webkit-linear-gradient(top, #1448b3, #103b93);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -webkit-linear-gradient(top, #1448b3, #103b93);
   /* Chrome 10+, Saf5.1+, iOS 5+ */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -moz-linear-gradient(top, #1448b3, #103b93);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -moz-linear-gradient(top, #1448b3, #103b93);
   /* FF3.6 */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -ms-linear-gradient(top, #1448b3, #103b93);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -ms-linear-gradient(top, #1448b3, #103b93);
   /* IE10 */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -o-linear-gradient(top, #1448b3, #103b93);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -o-linear-gradient(top, #1448b3, #103b93);
   /* Opera 11.10+ */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), linear-gradient(to bottom, #1448b3, #103b93);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), linear-gradient(to bottom, #1448b3, #103b93);
   box-shadow: 0 0 0 rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0.6);
@@ -311,17 +311,17 @@ td {
 }
 th {
   background-color: #c01614;
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -webkit-gradient(linear, left top, left bottom, from(#c01614), to(#a01211));
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -webkit-gradient(linear, left top, left bottom, from(#c01614), to(#a01211));
   /* Saf4+, Chrome */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -webkit-linear-gradient(top, #c01614, #a01211);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -webkit-linear-gradient(top, #c01614, #a01211);
   /* Chrome 10+, Saf5.1+, iOS 5+ */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -moz-linear-gradient(top, #c01614, #a01211);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -moz-linear-gradient(top, #c01614, #a01211);
   /* FF3.6 */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -ms-linear-gradient(top, #c01614, #a01211);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -ms-linear-gradient(top, #c01614, #a01211);
   /* IE10 */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -o-linear-gradient(top, #c01614, #a01211);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -o-linear-gradient(top, #c01614, #a01211);
   /* Opera 11.10+ */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), linear-gradient(to bottom, #c01614, #a01211);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), linear-gradient(to bottom, #c01614, #a01211);
   color: #f7e279;
   text-shadow: 1px 1px 3px #111111;
   font-weight: 700;
@@ -409,19 +409,19 @@ th {
   text-align: center;
 }
 .smallbuttonstyle {
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png");
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png");
   background-color: #424242;
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -webkit-gradient(linear, left top, left bottom, from(#424242), to(#303030));
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -webkit-gradient(linear, left top, left bottom, from(#424242), to(#303030));
   /* Saf4+, Chrome */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -webkit-linear-gradient(top, #424242, #303030);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -webkit-linear-gradient(top, #424242, #303030);
   /* Chrome 10+, Saf5.1+, iOS 5+ */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -moz-linear-gradient(top, #424242, #303030);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -moz-linear-gradient(top, #424242, #303030);
   /* FF3.6 */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -ms-linear-gradient(top, #424242, #303030);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -ms-linear-gradient(top, #424242, #303030);
   /* IE10 */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -o-linear-gradient(top, #424242, #303030);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -o-linear-gradient(top, #424242, #303030);
   /* Opera 11.10+ */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), linear-gradient(to bottom, #424242, #303030);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), linear-gradient(to bottom, #424242, #303030);
   border-width: 1px 0px 1px 1px;
   border-style: solid;
   border-color: #4c4c4c #000000 #000000 #474747;
@@ -446,17 +446,17 @@ th {
 }
 .smallbuttonstyle:hover {
   background-color: #3c70df;
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -webkit-gradient(linear, left top, left bottom, from(#3c70df), to(#235cd4));
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -webkit-gradient(linear, left top, left bottom, from(#3c70df), to(#235cd4));
   /* Saf4+, Chrome */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -webkit-linear-gradient(top, #3c70df, #235cd4);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -webkit-linear-gradient(top, #3c70df, #235cd4);
   /* Chrome 10+, Saf5.1+, iOS 5+ */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -moz-linear-gradient(top, #3c70df, #235cd4);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -moz-linear-gradient(top, #3c70df, #235cd4);
   /* FF3.6 */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -ms-linear-gradient(top, #3c70df, #235cd4);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -ms-linear-gradient(top, #3c70df, #235cd4);
   /* IE10 */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -o-linear-gradient(top, #3c70df, #235cd4);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -o-linear-gradient(top, #3c70df, #235cd4);
   /* Opera 11.10+ */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), linear-gradient(to bottom, #3c70df, #235cd4);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), linear-gradient(to bottom, #3c70df, #235cd4);
   border-width: 1px 0px 1px 1px;
   border-style: solid;
   border-color: #4e7de2 #102a63 #102a63 #4576e0;
@@ -464,17 +464,17 @@ th {
 }
 .smallbuttonstyle:active {
   background-color: #1448b3;
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -webkit-gradient(linear, left top, left bottom, from(#1448b3), to(#103b93));
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -webkit-gradient(linear, left top, left bottom, from(#1448b3), to(#103b93));
   /* Saf4+, Chrome */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -webkit-linear-gradient(top, #1448b3, #103b93);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -webkit-linear-gradient(top, #1448b3, #103b93);
   /* Chrome 10+, Saf5.1+, iOS 5+ */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -moz-linear-gradient(top, #1448b3, #103b93);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -moz-linear-gradient(top, #1448b3, #103b93);
   /* FF3.6 */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -ms-linear-gradient(top, #1448b3, #103b93);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -ms-linear-gradient(top, #1448b3, #103b93);
   /* IE10 */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -o-linear-gradient(top, #1448b3, #103b93);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -o-linear-gradient(top, #1448b3, #103b93);
   /* Opera 11.10+ */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), linear-gradient(to bottom, #1448b3, #103b93);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), linear-gradient(to bottom, #1448b3, #103b93);
   box-shadow: 0 0 0 rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0.6);
@@ -485,19 +485,19 @@ th {
   color: #ffffff;
 }
 .smallbutton {
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png");
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png");
   background-color: #424242;
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -webkit-gradient(linear, left top, left bottom, from(#424242), to(#303030));
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -webkit-gradient(linear, left top, left bottom, from(#424242), to(#303030));
   /* Saf4+, Chrome */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -webkit-linear-gradient(top, #424242, #303030);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -webkit-linear-gradient(top, #424242, #303030);
   /* Chrome 10+, Saf5.1+, iOS 5+ */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -moz-linear-gradient(top, #424242, #303030);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -moz-linear-gradient(top, #424242, #303030);
   /* FF3.6 */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -ms-linear-gradient(top, #424242, #303030);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -ms-linear-gradient(top, #424242, #303030);
   /* IE10 */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -o-linear-gradient(top, #424242, #303030);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -o-linear-gradient(top, #424242, #303030);
   /* Opera 11.10+ */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), linear-gradient(to bottom, #424242, #303030);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), linear-gradient(to bottom, #424242, #303030);
   border-width: 1px 0px 1px 1px;
   border-style: solid;
   border-color: #4c4c4c #000000 #000000 #474747;
@@ -527,17 +527,17 @@ th {
 }
 .smallbutton:hover {
   background-color: #3c70df;
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -webkit-gradient(linear, left top, left bottom, from(#3c70df), to(#235cd4));
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -webkit-gradient(linear, left top, left bottom, from(#3c70df), to(#235cd4));
   /* Saf4+, Chrome */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -webkit-linear-gradient(top, #3c70df, #235cd4);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -webkit-linear-gradient(top, #3c70df, #235cd4);
   /* Chrome 10+, Saf5.1+, iOS 5+ */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -moz-linear-gradient(top, #3c70df, #235cd4);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -moz-linear-gradient(top, #3c70df, #235cd4);
   /* FF3.6 */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -ms-linear-gradient(top, #3c70df, #235cd4);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -ms-linear-gradient(top, #3c70df, #235cd4);
   /* IE10 */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -o-linear-gradient(top, #3c70df, #235cd4);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -o-linear-gradient(top, #3c70df, #235cd4);
   /* Opera 11.10+ */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), linear-gradient(to bottom, #3c70df, #235cd4);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), linear-gradient(to bottom, #3c70df, #235cd4);
   border-width: 1px 0px 1px 1px;
   border-style: solid;
   border-color: #4e7de2 #102a63 #102a63 #4576e0;
@@ -545,17 +545,17 @@ th {
 }
 .smallbutton:active {
   background-color: #1448b3;
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -webkit-gradient(linear, left top, left bottom, from(#1448b3), to(#103b93));
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -webkit-gradient(linear, left top, left bottom, from(#1448b3), to(#103b93));
   /* Saf4+, Chrome */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -webkit-linear-gradient(top, #1448b3, #103b93);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -webkit-linear-gradient(top, #1448b3, #103b93);
   /* Chrome 10+, Saf5.1+, iOS 5+ */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -moz-linear-gradient(top, #1448b3, #103b93);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -moz-linear-gradient(top, #1448b3, #103b93);
   /* FF3.6 */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -ms-linear-gradient(top, #1448b3, #103b93);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -ms-linear-gradient(top, #1448b3, #103b93);
   /* IE10 */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -o-linear-gradient(top, #1448b3, #103b93);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -o-linear-gradient(top, #1448b3, #103b93);
   /* Opera 11.10+ */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), linear-gradient(to bottom, #1448b3, #103b93);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), linear-gradient(to bottom, #1448b3, #103b93);
   box-shadow: 0 0 0 rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0.6);
@@ -575,19 +575,19 @@ th {
   text-align: right;
 }
 #bingoPage .newcard {
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png");
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png");
   background-color: #424242;
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -webkit-gradient(linear, left top, left bottom, from(#424242), to(#303030));
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -webkit-gradient(linear, left top, left bottom, from(#424242), to(#303030));
   /* Saf4+, Chrome */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -webkit-linear-gradient(top, #424242, #303030);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -webkit-linear-gradient(top, #424242, #303030);
   /* Chrome 10+, Saf5.1+, iOS 5+ */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -moz-linear-gradient(top, #424242, #303030);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -moz-linear-gradient(top, #424242, #303030);
   /* FF3.6 */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -ms-linear-gradient(top, #424242, #303030);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -ms-linear-gradient(top, #424242, #303030);
   /* IE10 */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -o-linear-gradient(top, #424242, #303030);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -o-linear-gradient(top, #424242, #303030);
   /* Opera 11.10+ */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), linear-gradient(to bottom, #424242, #303030);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), linear-gradient(to bottom, #424242, #303030);
   border-width: 1px 0px 1px 1px;
   border-style: solid;
   border-color: #4c4c4c #000000 #000000 #474747;
@@ -615,17 +615,17 @@ th {
 }
 #bingoPage .newcard:hover {
   background-color: #3c70df;
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -webkit-gradient(linear, left top, left bottom, from(#3c70df), to(#235cd4));
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -webkit-gradient(linear, left top, left bottom, from(#3c70df), to(#235cd4));
   /* Saf4+, Chrome */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -webkit-linear-gradient(top, #3c70df, #235cd4);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -webkit-linear-gradient(top, #3c70df, #235cd4);
   /* Chrome 10+, Saf5.1+, iOS 5+ */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -moz-linear-gradient(top, #3c70df, #235cd4);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -moz-linear-gradient(top, #3c70df, #235cd4);
   /* FF3.6 */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -ms-linear-gradient(top, #3c70df, #235cd4);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -ms-linear-gradient(top, #3c70df, #235cd4);
   /* IE10 */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -o-linear-gradient(top, #3c70df, #235cd4);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -o-linear-gradient(top, #3c70df, #235cd4);
   /* Opera 11.10+ */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), linear-gradient(to bottom, #3c70df, #235cd4);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), linear-gradient(to bottom, #3c70df, #235cd4);
   border-width: 1px 0px 1px 1px;
   border-style: solid;
   border-color: #4e7de2 #102a63 #102a63 #4576e0;
@@ -633,17 +633,17 @@ th {
 }
 #bingoPage .newcard:active {
   background-color: #1448b3;
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -webkit-gradient(linear, left top, left bottom, from(#1448b3), to(#103b93));
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -webkit-gradient(linear, left top, left bottom, from(#1448b3), to(#103b93));
   /* Saf4+, Chrome */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -webkit-linear-gradient(top, #1448b3, #103b93);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -webkit-linear-gradient(top, #1448b3, #103b93);
   /* Chrome 10+, Saf5.1+, iOS 5+ */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -moz-linear-gradient(top, #1448b3, #103b93);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -moz-linear-gradient(top, #1448b3, #103b93);
   /* FF3.6 */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -ms-linear-gradient(top, #1448b3, #103b93);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -ms-linear-gradient(top, #1448b3, #103b93);
   /* IE10 */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -o-linear-gradient(top, #1448b3, #103b93);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), -o-linear-gradient(top, #1448b3, #103b93);
   /* Opera 11.10+ */
-  background-image: url("http://c15111086.r86.cf2.rackcdn.com/grunge_button.png"), linear-gradient(to bottom, #1448b3, #103b93);
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), linear-gradient(to bottom, #1448b3, #103b93);
   box-shadow: 0 0 0 rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0.6);
