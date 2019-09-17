@@ -488,6 +488,10 @@ th {
   text-align: right;
 }
 
+#bingoPage #results .flag {
+  margin-left: 8px;
+}
+
 #bingoPage .newcard {
   background-color: #424242;
   background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png");
