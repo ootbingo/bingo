@@ -551,7 +551,7 @@ var bingoList = {
         {
             "difficulty": 11,
             "id": "boomerang",
-            "jp": "",
+            "jp": "ブーメラン",
             "name": "Boomerang",
             "rowtypes": {
                 "bottle": 0.0,
@@ -578,7 +578,7 @@ var bingoList = {
         {
             "difficulty": 11,
             "id": "at-least-5-zora-area-hps",
-            "jp": "",
+            "jp": "ゾーラエリアのハートのかけら5つ以上",
             "name": "At Least 5 Zora Area HPs",
             "rowtypes": {
                 "bottle": 0.0,
@@ -605,7 +605,7 @@ var bingoList = {
         {
             "difficulty": 11,
             "id": "7-different-unused-keys-in-gerudo-training-grounds",
-            "jp": "",
+            "jp": "ゲルドの修練場の未使用の鍵7つ(増殖禁止)",
             "name": "7 different unused keys in Gerudo Training Grounds",
             "rowtypes": {
                 "bottle": 100.0,
@@ -1062,7 +1062,7 @@ var bingoList = {
         {
             "difficulty": 13,
             "id": "at-least-1-skulltula-from-each-child-dungeon",
-            "jp": "",
+            "jp": "全ての子供ダンジョンからスタルチュラ最低1匹ずつ",
             "name": "At Least 1 Skulltula from each Child Dungeon",
             "rowtypes": {
                 "bottle": 0.0,
@@ -1585,7 +1585,7 @@ var bingoList = {
         {
             "difficulty": 15,
             "id": "3-shields",
-            "jp": "",
+            "jp": "盾3種",
             "name": "3 Shields",
             "rowtypes": {
                 "bottle": 0.0,
@@ -1834,7 +1834,7 @@ var bingoList = {
         {
             "difficulty": 16,
             "id": "open-all-5-small-key-chests-in-forest-temple",
-            "jp": "",
+            "jp": "森の神殿の小さな鍵の宝箱を5つ全て開ける",
             "name": "Open all 5 Small Key chests in Forest Temple",
             "rowtypes": {
                 "bottle": 0.5,
@@ -1864,7 +1864,7 @@ var bingoList = {
         {
             "difficulty": 16,
             "id": "open-all-8-small-key-chests-in-fire-temple",
-            "jp": "",
+            "jp": "炎の神殿の小さな鍵の宝箱を８つ全て開ける",
             "name": "Open all 8 Small Key chests in Fire Temple",
             "rowtypes": {
                 "bottle": 0.5,
@@ -2081,7 +2081,7 @@ var bingoList = {
         {
             "difficulty": 18,
             "id": "fire-medallion",
-            "jp": "",
+            "jp": "炎のメダル",
             "name": "Fire Medallion",
             "rowtypes": {
                 "bottle": 0.5,
@@ -2645,7 +2645,7 @@ var bingoList = {
         {
             "difficulty": 20,
             "id": "open-all-5-small-key-chests-in-shadow-temple",
-            "jp": "",
+            "jp": "闇の神殿の小さな鍵５つ取得",
             "name": "Open all 5 Small Key chests in Shadow Temple",
             "rowtypes": {
                 "bottle": 0.0,
@@ -2907,7 +2907,7 @@ var bingoList = {
         {
             "difficulty": 22,
             "id": "9-different-unused-keys-in-gerudo-training-grounds",
-            "jp": "",
+            "jp": "ゲルドの修練場の未使用の鍵9つ(増殖禁止)",
             "name": "9 different unused keys in Gerudo Training Grounds",
             "rowtypes": {
                 "bottle": 100.0,
@@ -2942,7 +2942,7 @@ var bingoList = {
         {
             "difficulty": 22,
             "id": "defeat-4-iron-knuckles",
-            "jp": "",
+            "jp": "アイアンナックを4体撃破",
             "name": "Defeat 4 Iron Knuckles",
             "rowtypes": {
                 "bottle": 100.0,
@@ -3067,7 +3067,7 @@ var bingoList = {
         {
             "difficulty": 24,
             "id": "at-least-1-skulltula-from-each-adult-dungeon",
-            "jp": "",
+            "jp": "全ての大人ダンジョンからスタルチュラ最低1匹ずつ",
             "name": "At Least 1 Skulltula from each Adult Dungeon",
             "rowtypes": {
                 "bottle": 0.5,
@@ -3102,7 +3102,7 @@ var bingoList = {
         {
             "difficulty": 24,
             "id": "get-to-the-end-of-forest-trial",
-            "jp": "",
+            "jp": "森の結界の最後の部屋に到達",
             "name": "Get to the end of Forest Trial",
             "rowtypes": {
                 "bottle": 100.0,
@@ -3244,7 +3244,7 @@ var bingoList = {
         {
             "difficulty": 25,
             "id": "3-swords-tunics-boots-and-shields",
-            "jp": "",
+            "jp": "剣3種、盾3種、服3種、靴3種",
             "name": "3 Swords, Tunics, Boots, and Shields",
             "rowtypes": {
                 "bottle": 100.0,
@@ -3279,7 +3279,7 @@ var bingoList = {
         {
             "difficulty": 25,
             "id": "all-3-elemental-arrows",
-            "jp": "",
+            "jp": "魔法矢3つ",
             "name": "All 3 Elemental Arrows",
             "rowtypes": {
                 "bottle": 100.0,
@@ -3314,7 +3314,7 @@ var bingoList = {
         {
             "difficulty": 25,
             "id": "at-least-1-unused-key-in-each-adult-dungeon",
-            "jp": "",
+            "jp": "全ての大人のダンジョンから未使用の鍵最低１つずつ",
             "name": "At least 1 unused key in each Adult Dungeon",
             "rowtypes": {
                 "bottle": 0.5,
@@ -3403,7 +3403,7 @@ var bingoList = {
         {
             "difficulty": 3,
             "id": "lon-lon-ranch-hp",
-            "jp": "",
+            "jp": "ロンロン牧場のハートのかけら",
             "name": "Lon Lon Ranch HP",
             "rowtypes": {
                 "bottle": 0.0,
@@ -3553,7 +3553,7 @@ var bingoList = {
         {
             "difficulty": 4,
             "id": "both-gerudo-valley-hps",
-            "jp": "",
+            "jp": "ゲルドの谷のハートのかけら2つ",
             "name": "Both Gerudo Valley HPs",
             "rowtypes": {
                 "bottle": 0.0,
@@ -3956,7 +3956,7 @@ var bingoList = {
         {
             "difficulty": 5,
             "id": "silver-scale",
-            "jp": "",
+            "jp": "銀のウロコ",
             "name": "Silver Scale",
             "rowtypes": {
                 "bottle": 0.0,
@@ -4627,7 +4627,7 @@ var bingoList = {
         {
             "difficulty": 7,
             "id": "at-least-3-lake-hylia-skulltulas",
-            "jp": "",
+            "jp": "ハイリア湖畔エリアの黄金のスタルチュラ3匹以上",
             "name": "At Least 3 Lake Hylia Skulltulas",
             "rowtypes": {
                 "bottle": 1.5,
@@ -4953,7 +4953,7 @@ var bingoList = {
         {
             "difficulty": 8,
             "id": "4-unused-keys-in-forest-temple",
-            "jp": "",
+            "jp": "森の神殿の未使用の小さな鍵4つ",
             "name": "4 Unused Keys in Forest Temple",
             "rowtypes": {
                 "bottle": 0.5,
@@ -4980,7 +4980,7 @@ var bingoList = {
         {
             "difficulty": 8,
             "id": "15-unique-skulltulas",
-            "jp": "",
+            "jp": "スタルチュラのしるし15個(増殖禁止)",
             "name": "15 Unique Skulltulas",
             "rowtypes": {
                 "bottle": 1.0,
