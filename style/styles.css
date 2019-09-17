@@ -232,7 +232,7 @@ h1 {
   font-family: 'Merriweather', Georgia, serif;
   font-weight: 800;
   font-size: 1.21em;
-  color: #e09456;
+  color: #f7e279;
   margin: 8px 0 8px 0;
   padding: 8px 0;
   word-wrap: break-word;
@@ -255,7 +255,7 @@ h2 {
   display: block;
   margin: 8px 0 0 0;
   padding: 8px 0;
-  color: #f7e279;
+  color: #e09456;
 }
 
 h4 {
