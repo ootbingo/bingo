@@ -179,6 +179,7 @@ nav ul li {
 
 nav ul li a {
   background-color: #424242;
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png");
   background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), linear-gradient(to bottom, #424242, #303030);
   border-width: 1px 0px 1px 1px;
   border-style: solid;
@@ -309,6 +310,7 @@ td {
 
 th {
   background-color: #c01614;
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png");
   background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), linear-gradient(to bottom, #c01614, #a01211);
   color: #f7e279;
   text-shadow: 1px 1px 3px #111111;
@@ -396,6 +398,7 @@ th {
 
 .smallbuttonstyle {
   background-color: #424242;
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png");
   background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), linear-gradient(to bottom, #424242, #303030);
   border-width: 1px 0px 1px 1px;
   border-style: solid;
@@ -433,6 +436,7 @@ th {
 
 .smallbutton {
   background-color: #424242;
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png");
   background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), linear-gradient(to bottom, #424242, #303030);
   border-width: 1px 0px 1px 1px;
   border-style: solid;
@@ -486,6 +490,7 @@ th {
 
 #bingoPage .newcard {
   background-color: #424242;
+  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png");
   background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), linear-gradient(to bottom, #424242, #303030);
   border-width: 1px 0px 1px 1px;
   border-style: solid;
