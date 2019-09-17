@@ -231,8 +231,8 @@ strong {
 h1 {
   font-family: 'Merriweather', Georgia, serif;
   font-weight: 800;
-  font-size: 1.21em;
-  color: #f7e279;
+  font-size: 1.5em;
+  color: #e09456;
   margin: 8px 0 8px 0;
   padding: 8px 0;
   word-wrap: break-word;
@@ -251,7 +251,7 @@ h1 a {
 h2 {
   font-family: 'Merriweather', Georgia, serif;
   font-weight: 800;
-  font-size: 1.21em;
+  font-size: 1.2em;
   display: block;
   margin: 8px 0 0 0;
   padding: 8px 0;
