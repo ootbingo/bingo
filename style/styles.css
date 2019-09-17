@@ -232,7 +232,7 @@ h1 {
   font-weight: 800;
   font-size: 1.21em;
   color: #e09456;
-  margin: 8px 0 0;
+  margin: 8px 0 8px 0;
   padding: 8px 0;
   word-wrap: break-word;
   overflow: hidden;
@@ -248,12 +248,13 @@ h1 a {
 }
 
 h2 {
+  font-family: 'Merriweather', Georgia, serif;
+  font-weight: 800;
+  font-size: 1.21em;
   display: block;
-  margin: 0 0 8px;
+  margin: 8px 0 0 0;
+  padding: 8px 0;
   color: #f7e279;
-  font-weight: 700;
-  clear: both;
-  font-size: 100%;
 }
 
 h4 {
