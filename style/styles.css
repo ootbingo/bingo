@@ -55,6 +55,10 @@ body {
   line-height: 15px;
 }
 
+body {
+	overflow-y: scroll;
+}
+
 .always_scrollbar {
   overflow-y: scroll;
 }

@@ -58,29 +58,30 @@
       box-shadow: inset 0px 0px 50px rgba(0, 0, 0, .6);
     }
   </style>
-  <script type="text/javascript" src="lib/jquery.min.js"></script>
 </head>
 
-<body>
-  <table>
-    <th></th>
-  </table>
-  <script type="text/javascript">
-    $(function () {
-      var data = decodeURIComponent(document.location.hash).substring(1).split('=');
-      var line = data[0];
-      var items = data[1].split(';;;');
-      $('table th').html(line);
-      for (a in items) {
-        $('table').append('<tr><td>' + items[a] + '</td></tr>');
-      }
-      $("td").toggle(
-        function () { $(this).addClass("greensquare"); },
-        function () { $(this).addClass("redsquare").removeClass("greensquare"); },
-        function () { $(this).removeClass("redsquare"); }
-      );
-    });
-  </script>
-</body>
+  <body>
+    <table>
+    </table>
+    <script type="text/javascript">
+      const data = decodeURIComponent(document.location.hash).substring(1).split('=');
+      const line = data[0];
+      const items = data[1].split(';;;');
+
+      const tableHTML = items.map(item => `<tr><td>${item}</td></tr>`).join('');
+      document.querySelector('table').innerHTML = `<th>${line}</th>${tableHTML}`;
+
+      document.querySelectorAll('td').forEach(el => el.addEventListener('click', () => {
+        if (el.classList.contains('greensquare')) {
+          el.classList.add('redsquare');
+          el.classList.remove('greensquare');
+        } else if (el.classList.contains('redsquare')) {
+          el.classList.remove('redsquare');
+        } else {
+          el.classList.add('greensquare');
+        }
+      }));
+    </script>
+  </body>
 
 </html>
