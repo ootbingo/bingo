@@ -25,18 +25,6 @@
   color: #808080;
 }
 
-.sans {
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  font-size: 0.88em;
-}
-
-.serif {
-  font-family: 'Merriweather', Georgia, serif;
-  font-weight: 800;
-  font-size: 1.21em;
-}
-
 .small {
   font-size: 75%;
 }
@@ -45,18 +33,18 @@ html,
 body {
   background: #111111;
   color: #bec7d2;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
   font-weight: normal;
-  font-size: 0.88em;
+  font-size: 0.92rem;
+  line-height: 1.22rem;
   padding: 0;
   margin: 0;
   height: 100%;
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
-  line-height: 15px;
 }
 
 body {
-	overflow-y: scroll;
+  overflow-y: scroll;
 }
 
 .always_scrollbar {
@@ -144,7 +132,7 @@ main {
   margin-right: 16px;
   float: right;
   text-align: center;
-  font-family: 'Merriweather', Georgia, serif;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
   font-weight: 800;
   font-size: 1.21em;
   line-height: 18px;
@@ -233,9 +221,11 @@ strong {
 }
 
 h1 {
-  font-family: 'Merriweather', Georgia, serif;
-  font-weight: 800;
-  font-size: 1.5em;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.50rem;
+  line-height: 1.15rem;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
   color: #e09456;
   margin: 8px 0 8px 0;
   padding: 8px 0;
@@ -253,13 +243,16 @@ h1 a {
 }
 
 h2 {
-  font-family: 'Merriweather', Georgia, serif;
-  font-weight: 800;
-  font-size: 1.2em;
-  display: block;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.06rem;
+  line-height: 1.15rem;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+  color: #e09456;
   margin: 8px 0 0 0;
   padding: 8px 0;
-  color: #e09456;
+  word-wrap: break-word;
+  overflow: hidden;
 }
 
 h4 {
@@ -280,7 +273,8 @@ a:hover {
 
 p {
   margin: 0px;
-  padding: 0 0 8px;
+  padding: 0 0 11.2px;
+  line-height: 1.35rem;
 }
 
 ul {
@@ -288,12 +282,16 @@ ul {
   padding-left: 1em;
   text-indent: -1em;
   margin-top: 2px;
+  margin-bottom: 2px;
 }
-
 ul li {
   list-style-type: square;
   list-style-position: inside;
-  padding-bottom: 10px;
+}
+
+li {
+  line-height: 1.35rem;
+  padding-bottom: 11.2px;
 }
 
 .noselect {
