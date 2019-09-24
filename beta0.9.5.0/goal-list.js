@@ -2015,8 +2015,8 @@ var bingoList = {
         {
             "difficulty": 17,
             "id": "8-hearts-no-duping-",
-            "jp": "ハート8つ",
-            "name": "8 Hearts (no duping)",
+            "jp": "ハート8つ(複製禁止)",
+            "name": "8 Hearts (No Duping)",
             "rowtypes": {
                 "bottle": 0.0,
                 "gclw": 1.0,
@@ -3216,8 +3216,8 @@ var bingoList = {
         {
             "difficulty": 23,
             "id": "9-hearts-no-duping-",
-            "jp": "ハート9つ",
-            "name": "9 Hearts (no duping)",
+            "jp": "ハート9つ(複製禁止)",
+            "name": "9 Hearts (No Duping)",
             "rowtypes": {
                 "bottle": 0.0,
                 "gclw": 1.0,
