@@ -607,7 +607,7 @@ var bingoList = {
         {
             "difficulty": 11,
             "id": "20-different-skulltulas",
-            "jp": "黄金のスタルチュラのしるし20個(増殖禁止)",
+            "jp": "スタルチュラのしるし20個(増殖禁止)",
             "name": "20 Different Skulltulas",
             "rowtypes": {
                 "bottle": 1.0,
@@ -3166,7 +3166,7 @@ var bingoList = {
         {
             "difficulty": 22,
             "id": "30-different-skulltulas",
-            "jp": "黄金のスタルチュラのしるし30個(増殖禁止)",
+            "jp": "スタルチュラのしるし30個(増殖禁止)",
             "name": "30 Different Skulltulas",
             "rowtypes": {
                 "bottle": 100.0,
@@ -4804,7 +4804,7 @@ var bingoList = {
         {
             "difficulty": 7,
             "id": "15-different-skulltulas",
-            "jp": "黄金のスタルチュラのしるし15個(増殖禁止)",
+            "jp": "スタルチュラのしるし15個(増殖禁止)",
             "name": "15 Different Skulltulas",
             "rowtypes": {
                 "bottle": 1.0,
