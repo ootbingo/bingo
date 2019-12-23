@@ -761,7 +761,7 @@ var bingoList = {
         {
             "difficulty": 12,
             "id": "defeat-amy-green-poe-",
-            "jp": "エイミー撃破(緑のポウ)ｴ",
+            "jp": "エイミー撃破(緑のポウ)",
             "name": "Defeat Amy (Green Poe)",
             "rowtypes": {
                 "bottle": 0.5,
@@ -1369,7 +1369,7 @@ var bingoList = {
         {
             "difficulty": 13,
             "id": "obtain-all-5-small-keys-in-forest-temple",
-            "jp": "森の神殿の小さな鍵の宝箱を5つ全て開ける",
+            "jp": "森の神殿の小さな鍵の宝箱を5つ開ける",
             "name": "Obtain all 5 Small Keys in Forest Temple",
             "rowtypes": {
                 "bottle": 0.5,
@@ -1400,7 +1400,7 @@ var bingoList = {
         {
             "difficulty": 13,
             "id": "obtain-all-8-small-keys-in-fire-temple",
-            "jp": "炎の神殿の小さな鍵の宝箱を８つ全て開ける",
+            "jp": "炎の神殿の小さな鍵の宝箱を8つ開ける",
             "name": "Obtain all 8 Small Keys in Fire Temple",
             "rowtypes": {
                 "bottle": 0.5,
@@ -2178,7 +2178,7 @@ var bingoList = {
         {
             "difficulty": 18,
             "id": "free-all-9-gorons-in-fire-temple",
-            "jp": "炎の神殿で９人のゴロンを全員救う",
+            "jp": "炎の神殿で9人のゴロンを全員救う",
             "name": "Free all 9 Gorons in Fire Temple",
             "rowtypes": {
                 "bottle": 0.5,
@@ -2804,7 +2804,7 @@ var bingoList = {
         {
             "difficulty": 20,
             "id": "obtain-all-5-small-keys-in-shadow-temple",
-            "jp": "闇の神殿の小さな鍵５つ取得",
+            "jp": "闇の神殿の小さな鍵5つ取得",
             "name": "Obtain all 5 Small Keys in Shadow Temple",
             "rowtypes": {
                 "bottle": 0.0,
@@ -2862,7 +2862,7 @@ var bingoList = {
         {
             "difficulty": 21,
             "id": "1-unused-small-key-in-each-adult-dungeon",
-            "jp": "全ての大人のダンジョンから未使用の鍵最低１つずつ",
+            "jp": "全ての大人のダンジョンから未使用の鍵最低1つずつ",
             "name": "1 Unused Small Key in each Adult Dungeon",
             "rowtypes": {
                 "bottle": 0.5,
@@ -3133,7 +3133,7 @@ var bingoList = {
         {
             "difficulty": 22,
             "id": "both-hps-in-lost-woods",
-            "jp": "迷いの森のハートのかけら２つ",
+            "jp": "迷いの森のハートのかけら2つ",
             "name": "Both HPs in Lost Woods",
             "rowtypes": {
                 "bottle": 0.0,
@@ -3597,7 +3597,7 @@ var bingoList = {
         {
             "difficulty": 25,
             "id": "two-fairy-spells",
-            "jp": "魔法のアイテム２つ",
+            "jp": "魔法のアイテム2つ",
             "name": "Two Fairy Spells",
             "rowtypes": {
                 "bottle": 100.0,
@@ -3753,7 +3753,7 @@ var bingoList = {
         {
             "difficulty": 3,
             "id": "both-hps-in-death-mountain-crater",
-            "jp": "デスマウンテン火口のハートのかけら２つ",
+            "jp": "デスマウンテン火口のハートのかけら2つ",
             "name": "Both HPs in Death Mountain Crater",
             "rowtypes": {
                 "bottle": 0.0,
@@ -4251,7 +4251,7 @@ var bingoList = {
         {
             "difficulty": 5,
             "id": "all-4-adult-skulltulas-in-zora-s-domain",
-            "jp": "大人時代のゾーラの里エリアの黄金のスタルチュラ4匹全て",
+            "jp": "大人時代のゾーラの里エリアの黄金のスタルチュラ4匹",
             "name": "All 4 Adult Skulltulas in Zora's Domain",
             "rowtypes": {
                 "bottle": 0.0,
@@ -4338,7 +4338,7 @@ var bingoList = {
         {
             "difficulty": 6,
             "id": "all-3-kokiri-forest-area-skulltulas",
-            "jp": "コキリの森エリアの黄金のスタルチュラ３匹",
+            "jp": "コキリの森エリアの黄金のスタルチュラ3匹",
             "name": "All 3 Kokiri Forest Area Skulltulas",
             "rowtypes": {
                 "bottle": 100.0,
@@ -5968,7 +5968,7 @@ var bingoList = {
         {
             "difficulty": 9,
             "id": "all-4-child-skulltulas-in-zora-s-domain",
-            "jp": "子供時代のゾーラの里エリアの黄金のスタルチュラ4匹全て",
+            "jp": "子供時代のゾーラの里エリアの黄金のスタルチュラ4匹",
             "name": "All 4 Child Skulltulas in Zora's Domain",
             "rowtypes": {
                 "bottle": 0.0,
