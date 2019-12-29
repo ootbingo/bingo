@@ -4,7 +4,7 @@ var bingoList = {
         {
             "difficulty": 1,
             "id": "30-deku-nuts",
-            "jp": "デクの実30個以上",
+            "jp": "デクの実30個",
             "name": "30 Deku Nuts",
             "rowtypes": {
                 "bottle": 0.0,
@@ -105,7 +105,7 @@ var bingoList = {
         {
             "difficulty": 1,
             "id": "exactly-20-deku-sticks",
-            "jp": "デクの棒20本",
+            "jp": "デクの棒20本ちょうど",
             "name": "Exactly 20 Deku Sticks",
             "rowtypes": {
                 "bottle": 1.0,
@@ -187,7 +187,7 @@ var bingoList = {
         {
             "difficulty": 10,
             "id": "1-skulltula-from-each-child-dungeon",
-            "jp": "全ての子供ダンジョンからスタルチュラ最低1匹ずつ",
+            "jp": "全ての子供ダンジョンから黄金のスタルチュラ最低1匹ずつ",
             "name": "1 Skulltula from each Child Dungeon",
             "rowtypes": {
                 "bottle": 0.0,
@@ -243,7 +243,7 @@ var bingoList = {
             "difficulty": 10,
             "id": "all-8-death-mountain-area-skulltulas",
             "jp": "デスマウンテンエリアの黄金のスタルチュラ8匹",
-            "name": "All 8 Death Mountain area Skulltulas",
+            "name": "All 8 Death Mountain Area Skulltulas",
             "rowtypes": {
                 "bottle": 100.0,
                 "gclw": 0.75,
@@ -268,8 +268,8 @@ var bingoList = {
         {
             "difficulty": 10,
             "id": "both-hyrule-field-area-skulltulas",
-            "jp": "ハイラル平原エリアの黄金ノスタルチュラ2匹",
-            "name": "Both Hyrule Field area Skulltulas",
+            "jp": "ハイラル平原エリアの黄金のスタルチュラ2匹",
+            "name": "Both Hyrule Field Area Skulltulas",
             "rowtypes": {
                 "bottle": 0.0,
                 "gclw": 0.0,
@@ -583,7 +583,7 @@ var bingoList = {
         {
             "difficulty": 11,
             "id": "open-2-boss-key-doors",
-            "jp": "",
+            "jp": "ボスカギの扉を2つ開ける",
             "name": "Open 2 Boss Key Doors",
             "rowtypes": {
                 "bottle": 0.0,
@@ -626,7 +626,7 @@ var bingoList = {
         {
             "difficulty": 11,
             "id": "7-different-bottled-contents",
-            "jp": "",
+            "jp": "ビンに詰めたアイテム7種類",
             "name": "7 Different Bottled Contents",
             "rowtypes": {
                 "bottle": 100.0,
@@ -706,7 +706,7 @@ var bingoList = {
         {
             "difficulty": 12,
             "id": "8-songs",
-            "jp": "歌8つ以上",
+            "jp": "歌8つ",
             "name": "8 Songs",
             "rowtypes": {
                 "bottle": 100.0,
@@ -761,7 +761,7 @@ var bingoList = {
         {
             "difficulty": 12,
             "id": "defeat-amy-green-poe-",
-            "jp": "エイミー撃破(緑のポウ)ｴ",
+            "jp": "エイミー撃破(緑のポウ)",
             "name": "Defeat Amy (Green Poe)",
             "rowtypes": {
                 "bottle": 0.5,
@@ -944,7 +944,7 @@ var bingoList = {
         {
             "difficulty": 12,
             "id": "desert-colossus-hp",
-            "jp": "",
+            "jp": "巨大邪神像のハートのかけら",
             "name": "Desert Colossus HP",
             "rowtypes": {
                 "bottle": 0.0,
@@ -965,7 +965,7 @@ var bingoList = {
         {
             "difficulty": 13,
             "id": "3-skulltulas-in-water-temple",
-            "jp": "水の神殿の黄金のスタルチュラ3匹以上",
+            "jp": "水の神殿の黄金のスタルチュラ3匹",
             "name": "3 Skulltulas in Water Temple",
             "rowtypes": {
                 "bottle": 100.0,
@@ -1071,7 +1071,7 @@ var bingoList = {
         {
             "difficulty": 13,
             "id": "4-skulltulas-in-shadow-temple",
-            "jp": "闇の神殿の黄金のスタルチュラ4匹以上",
+            "jp": "闇の神殿の黄金のスタルチュラ4匹",
             "name": "4 Skulltulas in Shadow Temple",
             "rowtypes": {
                 "bottle": 0.0,
@@ -1125,7 +1125,7 @@ var bingoList = {
             "difficulty": 13,
             "id": "all-4-wasteland-colossus-area-skulltulas",
             "jp": "幻影の砂漠・巨大邪神像エリアの黄金のスタルチュラ4匹",
-            "name": "All 4 Wasteland/ Colossus area Skulltulas",
+            "name": "All 4 Wasteland/ Colossus Area Skulltulas",
             "rowtypes": {
                 "bottle": 100.0,
                 "gclw": 0.0,
@@ -1155,7 +1155,7 @@ var bingoList = {
             "difficulty": 13,
             "id": "all-8-zora-s-domain-area-skulltulas",
             "jp": "ゾーラの里エリアの黄金のスタルチュラ8匹",
-            "name": "All 8 Zora's Domain area Skulltulas",
+            "name": "All 8 Zora's Domain Area Skulltulas",
             "rowtypes": {
                 "bottle": 0.0,
                 "gclw": 1.0,
@@ -1369,7 +1369,7 @@ var bingoList = {
         {
             "difficulty": 13,
             "id": "obtain-all-5-small-keys-in-forest-temple",
-            "jp": "森の神殿の小さな鍵の宝箱を5つ全て開ける",
+            "jp": "森の神殿の小さな鍵の宝箱を5つ開ける",
             "name": "Obtain all 5 Small Keys in Forest Temple",
             "rowtypes": {
                 "bottle": 0.5,
@@ -1400,7 +1400,7 @@ var bingoList = {
         {
             "difficulty": 13,
             "id": "obtain-all-8-small-keys-in-fire-temple",
-            "jp": "炎の神殿の小さな鍵の宝箱を８つ全て開ける",
+            "jp": "炎の神殿の小さな鍵の宝箱を8つ開ける",
             "name": "Obtain all 8 Small Keys in Fire Temple",
             "rowtypes": {
                 "bottle": 0.5,
@@ -1495,8 +1495,8 @@ var bingoList = {
         {
             "difficulty": 14,
             "id": "5-zora-area-hps",
-            "jp": "ゾーラエリアのハートのかけら5つ以上",
-            "name": "5 Zora area HPs",
+            "jp": "ゾーラエリアのハートのかけら5つ",
+            "name": "5 Zora Area HPs",
             "rowtypes": {
                 "bottle": 0.0,
                 "gclw": 1.0,
@@ -1619,7 +1619,7 @@ var bingoList = {
         {
             "difficulty": 14,
             "id": "open-5-gold-rupee-chests",
-            "jp": "",
+            "jp": "金ルピーの宝箱を5つ開ける",
             "name": "Open 5 Gold Rupee Chests",
             "rowtypes": {
                 "bottle": 0.0,
@@ -1649,7 +1649,7 @@ var bingoList = {
         {
             "difficulty": 15,
             "id": "9-songs",
-            "jp": "歌9つ以上",
+            "jp": "歌9つ",
             "name": "9 Songs",
             "rowtypes": {
                 "bottle": 100.0,
@@ -2178,7 +2178,7 @@ var bingoList = {
         {
             "difficulty": 18,
             "id": "free-all-9-gorons-in-fire-temple",
-            "jp": "炎の神殿で９人のゴロンを全員救う",
+            "jp": "炎の神殿で9人のゴロンを全員救う",
             "name": "Free all 9 Gorons in Fire Temple",
             "rowtypes": {
                 "bottle": 0.5,
@@ -2517,7 +2517,7 @@ var bingoList = {
         {
             "difficulty": 19,
             "id": "clear-8-silver-rupee-rooms",
-            "jp": "",
+            "jp": "銀ルピー部屋を8箇所攻略",
             "name": "Clear 8 Silver Rupee Rooms",
             "rowtypes": {
                 "bottle": 0.0,
@@ -2573,7 +2573,7 @@ var bingoList = {
         {
             "difficulty": 2,
             "id": "exactly-30-deku-sticks",
-            "jp": "デクの棒30本",
+            "jp": "デクの棒30本ちょうど",
             "name": "Exactly 30 Deku Sticks",
             "rowtypes": {
                 "bottle": 100.0,
@@ -2804,7 +2804,7 @@ var bingoList = {
         {
             "difficulty": 20,
             "id": "obtain-all-5-small-keys-in-shadow-temple",
-            "jp": "闇の神殿の小さな鍵５つ取得",
+            "jp": "闇の神殿の小さな鍵5つ取得",
             "name": "Obtain all 5 Small Keys in Shadow Temple",
             "rowtypes": {
                 "bottle": 0.0,
@@ -2836,7 +2836,7 @@ var bingoList = {
         {
             "difficulty": 20,
             "id": "open-3-boss-key-doors",
-            "jp": "",
+            "jp": "ボスカギの扉を3つ開ける",
             "name": "Open 3 Boss Key Doors",
             "rowtypes": {
                 "bottle": 100.0,
@@ -2862,7 +2862,7 @@ var bingoList = {
         {
             "difficulty": 21,
             "id": "1-unused-small-key-in-each-adult-dungeon",
-            "jp": "全ての大人のダンジョンから未使用の鍵最低１つずつ",
+            "jp": "全ての大人のダンジョンから未使用の鍵最低1つずつ",
             "name": "1 Unused Small Key in each Adult Dungeon",
             "rowtypes": {
                 "bottle": 0.5,
@@ -2940,7 +2940,7 @@ var bingoList = {
             "difficulty": 21,
             "id": "all-4-market-area-skulltulas",
             "jp": "城下町エリアの黄金のスタルチュラ4匹",
-            "name": "All 4 Market area Skulltulas",
+            "name": "All 4 Market Area Skulltulas",
             "rowtypes": {
                 "bottle": 100.0,
                 "gclw": 1.0,
@@ -3133,7 +3133,7 @@ var bingoList = {
         {
             "difficulty": 22,
             "id": "both-hps-in-lost-woods",
-            "jp": "迷いの森のハートのかけら２つ",
+            "jp": "迷いの森のハートのかけら2つ",
             "name": "Both HPs in Lost Woods",
             "rowtypes": {
                 "bottle": 0.0,
@@ -3308,7 +3308,7 @@ var bingoList = {
         {
             "difficulty": 24,
             "id": "1-skulltula-from-each-adult-dungeon",
-            "jp": "全ての大人ダンジョンからスタルチュラ最低1匹ずつ",
+            "jp": "全ての大人ダンジョンから黄金のスタルチュラ最低1匹ずつ",
             "name": "1 Skulltula from each Adult Dungeon",
             "rowtypes": {
                 "bottle": 0.5,
@@ -3346,7 +3346,7 @@ var bingoList = {
         {
             "difficulty": 24,
             "id": "10-songs",
-            "jp": "歌10つ以上",
+            "jp": "歌10つ",
             "name": "10 Songs",
             "rowtypes": {
                 "bottle": 100.0,
@@ -3382,7 +3382,7 @@ var bingoList = {
         {
             "difficulty": 24,
             "id": "clear-10-silver-rupee-rooms",
-            "jp": "",
+            "jp": "銀ルピー部屋を10箇所攻略",
             "name": "Clear 10 Silver Rupee Rooms",
             "rowtypes": {
                 "bottle": 0.0,
@@ -3411,8 +3411,8 @@ var bingoList = {
         {
             "difficulty": 24,
             "id": "open-50-rupee-chest-in-wasteland",
-            "jp": "",
-            "name": "Open 50 Rupee chest in Wasteland",
+            "jp": "幻影の砂漠の50ルピーの宝箱を開ける",
+            "name": "Open 50 Rupee Chest in Wasteland",
             "rowtypes": {
                 "bottle": 0.0,
                 "gclw": 0.0,
@@ -3597,7 +3597,7 @@ var bingoList = {
         {
             "difficulty": 25,
             "id": "two-fairy-spells",
-            "jp": "魔法のアイテム２つ",
+            "jp": "魔法のアイテム2つ",
             "name": "Two Fairy Spells",
             "rowtypes": {
                 "bottle": 100.0,
@@ -3641,7 +3641,7 @@ var bingoList = {
         {
             "difficulty": 25,
             "id": "open-all-6-gold-rupee-chests",
-            "jp": "",
+            "jp": "金ルピーの宝箱を6つ開ける",
             "name": "Open All 6 Gold Rupee Chests",
             "rowtypes": {
                 "bottle": 0.0,
@@ -3670,7 +3670,7 @@ var bingoList = {
         {
             "difficulty": 25,
             "id": "both-rusty-switches-in-spirit-temple",
-            "jp": "",
+            "jp": "魂の神殿の錆びたスイッチ2つ",
             "name": "Both Rusty Switches in Spirit Temple",
             "rowtypes": {
                 "bottle": 0.0,
@@ -3729,7 +3729,7 @@ var bingoList = {
         {
             "difficulty": 3,
             "id": "5-magic-beans",
-            "jp": "魔法のマメ5つ以上",
+            "jp": "魔法のマメ5つ",
             "name": "5 Magic Beans",
             "rowtypes": {
                 "bottle": 0.0,
@@ -3753,7 +3753,7 @@ var bingoList = {
         {
             "difficulty": 3,
             "id": "both-hps-in-death-mountain-crater",
-            "jp": "デスマウンテン火口のハートのかけら２つ",
+            "jp": "デスマウンテン火口のハートのかけら2つ",
             "name": "Both HPs in Death Mountain Crater",
             "rowtypes": {
                 "bottle": 0.0,
@@ -3822,8 +3822,8 @@ var bingoList = {
         {
             "difficulty": 3,
             "id": "2-skulltulas-in-lon-lon-ranch",
-            "jp": "",
-            "name": "2 Skulltulas in Lon Lon Ranch",
+            "jp": "ロンロン牧場エリアの黄金のスタルチュラ2匹",
+            "name": "2 Lon-Lon Ranch Area Skulltulas",
             "rowtypes": {
                 "bottle": 0.0,
                 "gclw": 0.0,
@@ -3934,7 +3934,7 @@ var bingoList = {
         {
             "difficulty": 4,
             "id": "open-3-gold-rupee-chests",
-            "jp": "",
+            "jp": "金ルピーの宝箱を3つ開ける",
             "name": "Open 3 Gold Rupee Chests",
             "rowtypes": {
                 "bottle": 0.0,
@@ -3969,7 +3969,7 @@ var bingoList = {
         {
             "difficulty": 5,
             "id": "3-songs",
-            "jp": "歌3つ以上",
+            "jp": "歌3つ",
             "name": "3 Songs",
             "rowtypes": {
                 "bottle": 100.0,
@@ -4023,7 +4023,7 @@ var bingoList = {
         {
             "difficulty": 5,
             "id": "4-songs",
-            "jp": "歌4つ以上",
+            "jp": "歌4つ",
             "name": "4 Songs",
             "rowtypes": {
                 "bottle": 100.0,
@@ -4251,7 +4251,7 @@ var bingoList = {
         {
             "difficulty": 5,
             "id": "all-4-adult-skulltulas-in-zora-s-domain",
-            "jp": "",
+            "jp": "大人時代のゾーラの里エリアの黄金のスタルチュラ4匹",
             "name": "All 4 Adult Skulltulas in Zora's Domain",
             "rowtypes": {
                 "bottle": 0.0,
@@ -4338,8 +4338,8 @@ var bingoList = {
         {
             "difficulty": 6,
             "id": "all-3-kokiri-forest-area-skulltulas",
-            "jp": "コキリの森エリアの黄金のスタルチュラ３匹",
-            "name": "All 3 Kokiri Forest area Skulltulas",
+            "jp": "コキリの森エリアの黄金のスタルチュラ3匹",
+            "name": "All 3 Kokiri Forest Area Skulltulas",
             "rowtypes": {
                 "bottle": 100.0,
                 "gclw": 1.0,
@@ -4466,7 +4466,7 @@ var bingoList = {
             "difficulty": 6,
             "id": "both-gerudo-s-fortress-area-skulltulas",
             "jp": "ゲルドの砦の黄金のスタルチュラ2匹",
-            "name": "Both Gerudo's Fortress area Skulltulas",
+            "name": "Both Gerudo's Fortress Area Skulltulas",
             "rowtypes": {
                 "bottle": 0.0,
                 "gclw": 0.0,
@@ -4749,7 +4749,7 @@ var bingoList = {
             "difficulty": 6,
             "id": "plant-bean-in-death-mountain-crater",
             "jp": "デスマウンテン火口の土にマメを植える",
-            "name": "Plant bean in Death Mountain Crater",
+            "name": "Plant Bean in Death Mountain Crater",
             "rowtypes": {
                 "bottle": 0.0,
                 "gclw": 0.0,
@@ -4774,7 +4774,7 @@ var bingoList = {
         {
             "difficulty": 6,
             "id": "clear-4-silver-rupee-rooms",
-            "jp": "",
+            "jp": "銀ルピー部屋を4箇所攻略",
             "name": "Clear 4 Silver Rupee Rooms",
             "rowtypes": {
                 "bottle": 0.0,
@@ -4823,7 +4823,7 @@ var bingoList = {
         {
             "difficulty": 7,
             "id": "3-lake-hylia-skulltulas",
-            "jp": "ハイリア湖畔エリアの黄金のスタルチュラ3匹以上",
+            "jp": "ハイリア湖畔エリアの黄金のスタルチュラ3匹",
             "name": "3 Lake Hylia Skulltulas",
             "rowtypes": {
                 "bottle": 1.5,
@@ -4896,7 +4896,7 @@ var bingoList = {
         {
             "difficulty": 7,
             "id": "6-songs",
-            "jp": "歌6つ以上",
+            "jp": "歌6つ",
             "name": "6 Songs",
             "rowtypes": {
                 "bottle": 100.0,
@@ -4923,7 +4923,7 @@ var bingoList = {
             "difficulty": 7,
             "id": "all-4-lost-woods-area-skulltulas",
             "jp": "迷いの森エリアの黄金のスタルチュラ4匹",
-            "name": "All 4 Lost Woods area Skulltulas",
+            "name": "All 4 Lost Woods Area Skulltulas",
             "rowtypes": {
                 "bottle": 100.0,
                 "gclw": 1.0,
@@ -5305,7 +5305,7 @@ var bingoList = {
         {
             "difficulty": 8,
             "id": "7-magic-beans",
-            "jp": "魔法のマメ7つ以上",
+            "jp": "魔法のマメ7つ",
             "name": "7 Magic Beans",
             "rowtypes": {
                 "bottle": 0.0,
@@ -5330,7 +5330,7 @@ var bingoList = {
             "difficulty": 8,
             "id": "all-4-lon-lon-ranch-area-skulltulas",
             "jp": "ロンロン牧場エリアの黄金のスタルチュラ4匹",
-            "name": "All 4 Lon-Lon Ranch area Skulltulas",
+            "name": "All 4 Lon-Lon Ranch Area Skulltulas",
             "rowtypes": {
                 "bottle": 100.0,
                 "gclw": 0.0,
@@ -5380,7 +5380,7 @@ var bingoList = {
             "difficulty": 8,
             "id": "all-8-kakariko-area-skulltulas",
             "jp": "カカリコ村エリアの黄金のスタルチュラ8匹",
-            "name": "All 8 Kakariko area Skulltulas",
+            "name": "All 8 Kakariko Area Skulltulas",
             "rowtypes": {
                 "bottle": 100.0,
                 "gclw": 0.0,
@@ -5623,7 +5623,7 @@ var bingoList = {
         {
             "difficulty": 9,
             "id": "7-songs",
-            "jp": "歌7つ以上",
+            "jp": "歌7つ",
             "name": "7 Songs",
             "rowtypes": {
                 "bottle": 100.0,
@@ -5652,7 +5652,7 @@ var bingoList = {
             "difficulty": 9,
             "id": "all-4-gerudo-valley-area-skulltulas",
             "jp": "ゲルドの谷エリアの黄金のスタルチュラ4匹",
-            "name": "All 4 Gerudo Valley area Skulltulas",
+            "name": "All 4 Gerudo Valley Area Skulltulas",
             "rowtypes": {
                 "bottle": 100.0,
                 "gclw": 0.0,
@@ -5944,7 +5944,7 @@ var bingoList = {
         {
             "difficulty": 9,
             "id": "plant-5-magic-beans",
-            "jp": "",
+            "jp": "魔法の豆を5つ植える",
             "name": "Plant 5 Magic Beans",
             "rowtypes": {
                 "bottle": 0.0,
@@ -5968,7 +5968,7 @@ var bingoList = {
         {
             "difficulty": 9,
             "id": "all-4-child-skulltulas-in-zora-s-domain",
-            "jp": "",
+            "jp": "子供時代のゾーラの里エリアの黄金のスタルチュラ4匹",
             "name": "All 4 Child Skulltulas in Zora's Domain",
             "rowtypes": {
                 "bottle": 0.0,
