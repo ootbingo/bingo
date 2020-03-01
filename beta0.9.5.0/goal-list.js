@@ -3823,7 +3823,7 @@ var bingoList = {
             "difficulty": 3,
             "id": "2-skulltulas-in-lon-lon-ranch",
             "jp": "ロンロン牧場エリアの黄金のスタルチュラ2匹",
-            "name": "2 Lon-Lon Ranch Area Skulltulas",
+            "name": "2 Lon Lon Ranch Area Skulltulas",
             "rowtypes": {
                 "bottle": 0.0,
                 "gclw": 0.0,
@@ -5330,7 +5330,7 @@ var bingoList = {
             "difficulty": 8,
             "id": "all-4-lon-lon-ranch-area-skulltulas",
             "jp": "ロンロン牧場エリアの黄金のスタルチュラ4匹",
-            "name": "All 4 Lon-Lon Ranch Area Skulltulas",
+            "name": "All 4 Lon Lon Ranch Area Skulltulas",
             "rowtypes": {
                 "bottle": 100.0,
                 "gclw": 0.0,
