@@ -341,7 +341,7 @@ var bingoList = {
                 "skulls": 0.75,
                 "songs5": 3.0
             },
-            "time": 7.5,
+            "time": 7.25,
             "types": {
                 "endon": -0.25,
                 "fortress": 2.5,
@@ -509,10 +509,10 @@ var bingoList = {
                 "childchu": -2.5,
                 "incarrows": 100.0,
                 "map": 3.0,
-                "poachers": 1.5,
+                "poachers": 1.0,
                 "skulls": 0.25
             },
-            "time": 8.5,
+            "time": 8.25,
             "types": {
                 "firearrow": 8.0,
                 "fortress": 3.0,
@@ -541,15 +541,15 @@ var bingoList = {
                 "hearts3": 1.0,
                 "skulls": 0.25
             },
-            "time": 8.0,
+            "time": 7.5,
             "types": {
                 "aganon": 3.0,
                 "bganon": -2.0,
                 "bothzl": -4.0,
                 "cganon": 2.0,
-                "czl": 4.0,
+                "czl": 2.75,
                 "endon": -0.5,
-                "poachers": 4.0,
+                "poachers": 3.5,
                 "selfsynergy": 0.0
             }
         },
@@ -572,7 +572,7 @@ var bingoList = {
                 "map": 3.0,
                 "skulls": 0.75
             },
-            "time": 8.0,
+            "time": 7.75,
             "types": {
                 "fountain": 2.0,
                 "incbarinade": 100.0,
@@ -722,10 +722,10 @@ var bingoList = {
                 "hearts3": 1.5,
                 "skulls": 0.5
             },
-            "time": 9.25,
+            "time": 8.75,
             "types": {
                 "incsongs": 100.0,
-                "poachers": 4.0,
+                "poachers": 3.5,
                 "selfsynergy": 0.0,
                 "songs5": 5.5
             }
@@ -749,7 +749,7 @@ var bingoList = {
                 "map": 2.0,
                 "skulls": 1.25
             },
-            "time": 9.0,
+            "time": 8.25,
             "types": {
                 "endon": -1.75,
                 "fountain": 2.0,
@@ -811,7 +811,7 @@ var bingoList = {
                 "map": 2.0,
                 "skulls": 1.25
             },
-            "time": 8.75,
+            "time": 8.5,
             "types": {
                 "endon": -0.25,
                 "fountain": 2.0,
@@ -841,13 +841,13 @@ var bingoList = {
                 "hearts3": 1.5,
                 "songs5": 1.0
             },
-            "time": 9.25,
+            "time": 8.75,
             "types": {
                 "bothzl": -4.0,
-                "czl": 4.0,
+                "czl": 2.75,
                 "dmc": 1.0,
-                "magic": 2.0,
-                "poachers": 4.0,
+                "magic": 1.75,
+                "poachers": 3.5,
                 "selfsynergy": 0.0
             }
         },
@@ -872,7 +872,7 @@ var bingoList = {
                 "marketgs": 4.0,
                 "skulls": 0.5
             },
-            "time": 9.25,
+            "time": 7.75,
             "types": {
                 "fortress": 2.5,
                 "incgcard": 100.0,
@@ -931,12 +931,12 @@ var bingoList = {
                 "hearts3": 2.5,
                 "skulls": 0.25
             },
-            "time": 9.0,
+            "time": 8.5,
             "types": {
                 "bothzl": -4.0,
-                "czl": 4.0,
+                "czl": 2.75,
                 "hovers": 1.5,
-                "poachers": 4.0,
+                "poachers": 3.5,
                 "selfsynergy": 0.0,
                 "shadow": 6.0
             }
@@ -985,7 +985,7 @@ var bingoList = {
                 "map": 2.5,
                 "skulls": 1.5
             },
-            "time": 9.75,
+            "time": 9.5,
             "types": {
                 "dc": 2.0,
                 "ice": 1.5,
@@ -1019,7 +1019,7 @@ var bingoList = {
                 "skulls": 1.0,
                 "songs4": 1.5
             },
-            "time": 9.75,
+            "time": 9.5,
             "types": {
                 "endon": -0.5,
                 "fountain": 2.0,
@@ -1055,11 +1055,11 @@ var bingoList = {
                 "skulls": 1.0,
                 "songs4": 1.5
             },
-            "time": 10.0,
+            "time": 9.75,
             "types": {
                 "endon": -0.5,
                 "fountain": 2.0,
-                "gtunic": 1.5,
+                "gtunic": 1.0,
                 "hovers": 2.5,
                 "ice": 1.5,
                 "incboot": 100.0,
@@ -1144,7 +1144,7 @@ var bingoList = {
                 "songs10": -5.0,
                 "songs5": 3.0
             },
-            "time": 10.0,
+            "time": 9.75,
             "types": {
                 "fortress": 2.5,
                 "selfsynergy": 0.0,
@@ -1200,13 +1200,13 @@ var bingoList = {
                 "hearts3": 1.5,
                 "skulls": 0.25
             },
-            "time": 9.75,
+            "time": 9.25,
             "types": {
                 "bothzl": -4.0,
-                "czl": 4.0,
+                "czl": 2.75,
                 "dmc": 1.0,
-                "magic": 2.0,
-                "poachers": 4.0,
+                "magic": 1.75,
+                "poachers": 3.5,
                 "selfsynergy": 0.0
             }
         },
@@ -1228,7 +1228,7 @@ var bingoList = {
                 "compass": 3.5,
                 "hearts4": 1.0,
                 "hovers": 1.25,
-                "lightarrow": 3.0,
+                "lightarrow": 1.0,
                 "map": 2.5,
                 "quiver": 4.5,
                 "skulls": 1.0,
@@ -1290,12 +1290,12 @@ var bingoList = {
                 "marketgs": 2.0,
                 "songs4": 1.75
             },
-            "time": 9.75,
+            "time": 7.75,
             "types": {
                 "childchu": 0.0,
-                "childtrade": 2.75,
+                "childtrade": 2.0,
                 "chuczl": 2.0,
-                "czl": 5.0,
+                "czl": 3.75,
                 "incctrade": 100.0,
                 "selfsynergy": 0.0
             }
@@ -1354,7 +1354,7 @@ var bingoList = {
                 "skulls": 0.75,
                 "songs5": 1.0
             },
-            "time": 10.0,
+            "time": 9.75,
             "types": {
                 "fortress": 2.5,
                 "gtg": 1.0,
@@ -1450,7 +1450,7 @@ var bingoList = {
                 "skulls": 0.75,
                 "songs5": 1.0
             },
-            "time": 10.0,
+            "time": 9.75,
             "types": {
                 "endon": -1.0,
                 "fortress": 3.0,
@@ -1483,7 +1483,7 @@ var bingoList = {
                 "map": 3.0,
                 "poachers": 0.25
             },
-            "time": 10.5,
+            "time": 10.25,
             "types": {
                 "fortress": 2.5,
                 "hovers": 2.5,
@@ -1665,10 +1665,10 @@ var bingoList = {
                 "hearts3": 1.5,
                 "skulls": 0.75
             },
-            "time": 11.25,
+            "time": 10.75,
             "types": {
                 "incsongs": 100.0,
-                "poachers": 4.0,
+                "poachers": 3.5,
                 "selfsynergy": 0.0,
                 "songs5": 8.75
             }
@@ -1699,7 +1699,7 @@ var bingoList = {
                 "songs10": -0.5,
                 "songs5": 1.0
             },
-            "time": 11.5,
+            "time": 11.25,
             "types": {
                 "fortress": 2.5,
                 "gtg": 1.0,
@@ -1762,14 +1762,14 @@ var bingoList = {
                 "map": 2.0,
                 "skulls": 0.5
             },
-            "time": 11.25,
+            "time": 10.5,
             "types": {
                 "bothzl": -4.0,
-                "czl": 4.0,
+                "czl": 2.75,
                 "dmc": 1.0,
                 "fountain": 2.0,
-                "magic": 2.0,
-                "poachers": 4.0,
+                "magic": 1.75,
+                "poachers": 3.5,
                 "selfsynergy": 0.0
             }
         },
@@ -1890,11 +1890,11 @@ var bingoList = {
                 "aganon": 1.0,
                 "bosskey": 2.0,
                 "compass": 4.0,
-                "gtunic": 1.0,
+                "gtunic": 0.5,
                 "hearts3": 3.5,
                 "hearts4": 2.0,
                 "hovers": 0.25,
-                "lightarrow": 3.5,
+                "lightarrow": 1.5,
                 "map": 2.5,
                 "pg": 1.0,
                 "skulls": 0.25,
@@ -1932,15 +1932,15 @@ var bingoList = {
                 "songs4": 3.0,
                 "songs5": -3.0
             },
-            "time": 12.0,
+            "time": 10.5,
             "types": {
                 "childchu": 0.0,
                 "childreset": 1.25,
-                "childtrade": 2.75,
+                "childtrade": 2.0,
                 "chuczl": 2.0,
-                "czl": 5.0,
+                "czl": 3.75,
                 "incsaria": 100.0,
-                "saria": 3.0,
+                "saria": 2.75,
                 "selfsynergy": 0.0
             }
         }
@@ -1971,7 +1971,7 @@ var bingoList = {
                 "skulls": 0.75,
                 "songs5": 1.0
             },
-            "time": 12.5,
+            "time": 12.0,
             "types": {
                 "fortress": 2.5,
                 "gtg": 1.0,
@@ -2055,7 +2055,7 @@ var bingoList = {
                 "map": 4.0,
                 "skulls": 2.5
             },
-            "time": 12.5,
+            "time": 12.0,
             "types": {
                 "fountain": 2.0,
                 "ice": 1.5,
@@ -2081,11 +2081,11 @@ var bingoList = {
                 "aganon": 2.0,
                 "bosskey": 2.0,
                 "compass": 4.0,
-                "gtunic": 1.0,
+                "gtunic": 0.5,
                 "hearts3": 2.5,
                 "hearts4": 2.0,
                 "hovers": 0.25,
-                "lightarrow": 3.0,
+                "lightarrow": 1.0,
                 "map": 2.5,
                 "pg": 1.0,
                 "skulls": 0.25,
@@ -2127,12 +2127,12 @@ var bingoList = {
                 "skulls": 1.0,
                 "songs5": 1.0
             },
-            "time": 13.25,
+            "time": 12.75,
             "types": {
                 "fortress": 2.5,
                 "fountain": 1.5,
                 "gtg": 1.0,
-                "gtunic": 1.5,
+                "gtunic": 1.0,
                 "hovers": 2.5,
                 "incshield": 100.0,
                 "inctunic": 100.0,
@@ -2156,11 +2156,11 @@ var bingoList = {
                 "aganon": 2.5,
                 "bosskey": 2.0,
                 "compass": 4.0,
-                "gtunic": 1.0,
+                "gtunic": 0.5,
                 "hearts3": 2.5,
                 "hearts4": 2.0,
                 "hovers": 0.25,
-                "lightarrow": 3.0,
+                "lightarrow": 1.0,
                 "map": 2.0,
                 "pg": 1.0,
                 "skulls": 0.25,
@@ -2229,7 +2229,7 @@ var bingoList = {
                 "hovers": 0.25,
                 "map": 2.0,
                 "pg": 2.0,
-                "poachers": 3.0,
+                "poachers": 2.5,
                 "skulls": 0.5,
                 "songs5": 1.25
             },
@@ -2239,7 +2239,7 @@ var bingoList = {
                 "dmc": 1.0,
                 "endon": -0.5,
                 "fire": 7.0,
-                "lightarrow": 10.0,
+                "lightarrow": 8.0,
                 "selfsynergy": 0.0
             }
         },
@@ -2268,14 +2268,14 @@ var bingoList = {
                 "quiver": 4.5,
                 "skulls": 0.25
             },
-            "time": 13.25,
+            "time": 10.75,
             "types": {
                 "endon": -1.0,
                 "fortress": 2.0,
                 "inclacs": 100.0,
                 "legitlacs": 100.0,
-                "lightarrow": 6.5,
-                "poachers": 4.0,
+                "lightarrow": 4.5,
+                "poachers": 3.5,
                 "selfsynergy": 0.0
             }
         }
@@ -2398,15 +2398,15 @@ var bingoList = {
                 "skulls": 0.5,
                 "songs4": 1.75
             },
-            "time": 14.25,
+            "time": 12.75,
             "types": {
                 "childchu": 0.0,
-                "childtrade": 2.75,
+                "childtrade": 2.0,
                 "chuczl": 2.0,
-                "czl": 5.0,
+                "czl": 3.75,
                 "dins": 3.0,
                 "dmcchild": 1.25,
-                "magic": 2.0,
+                "magic": 1.75,
                 "selfsynergy": 0.0
             }
         },
@@ -2432,7 +2432,7 @@ var bingoList = {
                 "poachers": 0.25,
                 "skulls": 1.0
             },
-            "time": 14.0,
+            "time": 13.75,
             "types": {
                 "aganon": 3.0,
                 "endon": -0.5,
@@ -2465,7 +2465,7 @@ var bingoList = {
                 "marketgs": 4.0,
                 "skulls": 0.25
             },
-            "time": 14.25,
+            "time": 12.5,
             "types": {
                 "beans": 10.0,
                 "bombbag": 100.0,
@@ -2500,16 +2500,16 @@ var bingoList = {
                 "map": 4.5,
                 "skulls": 0.25
             },
-            "time": 14.0,
+            "time": 13.5,
             "types": {
                 "bothzl": -4.0,
-                "czl": 4.0,
+                "czl": 2.75,
                 "fortress": 3.0,
                 "hovers": 2.5,
                 "inclacs": 100.0,
                 "legitlacs": 100.0,
-                "lightarrow": 7.0,
-                "poachers": 4.0,
+                "lightarrow": 5.0,
+                "poachers": 3.5,
                 "selfsynergy": 0.0,
                 "spirit": 5.0
             }
@@ -2608,9 +2608,9 @@ var bingoList = {
                 "bosskey": 0.5,
                 "songs5": 0.25
             },
-            "time": 1.5,
+            "time": 1.0,
             "types": {
-                "gtunic": 1.5,
+                "gtunic": 1.0,
                 "inctunic": 100.0,
                 "selfsynergy": 0.0
             }
@@ -2711,7 +2711,7 @@ var bingoList = {
                 "hovers": 0.75,
                 "map": 2.0,
                 "pg": 2.0,
-                "poachers": 3.0,
+                "poachers": 2.5,
                 "skulls": 0.5,
                 "songs5": 1.25
             },
@@ -2722,7 +2722,7 @@ var bingoList = {
                 "endon": -0.5,
                 "fire": 7.0,
                 "incshtrial": 100.0,
-                "lightarrow": 10.0,
+                "lightarrow": 8.0,
                 "selfsynergy": 0.0
             }
         },
@@ -2749,15 +2749,15 @@ var bingoList = {
                 "skulls": 100.0,
                 "songs4": 3.0
             },
-            "time": 15.0,
+            "time": 13.0,
             "types": {
                 "childchu": 0.0,
                 "childreset": 1.25,
-                "childtrade": 2.75,
+                "childtrade": 2.0,
                 "chuczl": 2.0,
-                "czl": 5.0,
+                "czl": 3.75,
                 "dmcchild": 1.0,
-                "saria": 5.0,
+                "saria": 4.75,
                 "selfsynergy": 0.0,
                 "strength": 100.0
             }
@@ -2787,16 +2787,16 @@ var bingoList = {
                 "map": 2.0,
                 "skulls": 0.5
             },
-            "time": 15.0,
+            "time": 14.25,
             "types": {
                 "bothzl": -4.0,
-                "czl": 4.0,
+                "czl": 2.75,
                 "dmc": 1.0,
                 "endon": -0.25,
                 "fortress": 2.5,
                 "hovers": 2.0,
-                "magic": 2.0,
-                "poachers": 4.0,
+                "magic": 1.75,
+                "poachers": 3.5,
                 "selfsynergy": 0.0,
                 "spirit": 2.0
             }
@@ -2823,12 +2823,12 @@ var bingoList = {
                 "hearts4": 1.0,
                 "skulls": 1.5
             },
-            "time": 14.75,
+            "time": 14.25,
             "types": {
                 "bothzl": -4.0,
-                "czl": 4.0,
+                "czl": 2.75,
                 "hovers": 2.5,
-                "poachers": 4.0,
+                "poachers": 3.5,
                 "selfsynergy": 0.0,
                 "shadow": 8.0
             }
@@ -2921,7 +2921,7 @@ var bingoList = {
                 "songs4": 1.5,
                 "songs5": 1.0
             },
-            "time": 15.75,
+            "time": 15.5,
             "types": {
                 "endon": -0.5,
                 "fortress": 2.5,
@@ -2995,12 +2995,12 @@ var bingoList = {
                 "hearts4": 1.0,
                 "skulls": 2.5
             },
-            "time": 15.5,
+            "time": 15.0,
             "types": {
                 "bothzl": -4.0,
-                "czl": 4.0,
+                "czl": 2.75,
                 "hovers": 2.5,
-                "poachers": 4.0,
+                "poachers": 3.5,
                 "selfsynergy": 0.0,
                 "shadow": 8.0
             }
@@ -3022,7 +3022,7 @@ var bingoList = {
                 "bosskey2": 5.0,
                 "childtrade": 1.5,
                 "compass": 1.0,
-                "czl": 1.5,
+                "czl": 0.25,
                 "hearts3": 2.0,
                 "hearts4": 1.5,
                 "map": 3.0,
@@ -3070,13 +3070,13 @@ var bingoList = {
                 "songs4": 1.5,
                 "songs5": 1.0
             },
-            "time": 16.75,
+            "time": 16.25,
             "types": {
                 "endon": -0.5,
                 "fortress": 2.5,
                 "fountain": 1.5,
                 "gtg": 1.0,
-                "gtunic": 1.5,
+                "gtunic": 1.0,
                 "hovers": 2.5,
                 "ice": 1.5,
                 "incboot": 100.0,
@@ -3115,17 +3115,17 @@ var bingoList = {
                 "skulls": 2.5,
                 "spirit": -1.0
             },
-            "time": 16.25,
+            "time": 15.5,
             "types": {
                 "bothzl": -4.0,
-                "czl": 4.0,
+                "czl": 2.75,
                 "dc": 2.0,
                 "ice": 1.5,
                 "inclong": 100.0,
                 "incwskull": 100.0,
                 "irons": 2.0,
                 "longshot": 4.0,
-                "poachers": 4.0,
+                "poachers": 3.5,
                 "selfsynergy": 0.0,
                 "water": 4.0
             }
@@ -3152,14 +3152,14 @@ var bingoList = {
                 "skulls": 0.25,
                 "songs4": 3.0
             },
-            "time": 16.25,
+            "time": 14.5,
             "types": {
                 "childchu": 0.0,
                 "childreset": 1.25,
-                "childtrade": 2.75,
+                "childtrade": 2.0,
                 "chuczl": 2.0,
-                "czl": 5.0,
-                "saria": 3.0,
+                "czl": 3.75,
+                "saria": 2.75,
                 "selfsynergy": 0.0
             }
         },
@@ -3256,7 +3256,7 @@ var bingoList = {
                 "skulls": 0.5,
                 "songs5": 1.0
             },
-            "time": 17.25,
+            "time": 17.0,
             "types": {
                 "endon": -1.0,
                 "fortress": 2.5,
@@ -3290,15 +3290,15 @@ var bingoList = {
                 "skulls": 0.5,
                 "songs4": 3.0
             },
-            "time": 17.0,
+            "time": 15.0,
             "types": {
                 "childchu": 0.0,
                 "childreset": 1.25,
-                "childtrade": 2.75,
+                "childtrade": 2.0,
                 "chuczl": 2.0,
-                "czl": 5.0,
+                "czl": 3.75,
                 "dmcchild": 1.0,
-                "saria": 5.0,
+                "saria": 4.75,
                 "selfsynergy": 0.0,
                 "strength": 100.0
             }
@@ -3367,12 +3367,12 @@ var bingoList = {
                 "map": 2.0,
                 "skulls": 1.5
             },
-            "time": 17.75,
+            "time": 17.0,
             "types": {
                 "endon": -0.25,
                 "fortress": 2.5,
                 "incsongs": 100.0,
-                "poachers": 4.0,
+                "poachers": 3.5,
                 "selfsynergy": 0.0,
                 "songs10": 10.0,
                 "songs5": 15.0,
@@ -3425,17 +3425,17 @@ var bingoList = {
                 "map": 3.0,
                 "skulls": 0.5
             },
-            "time": 18.0,
+            "time": 17.25,
             "types": {
                 "bothzl": -4.0,
-                "czl": 4.0,
+                "czl": 2.75,
                 "dins": 3.0,
                 "firearrow": 8.0,
                 "forest": 2.0,
                 "fortress": 3.0,
                 "gtg": 1.0,
-                "magic": 2.0,
-                "poachers": 4.0,
+                "magic": 1.75,
+                "poachers": 3.5,
                 "quiver": 4.5,
                 "selfsynergy": 0.0,
                 "spirit": 1.0,
@@ -3469,7 +3469,7 @@ var bingoList = {
                 "quiver": 4.5,
                 "skulls": 0.25
             },
-            "time": 18.75,
+            "time": 16.25,
             "types": {
                 "endon": -1.0,
                 "firearrow": 8.0,
@@ -3478,8 +3478,8 @@ var bingoList = {
                 "incarrows": 100.0,
                 "inclacs": 100.0,
                 "legitlacs": 100.0,
-                "lightarrow": 6.5,
-                "poachers": 4.0,
+                "lightarrow": 4.5,
+                "poachers": 3.5,
                 "selfsynergy": -0.5
             }
         },
@@ -3506,7 +3506,7 @@ var bingoList = {
                 "skulls": 0.5,
                 "songs5": 1.0
             },
-            "time": 18.5,
+            "time": 18.25,
             "types": {
                 "endon": -1.0,
                 "fortress": 2.5,
@@ -3539,11 +3539,11 @@ var bingoList = {
                 "hearts4": 0.5,
                 "songs5": 1.0
             },
-            "time": 18.75,
+            "time": 18.25,
             "types": {
                 "aganon": 3.0,
                 "bothzl": -4.0,
-                "czl": 4.0,
+                "czl": 2.75,
                 "dins": 3.0,
                 "dmc": 0.75,
                 "dmcchild": 0.75,
@@ -3551,9 +3551,9 @@ var bingoList = {
                 "firearrow": 8.0,
                 "fortress": 2.0,
                 "hovers": 1.5,
-                "lightarrow": 10.0,
-                "magic": 2.0,
-                "poachers": 4.0,
+                "lightarrow": 8.0,
+                "magic": 1.75,
+                "poachers": 3.5,
                 "selfsynergy": 0.0
             }
         },
@@ -3582,13 +3582,13 @@ var bingoList = {
                 "skulls": 1.0,
                 "songs5": 1.0
             },
-            "time": 18.5,
+            "time": 18.0,
             "types": {
                 "bothzl": -4.0,
-                "czl": 4.0,
+                "czl": 2.75,
                 "fortress": 3.0,
                 "hovers": 2.5,
-                "poachers": 4.0,
+                "poachers": 3.5,
                 "quiver": 1.5,
                 "selfsynergy": -1.0,
                 "spirit": 5.0
@@ -3620,11 +3620,11 @@ var bingoList = {
                 "map": 4.0,
                 "skulls": 0.75
             },
-            "time": 18.75,
+            "time": 18.0,
             "types": {
                 "bothzl": -4.0,
-                "childtrade": 2.75,
-                "czl": 7.0,
+                "childtrade": 2.0,
+                "czl": 5.75,
                 "dmc": 0.75,
                 "dmcchild": 0.75,
                 "endon": -0.25,
@@ -3632,8 +3632,8 @@ var bingoList = {
                 "fountain": 2.0,
                 "hovers": 2.0,
                 "incfairy": 100.0,
-                "magic": 2.0,
-                "poachers": 4.0,
+                "magic": 1.75,
+                "poachers": 3.5,
                 "selfsynergy": -0.5,
                 "spirit": 2.0
             }
@@ -3742,9 +3742,9 @@ var bingoList = {
                 "child2": 3.0,
                 "skulls": 0.25
             },
-            "time": 2.5,
+            "time": 2.25,
             "types": {
-                "beans": 5.0,
+                "beans": 4.75,
                 "childreset": 0.5,
                 "incbeans": 100.0,
                 "selfsynergy": 0.0
@@ -3876,7 +3876,7 @@ var bingoList = {
             "time": 3.25,
             "types": {
                 "fountain": 1.5,
-                "gtunic": 1.5,
+                "gtunic": 1.0,
                 "inctunic": 100.0,
                 "selfsynergy": 0.0
             }
@@ -4139,12 +4139,12 @@ var bingoList = {
             "subtypes": {
                 "bulletbag": 1.0,
                 "compass": 2.0,
-                "czl": 3.0,
+                "czl": 1.75,
                 "hearts4": 1.0,
                 "hovers": 0.5,
                 "map": 2.0
             },
-            "time": 3.75,
+            "time": 3.5,
             "types": {
                 "deku": 2.5,
                 "selfsynergy": 0.0
@@ -4212,7 +4212,7 @@ var bingoList = {
             "skill": 0.25,
             "subtypes": {
                 "compass": 3.0,
-                "czl": 3.0,
+                "czl": 1.75,
                 "hearts4": 1.0,
                 "hovers": 0.5,
                 "map": 3.0,
@@ -4325,10 +4325,10 @@ var bingoList = {
                 "hearts3": 0.5,
                 "skulls": 0.5
             },
-            "time": 4.75,
+            "time": 4.5,
             "types": {
                 "fountain": 1.5,
-                "gtunic": 1.5,
+                "gtunic": 1.0,
                 "incsword": 100.0,
                 "inctunic": 100.0,
                 "selfsynergy": 0.0,
@@ -4424,7 +4424,7 @@ var bingoList = {
             "subtypes": {
                 "cganon": 2.0,
                 "compass": 2.5,
-                "czl": 3.0,
+                "czl": 1.75,
                 "hearts3": 3.0,
                 "hearts4": 1.0,
                 "hovers": 0.5,
@@ -4456,9 +4456,9 @@ var bingoList = {
                 "childchu": -2.5,
                 "hearts3": 1.0
             },
-            "time": 4.25,
+            "time": 4.0,
             "types": {
-                "poachers": 4.0,
+                "poachers": 3.5,
                 "selfsynergy": 0.0
             }
         },
@@ -4498,7 +4498,7 @@ var bingoList = {
                 "ms": 100.0
             },
             "skill": 0.0,
-            "time": 4.5,
+            "time": 4.0,
             "types": {
                 "selfsynergy": 0.0
             }
@@ -4680,8 +4680,8 @@ var bingoList = {
             "skill": 0.0,
             "subtypes": {
                 "bosskey": 4.25,
-                "childtrade": 1.5,
-                "czl": 1.5,
+                "childtrade": 0.75,
+                "czl": 0.25,
                 "hearts3": 2.0,
                 "hearts4": 1.0,
                 "skulls": 0.25
@@ -4837,7 +4837,7 @@ var bingoList = {
                 "child2": 2.0,
                 "skulls": 1.5
             },
-            "time": 5.5,
+            "time": 5.0,
             "types": {
                 "inclhskull": 100.0,
                 "selfsynergy": 0.0
@@ -4911,10 +4911,10 @@ var bingoList = {
                 "hearts3": 1.5,
                 "skulls": 0.25
             },
-            "time": 5.25,
+            "time": 4.75,
             "types": {
                 "incsongs": 100.0,
-                "poachers": 4.0,
+                "poachers": 3.5,
                 "selfsynergy": 0.0,
                 "songs5": 1.25
             }
@@ -4987,11 +4987,11 @@ var bingoList = {
             },
             "skill": 0.0,
             "subtypes": {
-                "czl": 3.0,
+                "czl": 1.75,
                 "hearts4": 1.0,
                 "strength": -1.0
             },
-            "time": 5.0,
+            "time": 4.5,
             "types": {
                 "bulletbag": 100.0,
                 "childreset": 0.5,
@@ -5111,11 +5111,11 @@ var bingoList = {
             "subtypes": {
                 "bottleslot": 4.5,
                 "childreset": 1.0,
-                "czl": 2.5,
+                "czl": 1.25,
                 "skulls": 0.5,
                 "songs4": 0.5
             },
-            "time": 5.5,
+            "time": 4.5,
             "types": {
                 "lonlon": 4.0,
                 "selfsynergy": 0.0
@@ -5220,7 +5220,7 @@ var bingoList = {
                 "hearts4": 0.5,
                 "kd": 2.0,
                 "map": 2.0,
-                "poachers": 3.0
+                "poachers": 2.5
             },
             "time": 6.0,
             "types": {
@@ -5318,9 +5318,9 @@ var bingoList = {
                 "child2": 3.0,
                 "skulls": 0.25
             },
-            "time": 6.25,
+            "time": 6.0,
             "types": {
-                "beans": 6.0,
+                "beans": 5.75,
                 "childreset": 0.5,
                 "incbeans": 100.0,
                 "selfsynergy": 0.0
@@ -5443,7 +5443,7 @@ var bingoList = {
                 "hearts3": 0.5,
                 "skulls": 0.75
             },
-            "time": 6.25,
+            "time": 5.75,
             "types": {
                 "fountain": 2.0,
                 "jabu": 2.0,
@@ -5498,7 +5498,7 @@ var bingoList = {
                 "hearts4": 1.0,
                 "hovers": 1.0,
                 "map": 2.5,
-                "poachers": 1.25
+                "poachers": 0.75
             },
             "time": 5.75,
             "types": {
@@ -5553,7 +5553,7 @@ var bingoList = {
                 "compass": 3.0,
                 "hearts4": 1.0,
                 "map": 3.0,
-                "poachers": 1.25
+                "poachers": 0.75
             },
             "time": 6.25,
             "types": {
@@ -5640,10 +5640,10 @@ var bingoList = {
                 "hearts3": 0.5,
                 "skulls": 0.5
             },
-            "time": 7.0,
+            "time": 6.5,
             "types": {
                 "incsongs": 100.0,
-                "poachers": 4.0,
+                "poachers": 3.5,
                 "selfsynergy": 0.0,
                 "songs5": 3.25
             }
@@ -5753,7 +5753,7 @@ var bingoList = {
                 "hearts4": 1.0,
                 "hovers": 1.0,
                 "map": 2.5,
-                "poachers": 1.25
+                "poachers": 0.75
             },
             "time": 6.5,
             "types": {
@@ -5782,7 +5782,7 @@ var bingoList = {
                 "map": 2.0,
                 "skulls": 1.0
             },
-            "time": 6.5,
+            "time": 6.25,
             "types": {
                 "fountain": 2.0,
                 "incbarinade": 100.0,
@@ -5809,7 +5809,7 @@ var bingoList = {
                 "hearts4": 1.0,
                 "hovers": 0.5,
                 "map": 3.5,
-                "poachers": 1.25,
+                "poachers": 0.75,
                 "skulls": 0.25
             },
             "time": 7.0,
@@ -5836,14 +5836,14 @@ var bingoList = {
             "subtypes": {
                 "bottleslot": 3.0,
                 "childreset": 1.0,
-                "czl": 2.5,
+                "czl": 1.25,
                 "marketgs": 2.0,
                 "poachers": -100.0,
                 "skulls": 0.5,
                 "songs4": 1.75,
                 "songs5": -3.0
             },
-            "time": 6.75,
+            "time": 6.25,
             "types": {
                 "lonlon": 4.0,
                 "selfsynergy": 0.0
@@ -5868,7 +5868,7 @@ var bingoList = {
                 "hearts4": 1.0,
                 "hovers": 0.25,
                 "map": 3.5,
-                "poachers": 1.25,
+                "poachers": 0.75,
                 "skulls": 0.25
             },
             "time": 7.0,
@@ -5904,7 +5904,7 @@ var bingoList = {
             "types": {
                 "fortress": 2.0,
                 "inclacs": 100.0,
-                "poachers": 4.0,
+                "poachers": 3.5,
                 "selfsynergy": 0.0,
                 "water": 6.5
             }
@@ -5957,9 +5957,9 @@ var bingoList = {
                 "child2": 1.0,
                 "skulls": 1.0
             },
-            "time": 7.0,
+            "time": 6.75,
             "types": {
-                "beans": 5.0,
+                "beans": 4.75,
                 "childreset": 1.25,
                 "incbeans": 100.0,
                 "selfsynergy": 0.0
@@ -5999,8 +5999,8 @@ var bingoList = {
     "rowtypes": {
         "bottle": 2.0,
         "gclw": 1.0,
-        "hookshot": 3.0,
-        "ms": 11.0
+        "hookshot": 2.75,
+        "ms": 9.5
     },
     "synfilters": {
         "childchu": "min 1",
