@@ -5994,7 +5994,7 @@ var bingoList = {
         }
     ],
     "info": {
-        "version": "v0.9.5.0-j"
+        "version": "v0.9.6.0-j"
     },
     "rowtypes": {
         "bottle": 2.0,
