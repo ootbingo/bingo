@@ -66,61 +66,12 @@ body {
   padding-bottom: 16px;
 }
 
-header {
-  background: url("//c15111086.r86.cf2.rackcdn.com/texture_bar2.jpg") top center;
-  border-bottom: 1px #424242 dotted;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
-  padding-top: 8px;
-}
-
-footer {
-  background: url("../img/texture_bar_footer2.jpg") top center;
-  border-top: 1px #424242 dotted;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
-  color: #808080;
-  font-size: 85%;
-  line-height: 85%;
-  text-align: center;
-  width: 100%;
-  position: relative;
-  margin-top: -29px;
-  /* negative height minus border */
-  height: 28px;
-  clear: both;
-}
-
-footer .left {
-  margin-left: 8px;
-}
-
-footer .right {
-  margin-right: 8px;
-}
-
-footer .container {
-  padding: 8px 0;
-}
-
 #wrap {
   min-height: 100%;
 }
 
 main {
   padding-bottom: 28px;
-}
-
-#logo {
-  background: url("//c15111086.r86.cf2.rackcdn.com/srl_350px.png") no-repeat;
-  display: block;
-  overflow: hidden;
-  width: 350px;
-  height: 50px;
-  margin-bottom: 13px;
-  float: left;
-}
-
-#logo span {
-  display: none;
 }
 
 #headerright {
@@ -582,6 +533,10 @@ th {
   text-align: center;
   border: 1px #424242 solid;
   background: #000;
+}
+
+#bingoPage.modern #bingo tr td {
+  box-shadow: none;
 }
 
 #bingoPage #bingo tr td:first-child {

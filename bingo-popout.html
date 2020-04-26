@@ -27,8 +27,21 @@
     td {
       padding: 0 10px;
       height: 19%;
-      border-top: 2px #666 solid;
+      border-top: 1px #666 solid;
       box-shadow: inset 0px 0px 50px rgba(0, 0, 0, .6);
+    }
+
+    td,
+    th {
+      user-select: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+    }
+
+    table.modern td {
+      box-shadow: none;
     }
 
     td:hover {
@@ -56,35 +69,47 @@
       height: 20px;
       background: #1448B3;
       box-shadow: inset 0px 0px 50px rgba(0, 0, 0, .6);
+      cursor: default;
+    }
+
+    table.modern th {
+      box-shadow: none;
     }
   </style>
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <link href="./lib/item-tracker/item-tracker.css" rel="stylesheet">
 </head>
 
-  <body>
-    <table>
-    </table>
-    <script type="text/javascript">
-      const data = decodeURIComponent(document.location.hash).substring(1).split('=');
-      const line = data[0];
-      const items = data[1].split(';;;');
+<body>
+  <table>
+  </table>
+  <script type="text/javascript">
 
-      const tableHTML = items.map(item => `<tr><td>${item}</td></tr>`).join('');
-      document.querySelector('table').innerHTML = `<th>${line}</th>${tableHTML}`;
+    const maybeThemeSettings = localStorage.getItem('theme');
+    const themeSettings = maybeThemeSettings ? JSON.parse(maybeThemeSettings) : { modern: false };
+    const data = decodeURIComponent(document.location.hash).substring(1).split('=');
+    const line = data[0];
+    const items = data[1].split(';;;');
+    const table = document.querySelector('table');
 
-      document.querySelectorAll('td').forEach(el => el.addEventListener('click', () => {
-        if (el.classList.contains('greensquare')) {
-          el.classList.add('redsquare');
-          el.classList.remove('greensquare');
-        } else if (el.classList.contains('redsquare')) {
-          el.classList.remove('redsquare');
-        } else {
-          el.classList.add('greensquare');
-        }
-      }));
-    </script>
-    <script defer src="./lib/item-tracker/tracker-loader.js"></script>
-  </body>
+    const tableHTML = items.map(item => `<tr><td>${item}</td></tr>`).join('');
+    table.innerHTML = `<th>${line}</th>${tableHTML}`;
+    if (themeSettings.modern) {
+      table.classList.add("modern");
+    }
+
+    document.querySelectorAll('td').forEach(el => el.addEventListener('click', () => {
+      if (el.classList.contains('greensquare')) {
+        el.classList.add('redsquare');
+        el.classList.remove('greensquare');
+      } else if (el.classList.contains('redsquare')) {
+        el.classList.remove('redsquare');
+      } else {
+        el.classList.add('greensquare');
+      }
+    }));
+  </script>
+  <script defer src="./lib/item-tracker/tracker-loader.js"></script>
+</body>
 
 </html>
