@@ -1,140 +1,158 @@
 <html>
-  <head>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet">
-    <style>
-      h1 {
-        color: #e09456;
-        font-weight: bold;
-        font-size: 22px;
-      }
-      h2 {
-        color: #e09456;
-        font-weight: bold;
-        font-size: 16px;
-      }
-      html {
-        font-family: Roboto;
-        margin: 0;
-        background: #111111;
-        color: #bec7d2;
-        padding: 16px;
-      }
-      .tracker-enabled {
-        display: flex;
-      }
-      .tracker-enabled input {
-        opacity: 0;
-        height: 0;
-        width: 0;
-        position: absolute;
-      }
-      .tracker-enabled .check {
-        height: 20px;
-        width: 20px;
-        border-radius: 4px;
-        background: #222222;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: 100ms ease-in-out;
-        cursor: pointer;
-        margin-left: 8px;
-      }
-      .tracker-enabled input[type="checkbox"]:checked ~ .check {
-        background: #ad920a;
-      }
-      .tracker-enabled input[type="checkbox"]:checked ~ .check::after {
-        color: rgba(0, 0, 0, 0.8);
-        content: "✔";
-      }
-      .goal {
-        margin-top: 8px;
-      }
-      .goal input {
-        opacity: 0;
-        position: absolute;
-        height: 0;
-        width: 0;
-      }
-      .goal .mode {
-        display: flex;
-      }
-      .goal label>div {
-        width: 100px;
-        padding: 4px 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 4px;
-        cursor: pointer;
-        background: #222222;
-        transition: 200ms ease-in-out;
-      }
-      .goal label>div:not(:first-child) {
-        margin-left: 4px;
-      }
-      .goal input:checked ~ div {
-        color: rgba(0, 0, 0, 0.8);
-        background: #ad920a;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Tracker Settings</h1>
-    <label class="tracker-enabled">Tracker enabled<input id="tracker-enabled" type="checkbox"><div class="check"></div></label>
-    <h2>Individual goal settings</h2>
-    <div id="settings"></div>
-  </body>
-  <script src="../../v9.4/goal-list.js"></script>
-  <script src="./tracker-data.js"></script>
-  <script src="./tracker-default.js"></script>
-  <script>
-    const renderRadio = ({ name, value, checked }) => `
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet">
+  <style>
+    h1 {
+      color: #e09456;
+      font-weight: bold;
+      font-size: 22px;
+    }
+
+    h2 {
+      color: #e09456;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    html {
+      font-family: Roboto;
+      margin: 0;
+      background: #111111;
+      color: #bec7d2;
+      padding: 16px;
+    }
+
+    .tracker-enabled {
+      display: flex;
+    }
+
+    .tracker-enabled input {
+      opacity: 0;
+      height: 0;
+      width: 0;
+      position: absolute;
+    }
+
+    .tracker-enabled .check {
+      height: 20px;
+      width: 20px;
+      border-radius: 4px;
+      background: #222222;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 100ms ease-in-out;
+      cursor: pointer;
+      margin-left: 8px;
+    }
+
+    .tracker-enabled input[type="checkbox"]:checked~.check {
+      background: #ad920a;
+    }
+
+    .tracker-enabled input[type="checkbox"]:checked~.check::after {
+      color: rgba(0, 0, 0, 0.8);
+      content: "✔";
+    }
+
+    .goal {
+      margin-top: 8px;
+    }
+
+    .goal input {
+      opacity: 0;
+      position: absolute;
+      height: 0;
+      width: 0;
+    }
+
+    .goal .mode {
+      display: flex;
+    }
+
+    .goal label>div {
+      width: 100px;
+      padding: 4px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+      cursor: pointer;
+      background: #222222;
+      transition: 200ms ease-in-out;
+    }
+
+    .goal label>div:not(:first-child) {
+      margin-left: 4px;
+    }
+
+    .goal input:checked~div {
+      color: rgba(0, 0, 0, 0.8);
+      background: #ad920a;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Tracker Settings</h1>
+  <label class="tracker-enabled">Tracker enabled<input id="tracker-enabled" type="checkbox">
+    <div class="check"></div>
+  </label>
+  <h2>Individual goal settings</h2>
+  <div id="settings"></div>
+</body>
+<script src="../../v9.5/goal-list.js"></script>
+<script src="./tracker-data.js"></script>
+<script src="./tracker-default.js"></script>
+<script>
+  const renderRadio = ({ name, value, checked }) => `
       <label>
         <input type="radio" name="${name}" value="${value}" ${checked ? 'checked' : ''}>
         <div>${value}</div>
       </label>`;
-    const goals = [];
-    for (let i = 1; i <= 25; i++) {
-      goals.push(...bingoList.normal[i]);
+  const goals = [];
+  for (let i = 1; i <= 25; i++) {
+    goals.push(...bingoList.normal[i]);
+  }
+  goals.sort((a, b) => a.name < b.name ? -1 : 1);
+
+  const storageItem = localStorage.getItem('tracker');
+  const storageData = storageItem ? JSON.parse(storageItem) : {
+    enabled: false,
+    settings: {},
+  };
+
+  const checkbox = document.getElementById('tracker-enabled');
+  checkbox.addEventListener('change', () => {
+    storageData.enabled = checkbox.checked;
+    localStorage.setItem('tracker', JSON.stringify(storageData));
+  });
+  checkbox.checked = storageData.enabled;
+
+  const settingsDiv = document.getElementById('settings');
+
+  goals.forEach(goal => {
+    const goalTrackerData = window.trackerData.find(({ regex }) => goal.name.match(regex));
+    if (!goalTrackerData) {
+      return;
     }
-    goals.sort((a, b) => a.name < b.name ? -1 : 1);
 
-    const storageItem = localStorage.getItem('tracker');
-    const storageData = storageItem ? JSON.parse(storageItem) : {
-      enabled : false,
-      settings : {},
-    };
-
-    const checkbox = document.getElementById('tracker-enabled');
-    checkbox.addEventListener('change', () => {
-      storageData.enabled = checkbox.checked;
-      localStorage.setItem('tracker', JSON.stringify(storageData));
-    });
-    checkbox.checked = storageData.enabled;
-
-    const settingsDiv = document.getElementById('settings');
-
-    goals.forEach(goal => {
-      const goalTrackerData = window.trackerData.find(({ regex }) => goal.name.match(regex));
-      if (!goalTrackerData) {
-        return;
-      }
-
-      const optionsDiv = document.createElement('div');
-      optionsDiv.classList.add('goal');
-      optionsDiv.innerHTML = `
+    const optionsDiv = document.createElement('div');
+    optionsDiv.classList.add('goal');
+    optionsDiv.innerHTML = `
       <div class="goal-name">${goal.name}</div>
       <div class="mode">
-        ${['none', ...Object.keys(goalTrackerData.options)].map(mode => renderRadio({ name : goal.name, value : mode, checked : (storageData.settings[goal.name] || window.trackerDefaults[goal.name]) === mode })).join('')}
+        ${['none', ...Object.keys(goalTrackerData.options)].map(mode => renderRadio({ name: goal.name, value: mode, checked: (storageData.settings[goal.name] || window.trackerDefaults[goal.name]) === mode })).join('')}
       </div>
       `;
-      settingsDiv.appendChild(optionsDiv);
-      optionsDiv.querySelectorAll('input').forEach(radio => radio.addEventListener('change', () => {
-        storageData.settings[goal.name] = radio.value;
-        localStorage.setItem('tracker', JSON.stringify(storageData));
-      }));
-    });
+    settingsDiv.appendChild(optionsDiv);
+    optionsDiv.querySelectorAll('input').forEach(radio => radio.addEventListener('change', () => {
+      storageData.settings[goal.name] = radio.value;
+      localStorage.setItem('tracker', JSON.stringify(storageData));
+    }));
+  });
 
-  </script>
+</script>
+
 </html>
