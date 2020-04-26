@@ -99,6 +99,9 @@
   <label class="tracker-enabled">Tracker enabled<input id="tracker-enabled" type="checkbox">
     <div class="check"></div>
   </label>
+  <label class="tracker-enabled">Show total amount needed in counters<input id="total-amount" type="checkbox">
+    <div class="check"></div>
+  </label>
   <h2>Individual goal settings</h2>
   <div id="settings"></div>
 </body>
@@ -120,15 +123,23 @@
   const storageItem = localStorage.getItem('tracker');
   const storageData = storageItem ? JSON.parse(storageItem) : {
     enabled: false,
+    total: false,
     settings: {},
   };
 
-  const checkbox = document.getElementById('tracker-enabled');
-  checkbox.addEventListener('change', () => {
-    storageData.enabled = checkbox.checked;
+  const trackerEnabledCheckbox = document.getElementById('tracker-enabled');
+  trackerEnabledCheckbox.addEventListener('change', () => {
+    storageData.enabled = trackerEnabledCheckbox.checked;
     localStorage.setItem('tracker', JSON.stringify(storageData));
   });
-  checkbox.checked = storageData.enabled;
+  trackerEnabledCheckbox.checked = storageData.enabled;
+
+  const totalAmountCheckbox = document.getElementById('total-amount');
+  totalAmountCheckbox.addEventListener('change', () => {
+    storageData.total = totalAmountCheckbox.checked;
+    localStorage.setItem('tracker', JSON.stringify(storageData));
+  });
+  totalAmountCheckbox.checked = storageData.total;
 
   const settingsDiv = document.getElementById('settings');
 
