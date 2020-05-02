@@ -85,8 +85,9 @@
   </table>
   <script type="text/javascript">
 
-    const maybeThemeSettings = localStorage.getItem('theme');
-    const themeSettings = maybeThemeSettings ? JSON.parse(maybeThemeSettings) : { modern: false };
+    const maybeSettings = localStorage.getItem('layout-settings');
+    const settings = maybeSettings ? JSON.parse(maybeSettings) : defaultLayoutSettings
+
     const data = decodeURIComponent(document.location.hash).substring(1).split('=');
     const line = data[0];
     const items = data[1].split(';;;');
@@ -94,7 +95,9 @@
 
     const tableHTML = items.map(item => `<tr><td>${item}</td></tr>`).join('');
     table.innerHTML = `<th>${line}</th>${tableHTML}`;
-    if (themeSettings.modern) {
+
+
+    if (settings.boardTheme === "modern") {
       table.classList.add("modern");
     }
 
