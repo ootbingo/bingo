@@ -5963,7 +5963,7 @@ var bingoList = {
             "difficulty": 9,
             "id": "plant-5-magic-beans",
             "jp": "魔法の豆を5つ植える",
-            "name": "Plant Beans in 5 Different Soft Soil Patches",
+            "name": "Plant 5 Magic Beans",
             "rowtypes": {
                 "bottle": 0.0,
                 "gclw": 0.0,
