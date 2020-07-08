@@ -6,7 +6,8 @@
         "9.3": "v9.3",
         "9.4": "v9.4",
         "9.5": "v9.5",
-        "jp-beta": "beta0.9.6.0-j"
+        "9.5.1": "v9.5.1",
+        "jp-beta": "beta0.9.6.1-j"
     },
-    "default_version": "9.5"
+    "default_version": "9.5.1"
 }

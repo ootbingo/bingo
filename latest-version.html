@@ -1,10 +1,9 @@
-
 <script>
-fetch('https://ootbingo.github.io/bingo/api/v1/available_versions.json')
-  .then(response => response.json())
-  .then(json => {
+  fetch('api/v1/available_versions.json', { cache: "no-store" })
+    .then(response => response.json())
+    .then(json => {
       const latest_version_number = json.default_version
       const latest_version = json.versions[latest_version_number]
-      window.location.replace('https://ootbingo.github.io/bingo/' + latest_version + '/bingo.html');
-  }) 
+      window.location.replace(latest_version + '/bingo.html');
+    }) 
 </script>
