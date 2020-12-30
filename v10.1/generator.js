@@ -45,6 +45,6 @@ for(var rowtype in rowtypeSynergies){rowSynergy+=rowtypeSynergies[rowtype];}
 var timeDifferences=synergiesForSquares.timeDifferences;for(var i=0;i<timeDifferences.length;i++){var timeDifference=timeDifferences[i];rowSynergy+=timeDifference;}
 return rowSynergy;};ootBingoGenerator=function(bingoList,opts){var bingoGenerator=new BingoGenerator(bingoList,opts);var card=false;var iterations=0;while(!card&&iterations<100){card=bingoGenerator.makeCard();iterations++;}
 card["meta"]={iterations:iterations};if(!card){console.log();console.log(iterations);}
-return card;};
+return card;};console.log('TEST GENERATOR JAAA');
 
 // eval(mod_pagespeed_$G02ckBwnJ);

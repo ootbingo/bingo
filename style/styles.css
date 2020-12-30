@@ -509,7 +509,8 @@ th {
 }
 
 #bingoPage #bingo tr:first-child td,
-#bingoPage #bingo tr:last-child td {
+#bingoPage #bingo tr:last-child td,
+#bingoPage #bingo .short {
   height: 30px;
   background: #000811;
   font-size: 75%;

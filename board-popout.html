@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Board Popout</title>
+  <link rel="stylesheet" type="text/css" href="style/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+  <style>
+    body {
+      overflow-y: hidden !important;
+    }
+    #board-popout-page {
+      margin: 0px 16px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id='board-popout-page'>
+    <div id="bingoPage">
+      <div id="results">
+        <table id="bingo" aria-describedby="Bingo Board">
+          <tr>
+            <td class="popout" id="tlbr">TL-BR</td>
+            <td class="popout" id="col1">COL1</td>
+            <td class="popout" id="col2">COL2</td>
+            <td class="popout" id="col3">COL3</td>
+            <td class="popout" id="col4">COL4</td>
+            <td class="popout" id="col5">COL5</td>
+          </tr>
+          <tr>
+            <td class="popout" id="row1">ROW1</td>
+            <td class="row1 col1 tlbr" id="slot1"></td>
+            <td class="row1 col2" id="slot2"></td>
+            <td class="row1 col3" id="slot3"></td>
+            <td class="row1 col4" id="slot4"></td>
+            <td class="row1 col5 bltr" id="slot5"></td>
+          </tr>
+          <tr>
+            <td class="popout" id="row2">ROW2</td>
+            <td class="row2 col1" id="slot6"></td>
+            <td class="row2 col2 tlbr" id="slot7"></td>
+            <td class="row2 col3" id="slot8"></td>
+            <td class="row2 col4 bltr" id="slot9"></td>
+            <td class="row2 col5" id="slot10"></td>
+          </tr>
+          <tr>
+            <td class="popout" id="row3">ROW3</td>
+            <td class="row3 col1" id="slot11"></td>
+            <td class="row3 col2" id="slot12"></td>
+            <td class="row3 col3 tlbr bltr" id="slot13"></td>
+            <td class="row3 col4" id="slot14"></td>
+            <td class="row3 col5" id="slot15"></td>
+          </tr>
+          <tr>
+            <td class="popout" id="row4">ROW4</td>
+            <td class="row4 col1" id="slot16"></td>
+            <td class="row4 col2 bltr" id="slot17"></td>
+            <td class="row4 col3" id="slot18"></td>
+            <td class="row4 col4 tlbr" id="slot19"></td>
+            <td class="row4 col5" id="slot20"></td>
+          </tr>
+          <tr>
+            <td class="popout" id="row5">ROW5</td>
+            <td class="row5 col1 bltr" id="slot21"></td>
+            <td class="row5 col2" id="slot22"></td>
+            <td class="row5 col3" id="slot23"></td>
+            <td class="row5 col4" id="slot24"></td>
+            <td class="row5 col5 tlbr" id="slot25"></td>
+          </tr>
+          <tr>
+            <td class="popout" id="bltr">BL-TR</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <script src="lib/seedrandom-min.js" type="text/javascript"></script>
+  <script type='text/javascript'>
+    const popoutParams = new URLSearchParams(window.location.search);
+    const popoutOpts = {
+      seed: popoutParams.get('seed') || Math.ceil(999999 * Math.random()).toString(),
+      mode: popoutParams.get('mode') || 'normal',
+      lang: popoutParams.get('lang') || 'name',
+      version: popoutParams.get('version') || 'v10.1'
+    };
+
+    const loadScript = src => {
+      return new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.type = 'text/javascript'
+        script.onload = resolve
+        script.onerror = reject
+        script.src = src
+        document.head.append(script)
+      })
+    }
+
+    loadScript(`${popoutOpts.version}/goal-list.js`)
+      .then(() => loadScript(`${popoutOpts.version}/generator.js`))
+      .then(() => loadScript(`lib/bingosetup.js`))
+
+
+  </script>
+  <script src="lib/layout-settings/default-layout-settings.js" type="text/javascript"></script>
+  <script type="text/javascript">
+
+
+  </script>
+  <script defer src="./lib/item-tracker/tracker-loader.js"></script>
+</body>
+
+</html>
