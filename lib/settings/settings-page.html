@@ -4,7 +4,7 @@
 <head>
     <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="../../img/favicon.ico">
-    <title>Ocarina of Time Bingo - Layout Settings</title>
+    <title>Ocarina of Time Bingo - Settings</title>
     <style>
         h1 {
             color: #e09456;
@@ -92,23 +92,36 @@
 
 <body>
 
-    <h1>Layout Settings</h1>
+    <h1>Settings</h1>
 
     <form>
-        <label for="boardTheme" class="setting">Board theme:
+        <h2>Board</h2>
+        <label for="boardTheme" class="setting">Theme:
             <select id="boardTheme">
                 <option value="classic">Classic</option>
                 <option value="modern">Modern</option>
             </select>
         </label>
 
-        <label for="popoutWidth" class="setting">Row popout width:
-            <input id="popoutWidth" class="num-input" type="number" min=200 max=1000 maxlength=4
+        <label for="boardPopoutWidth" class="setting">Popout width:
+            <input id="boardPopoutWidth" class="num-input" type="number" min=500 max=1000 maxlength=4
                 oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
         </label>
 
-        <label for="popoutHeight" class="setting">Row popout height:
-            <input id="popoutHeight" class="num-input" type="number" min=320 max=1500 maxlength=4
+        <label for=boardPopoutHeight" class="setting">Popout height:
+            <input id="boardPopoutHeight" class="num-input" type="number" min=450 max=1500 maxlength=4
+                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+        </label>
+
+        <h2>Row</h2>
+
+        <label for="rowPopoutWidth" class="setting">Popout width:
+            <input id="rowPopoutWidth" class="num-input" type="number" min=200 max=1000 maxlength=4
+                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+        </label>
+
+        <label for=rowPopoutHeight" class="setting">Popout height:
+            <input id="rowPopoutHeight" class="num-input" type="number" min=320 max=1500 maxlength=4
                 oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
         </label>
     </form>
@@ -118,11 +131,12 @@
 
 </body>
 
-<script src="./default-layout-settings.js" type="text/javascript"></script>
+<script src="./default-settings.js" type="text/javascript"></script>
 <script>
 
-    const storageItem = localStorage.getItem('layout-settings');
-    const storageData = storageItem ? JSON.parse(storageItem) : defaultLayoutSettings;
+    const storageItem = localStorage.getItem('bingo-settings');
+    const storageData = storageItem ? JSON.parse(storageItem) : defaultSettings;
+    console.log(storageData)
 
     function checkNumConstraints(obj) {
         if (obj.min && parseInt(obj.value) < parseInt(obj.min)) {
@@ -134,26 +148,27 @@
     }
 
     function resetAllValues() {
-        for (setting in defaultLayoutSettings) {
+        for (setting in defaultSettings) {
             const settingStr = setting
             const settingObject = document.getElementById(settingStr);
 
-            storageData[settingStr] = defaultLayoutSettings[settingStr];
-            localStorage.setItem('layout-settings', JSON.stringify(storageData));
+            storageData[settingStr] = defaultSettings[settingStr];
+            localStorage.setItem('bingo-settings', JSON.stringify(storageData));
             settingObject.value = storageData[settingStr]
         }
     }
 
     function addSettingEventListeners() {
-        for (setting in defaultLayoutSettings) {
+        for (setting in defaultSettings) {
             const settingStr = setting
+            console.log(settingStr)
             const settingObject = document.getElementById(settingStr);
             settingObject.addEventListener('change', () => {
                 if (settingObject.type === 'number') {
                     checkNumConstraints(settingObject)
                 }
                 storageData[settingStr] = settingObject.value;
-                localStorage.setItem('layout-settings', JSON.stringify(storageData));
+                localStorage.setItem('bingo-settings', JSON.stringify(storageData));
             });
             settingObject.value = storageData[settingStr]
         }
