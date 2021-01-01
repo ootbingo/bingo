@@ -33,8 +33,6 @@ a:hover {
 
 p {
   margin: 0px;
-  padding: 0 0 11.2px;
-  line-height: 1.35rem;
 }
 
 table {
@@ -73,12 +71,8 @@ td {
 }
 
 #bingo-info {
-    height: 50px;
+    margin: 0px 0px;
 }
-
-#bingo-info .flag {
-  margin-left: 8px;
-}  
 
 #bingo .rowcol {
   background: #000811;

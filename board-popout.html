@@ -3,6 +3,7 @@
 
 <head>
   <title>Board Popout</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <link rel="stylesheet" type="text/css" href="style/board-popout-styles.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
@@ -77,7 +78,7 @@
       seed: popoutParams.get('seed') || Math.ceil(999999 * Math.random()).toString(),
       mode: popoutParams.get('mode') || 'normal',
       lang: popoutParams.get('lang') || 'name',
-      version: popoutParams.get('version') || 'v10.1'
+      version: popoutParams.get('version') || 'v10.1' /*todo: latest version as default*/
     };
 
     const loadScript = src => {

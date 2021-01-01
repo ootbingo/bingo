@@ -35,12 +35,12 @@
             display: flex;
             flex-flow: row;
             align-items: center;
-            margin: 10px 0px;
+            margin: 10px 0px 10px 10px;
         }
 
         select {
             height: 21px;
-            width: 70px;
+            width: 85px;
             margin: 0 10px;
         }
 
@@ -96,7 +96,15 @@
 
     <form>
         <h2>Board</h2>
-        <label for="boardTheme" class="setting">Theme:
+
+        <label for="language" class="setting">Language:
+            <select id="language" width=800px>
+                <option value="en">English</option>
+                <option value="jp">Japanese</option>
+            </select>
+        </label>
+
+        <label for="boardTheme" class="setting">Layout theme:
             <select id="boardTheme">
                 <option value="classic">Classic</option>
                 <option value="modern">Modern</option>
