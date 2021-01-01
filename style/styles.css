@@ -1,34 +1,3 @@
-.gold {
-  color: #f7e279;
-  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.6), 0 0 1px #8d8145;
-}
-
-.silver {
-  color: #bec7d2;
-  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.6), 0 0 1px #6d7278;
-}
-
-.bronze {
-  color: #e09456;
-  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.6), 0 0 1px #805531;
-}
-
-.red {
-  color: #fa5050;
-}
-
-.green {
-  color: #52d64f;
-}
-
-.grey {
-  color: #808080;
-}
-
-.small {
-  font-size: 75%;
-}
-
 html,
 body {
   background: #111111;
@@ -47,23 +16,11 @@ body {
   overflow-y: scroll;
 }
 
-.always_scrollbar {
-  overflow-y: scroll;
-}
-
 .container {
   width: 976px;
   margin: 0 auto;
   padding: 8px 0 16px 16px;
-  overflow: auto;
-}
-
-.container2 {
-  width: 100%;
-  min-width: 992px;
-  margin: 0 auto;
   overflow: hidden;
-  padding-bottom: 16px;
 }
 
 #wrap {
@@ -72,93 +29,6 @@ body {
 
 main {
   padding-bottom: 28px;
-}
-
-#headerright {
-  display: block;
-  overflow: hidden;
-  height: 50px;
-  margin-bottom: 13px;
-  width: 594px;
-  margin-right: 16px;
-  float: right;
-  text-align: center;
-  font-family: 'Roboto', Helvetica, Arial, sans-serif;
-  font-weight: 800;
-  font-size: 1.21em;
-  line-height: 18px;
-  color: #70e36e;
-}
-
-#headerright span {
-  color: #5d97ff;
-}
-
-#headerright a {
-  display: block;
-  padding-top: 10px;
-}
-
-#headerright a:hover {
-  color: #b4ffae;
-}
-
-#headerright a:hover span {
-  color: #78e0ff;
-}
-
-nav ul {
-  margin: 0;
-  padding: 0;
-  text-indent: 0;
-  clear: both;
-}
-
-nav ul li {
-  list-style-type: none;
-  margin: 0 0 16px 0;
-  padding: 0;
-}
-
-nav ul li a {
-  background-color: #424242;
-  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png");
-  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), linear-gradient(to bottom, #424242, #303030);
-  border-width: 1px 0px 1px 1px;
-  border-style: solid;
-  border-color: #4c4c4c #000000 #000000 #474747;
-  text-align: center;
-  display: block;
-  font-weight: 700;
-  color: #bec7d2;
-  margin: 0;
-  float: left;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
-  border-radius: 5px;
-  user-select: none;
-  cursor: pointer;
-  width: 105px;
-  padding: 4px 0;
-  margin: 0 16px 0 0;
-}
-
-nav ul li a:hover {
-  background-color: #3c70df;
-  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), linear-gradient(to bottom, #3c70df, #235cd4);
-  border-width: 1px 0px 1px 1px;
-  border-style: solid;
-  border-color: #4e7de2 #102a63 #102a63 #4576e0;
-  color: #ffffff;
-}
-
-nav ul li a:active {
-  background-color: #1448b3;
-  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), linear-gradient(to bottom, #1448b3, #103b93);
-  box-shadow: 0 0 0 rgba(0, 0, 0, 0.6);
-  border-width: 1px 0px 1px 1px;
-  border-style: solid;
-  border-color: #164fc5 #071a40 #071a40 #154cbc;
-  color: #ffffff;
 }
 
 ::selection {
@@ -245,10 +115,6 @@ li {
   padding-bottom: 11.2px;
 }
 
-.noselect {
-  user-select: none;
-}
-
 table {
   width: 100%;
   border-spacing: 0px;
@@ -261,177 +127,9 @@ td {
   padding: 0;
 }
 
-th {
-  background-color: #c01614;
-  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png");
-  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), linear-gradient(to bottom, #c01614, #a01211);
-  color: #f7e279;
-  text-shadow: 1px 1px 3px #111111;
-  font-weight: 700;
-}
-
-#skypedetectionswf {
-  position: absolute;
-  overflow: hidden;
-  top: -999px;
-}
-
 .note {
   color: #808080;
   font-size: 85%;
-}
-
-.rounded_top {
-  border-radius: 5px 5px 0 0;
-}
-
-.rounded_bottom {
-  border-radius: 0 0 5px 5px;
-}
-
-.rounded_topleft {
-  border-radius: 5px 0 0 0;
-}
-
-.rounded_topright {
-  border-radius: 0 5px 0 0;
-}
-
-.rounded_bottomleft {
-  border-radius: 0 0 0 5px;
-}
-
-.rounded_bottomright {
-  border-radius: 0 0 5px 0;
-}
-
-.textshadow {
-  text-shadow: 1px 1px 3px #111111;
-}
-
-.boxshadow {
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
-}
-
-.insetboxshadow {
-  box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.6);
-}
-
-.insetboxshadow2 {
-  box-shadow: inset 0px 0px 50px rgba(255, 255, 255, 0.3);
-}
-
-.noboxshadow {
-  box-shadow: 0 0 0 rgba(0, 0, 0, 0.6);
-}
-
-.liteboxshadow {
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.45);
-}
-
-.italic {
-  font-style: italic;
-}
-
-.bold {
-  font-weight: 700;
-}
-
-.left {
-  float: left;
-}
-
-.right {
-  float: right;
-}
-
-.center {
-  text-align: center;
-}
-
-.smallbuttonstyle {
-  background-color: #424242;
-  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png");
-  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), linear-gradient(to bottom, #424242, #303030);
-  border-width: 1px 0px 1px 1px;
-  border-style: solid;
-  border-color: #4c4c4c #000000 #000000 #474747;
-  text-align: center;
-  display: block;
-  font-weight: 700;
-  color: #bec7d2;
-  margin: 0;
-  float: left;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
-  border-radius: 5px;
-  user-select: none;
-  cursor: pointer;
-}
-
-.smallbuttonstyle:hover {
-  background-color: #3c70df;
-  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), linear-gradient(to bottom, #3c70df, #235cd4);
-  border-width: 1px 0px 1px 1px;
-  border-style: solid;
-  border-color: #4e7de2 #102a63 #102a63 #4576e0;
-  color: #ffffff;
-}
-
-.smallbuttonstyle:active {
-  background-color: #1448b3;
-  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), linear-gradient(to bottom, #1448b3, #103b93);
-  box-shadow: 0 0 0 rgba(0, 0, 0, 0.6);
-  border-width: 1px 0px 1px 1px;
-  border-style: solid;
-  border-color: #164fc5 #071a40 #071a40 #154cbc;
-  color: #ffffff;
-}
-
-.smallbutton {
-  background-color: #424242;
-  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png");
-  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), linear-gradient(to bottom, #424242, #303030);
-  border-width: 1px 0px 1px 1px;
-  border-style: solid;
-  border-color: #4c4c4c #000000 #000000 #474747;
-  text-align: center;
-  display: block;
-  font-weight: 700;
-  color: #bec7d2;
-  margin: 0;
-  float: left;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
-  border-radius: 5px;
-  user-select: none;
-  cursor: pointer;
-  width: 105px;
-  margin-right: 16px;
-  margin-bottom: 8px;
-  padding: 4px 0;
-  text-decoration: none;
-}
-
-.smallbutton:hover {
-  background-color: #3c70df;
-  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), linear-gradient(to bottom, #3c70df, #235cd4);
-  border-width: 1px 0px 1px 1px;
-  border-style: solid;
-  border-color: #4e7de2 #102a63 #102a63 #4576e0;
-  color: #ffffff;
-}
-
-.smallbutton:active {
-  background-color: #1448b3;
-  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), linear-gradient(to bottom, #1448b3, #103b93);
-  box-shadow: 0 0 0 rgba(0, 0, 0, 0.6);
-  border-width: 1px 0px 1px 1px;
-  border-style: solid;
-  border-color: #164fc5 #071a40 #071a40 #154cbc;
-  color: #ffffff;
-}
-
-#buttonholder {
-  width: 100%;
 }
 
 #bingoPage #results {
@@ -441,14 +139,9 @@ th {
   text-align: right;
 }
 
-#bingoPage #results .flag {
-  margin-left: 8px;
-}
-
 #bingoPage .newcard {
   background-color: #424242;
-  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png");
-  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), linear-gradient(to bottom, #424242, #303030);
+  background-image: linear-gradient(to bottom, #424242, #303030);
   border-width: 1px 0px 1px 1px;
   border-style: solid;
   border-color: #4c4c4c #000000 #000000 #474747;
@@ -469,7 +162,7 @@ th {
 
 #bingoPage .newcard:hover {
   background-color: #3c70df;
-  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), linear-gradient(to bottom, #3c70df, #235cd4);
+  background-image: linear-gradient(to bottom, #3c70df, #235cd4);
   border-width: 1px 0px 1px 1px;
   border-style: solid;
   border-color: #4e7de2 #102a63 #102a63 #4576e0;
@@ -478,7 +171,7 @@ th {
 
 #bingoPage .newcard:active {
   background-color: #1448b3;
-  background-image: url("//c15111086.r86.cf2.rackcdn.com/grunge_button.png"), linear-gradient(to bottom, #1448b3, #103b93);
+  background-image: linear-gradient(to bottom, #1448b3, #103b93);
   box-shadow: 0 0 0 rgba(0, 0, 0, 0.6);
   border-width: 1px 0px 1px 1px;
   border-style: solid;
@@ -493,19 +186,6 @@ th {
 #bingoPage #bingo {
   margin-top: 16px;
   user-select: none;
-}
-
-#bingoPage #bingo .rowcol {
-  background: #000811;
-  font-size: 75%;
-  color: #3c70df;
-  font-weight: 700;
-  border: 1px #0a245a solid;
-}
-
-#bingoPage #bingo .rowcol:hover {
-  color: #ffffff;
-  background: #1448b3;
 }
 
 #bingoPage #bingo tr:first-child td,
