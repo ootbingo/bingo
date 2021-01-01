@@ -188,15 +188,17 @@ td {
   user-select: none;
 }
 
-#bingoPage #bingo tr:first-child td,
-#bingoPage #bingo tr:last-child td,
-#bingoPage #bingo .short {
+#bingoPage #bingo tr:first-child td {
   height: 30px;
   background: #000811;
   font-size: 75%;
   color: #3c70df;
   font-weight: 700;
   border: 1px #0a245a solid;
+}
+
+#bingoPage #bingo .short {
+  height: 30px;
 }
 
 #bingoPage #bingo tr:first-child td:hover,
@@ -262,4 +264,17 @@ td {
   float: right;
   width: 350px;
   margin-right: 16px;
+}
+
+#bingoPage #bingo #bingo-info,
+#bingoPage #bingo #bingo-info:hover {
+  background-color: transparent;
+  box-shadow: none;
+  padding: 0;
+  border: none;
+  cursor: default;
+  user-select: text;
+  color: #ffffff;
+  text-align: right;
+  border: none;
 }
