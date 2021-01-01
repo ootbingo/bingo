@@ -3,24 +3,15 @@
 
 <head>
   <title>Board Popout</title>
-  <link rel="stylesheet" type="text/css" href="style/styles.css">
+  <link rel="stylesheet" type="text/css" href="style/board-popout-styles.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
-  <style>
-    body {
-      overflow-y: hidden !important;
-    }
-
-    #board-popout-page {
-      margin: 0px 16px;
-    }
-  </style>
 </head>
 
 <body>
   <div id='board-popout-page'>
     <div id="bingoPage">
-      <div id="results">
+      <div id="board">
         <table id="bingo" aria-describedby="Bingo Board">
           <tr>
             <td class="popout" id="tlbr">TL-BR</td>
@@ -75,6 +66,7 @@
           </tr>
         </table>
       </div>
+      <div id='bingo-info' />
     </div>
   </div>
   <script src="lib/seedrandom-min.js" type="text/javascript"></script>
@@ -105,4 +97,5 @@
 
   </script>
 </body>
+
 </html>
