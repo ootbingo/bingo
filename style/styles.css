@@ -187,10 +187,6 @@ td {
   margin-right: 0;
 }
 
-#bingoPage .option {
-  background-image: linear-gradient(to bottom, #5c5c5c, #303030);
-}
-
 #bingoPage #bingo {
   margin-top: 16px;
   user-select: none;
