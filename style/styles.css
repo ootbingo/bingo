@@ -139,7 +139,8 @@ td {
   text-align: right;
 }
 
-#bingoPage .newcard {
+#bingoPage .newcard,
+#bingoPage .option {
   background-color: #424242;
   background-image: linear-gradient(to bottom, #424242, #303030);
   border-width: 1px 0px 1px 1px;
@@ -160,7 +161,8 @@ td {
   padding: 4px 0;
 }
 
-#bingoPage .newcard:hover {
+#bingoPage .newcard:hover,
+#bingoPage .option:hover  {
   background-color: #3c70df;
   background-image: linear-gradient(to bottom, #3c70df, #235cd4);
   border-width: 1px 0px 1px 1px;
@@ -169,7 +171,8 @@ td {
   color: #ffffff;
 }
 
-#bingoPage .newcard:active {
+#bingoPage .newcard:active,
+#bingoPage .option:active {
   background-color: #1448b3;
   background-image: linear-gradient(to bottom, #1448b3, #103b93);
   box-shadow: 0 0 0 rgba(0, 0, 0, 0.6);
@@ -179,8 +182,13 @@ td {
   color: #ffffff;
 }
 
-#bingoPage .newcard:last-child {
+#bingoPage .newcard:last-child,
+#bingoPage .option:last-child  {
   margin-right: 0;
+}
+
+#bingoPage .option {
+  background-image: linear-gradient(to bottom, #5c5c5c, #303030);
 }
 
 #bingoPage #bingo {
