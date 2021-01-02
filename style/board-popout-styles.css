@@ -64,8 +64,17 @@ td {
 }
 
 #board {
-  height: 100%;
+  flex-grow: 1;
 }
+
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) {
+  @media {
+    #board {
+      height: 100%;
+    }
+  }
+}
+
 
 #bingo {
   user-select: none;
