@@ -59,6 +59,7 @@ td {
     width: 100%;
     display: flex;
     flex-flow: column;
+    flex-shrink: 0;
     text-align: right;
 }
 
