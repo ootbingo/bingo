@@ -274,6 +274,7 @@ td {
 #bingoPage #bingo #bingo-info,
 #bingoPage #bingo #bingo-info:hover {
   background-color: transparent;
+  color: #bec7d2;
   box-shadow: none;
   padding: 0;
   border: none;
