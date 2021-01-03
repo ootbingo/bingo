@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../../style/settings-styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="../../img/favicon.ico">
+    <title>Ocarina of Time Bingo - Settings</title>
+</head>
+
+<body>
+
+    <h1>Settings</h1>
+
+    <form>
+        <h2>Board</h2>
+
+        <label for="language" class="setting">Language:
+            <select id="language" width=800px>
+                <option value="en">English</option>
+                <option value="jp">Japanese</option>
+            </select>
+        </label>
+
+        <label for="boardTheme" class="setting">Layout theme:
+            <select id="boardTheme">
+                <option value="classic">Classic</option>
+                <option value="modern">Modern</option>
+            </select>
+        </label>
+
+        <label for="boardPopoutWidth" class="setting">Popout width:
+            <input id="boardPopoutWidth" class="num-input" type="number" min=500 max=1000 maxlength=4
+                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+        </label>
+
+        <label for=boardPopoutHeight" class="setting">Popout height:
+            <input id="boardPopoutHeight" class="num-input" type="number" min=450 max=1500 maxlength=4
+                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+        </label>
+
+        <h2>Row</h2>
+
+        <label for="rowPopoutWidth" class="setting">Popout width:
+            <input id="rowPopoutWidth" class="num-input" type="number" min=200 max=1000 maxlength=4
+                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+        </label>
+
+        <label for=rowPopoutHeight" class="setting">Popout height:
+            <input id="rowPopoutHeight" class="num-input" type="number" min=320 max=1500 maxlength=4
+                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+        </label>
+    </form>
+
+    <div id="save-button" class="button">Save and go back</div>
+    <div id="reset-button" class="button">Reset all to default</div>
+
+</body>
+
+<script src="./default-settings.js" type="text/javascript"></script>
+<script>
+
+    const storageItem = localStorage.getItem('bingo-settings');
+    const storageData = storageItem ? JSON.parse(storageItem) : defaultSettings;
+
+    function checkNumConstraints(obj) {
+        if (obj.min && parseInt(obj.value) < parseInt(obj.min)) {
+            obj.value = obj.min
+        }
+        if (obj.max && parseInt(obj.value) > parseInt(obj.max)) {
+            obj.value = obj.max
+        }
+    }
+
+    function resetAllValues() {
+        for (setting in defaultSettings) {
+            const settingStr = setting
+            const settingObject = document.getElementById(settingStr);
+
+            storageData[settingStr] = defaultSettings[settingStr];
+            localStorage.setItem('bingo-settings', JSON.stringify(storageData));
+            settingObject.value = storageData[settingStr]
+        }
+    }
+
+    function addSettingEventListeners() {
+        for (setting in defaultSettings) {
+            const settingStr = setting
+            const settingObject = document.getElementById(settingStr);
+            settingObject.addEventListener('change', () => {
+                if (settingObject.type === 'number') {
+                    checkNumConstraints(settingObject)
+                }
+                storageData[settingStr] = settingObject.value;
+                localStorage.setItem('bingo-settings', JSON.stringify(storageData));
+            });
+            settingObject.value = storageData[settingStr]
+        }
+    }
+
+    addSettingEventListeners();
+
+    const resetButton = document.getElementById('reset-button')
+    resetButton.addEventListener('click', () => {
+        const resetValues = confirm("Are you sure you want to reset all the fields to the default value?");
+        if (resetValues) {
+            resetAllValues()
+        }
+    })
+
+    const saveButton = document.getElementById('save-button')
+    saveButton.addEventListener('click', () => {
+        history.back()
+    })
+
+</script>
+
+</html>

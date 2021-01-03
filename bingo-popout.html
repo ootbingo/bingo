@@ -83,11 +83,11 @@
 <body>
   <table>
   </table>
-  <script src="lib/layout-settings/default-layout-settings.js" type="text/javascript"></script>
+  <script src="lib/settings/default-settings.js" type="text/javascript"></script>
   <script type="text/javascript">
 
-    const maybeSettings = localStorage.getItem('layout-settings');
-    const settings = maybeSettings ? JSON.parse(maybeSettings) : defaultLayoutSettings
+    const maybeSettings = localStorage.getItem('bingo-settings');
+    const settings = maybeSettings ? JSON.parse(maybeSettings) : defaultSettings
 
     const data = decodeURIComponent(document.location.hash).substring(1).split('=');
     const line = data[0];
