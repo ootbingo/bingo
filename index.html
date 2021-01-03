@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style/settings-styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <title>Ocarina of Time Bingo - Versions</title>
+    <style>
+        h2 {
+            margin-bottom: 2px;
+        }
+
+        #versions {
+            display: flex;
+            flex-flow: column;
+        }
+
+        .button {
+            width: 40px;
+            font-size: 14px;
+            text-decoration: none;
+            margin: 0px 5px;
+        }
+
+        .version-group {
+            display: flex;
+            flex-flow: row;
+            margin: 8px 0px;
+        }
+
+        #go-back {
+            width: 75px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1>Bingo Versions</h1>
+    <h2>Latest version</h2>
+    <div id="latest-version" class="version-group"></div>
+    <h2>All versions</h2>
+    <div id="versions"></div>
+</body>
+<script>
+    /*'api/v1/available_versions.json'*/
+    const getVersions = () => {
+        fetch('api/v1/available_versions.json')
+            .then(response => {
+                return response.json();
+            })
+            .then(json => {
+                addLatestVersionButton(json);
+                addVersionButtons(json);
+            })
+            .catch(error => {
+                console.log(error);
+            })
+    }
+
+    const addLatestVersionButton = (availableVersions) => {
+        const versionDiv = document.getElementById('latest-version')
+        const version = availableVersions['default_version']
+        versionDiv.innerHTML += `<a class="button" href='v${version}/bingo.html'>${version}</a>`
+    }
+
+    const addVersionButtons = (availableVersions) => {
+        const versionsDiv = document.getElementById('versions')
+        const groupedVersions = parseAvailableVersions(availableVersions)
+        for (group in groupedVersions) {
+            const groupDiv = document.createElement('div');
+            groupDiv.className = 'version-group'
+            groupedVersions[group].forEach(version => {
+                groupDiv.innerHTML += `<a class="button" href='v${version}/bingo.html'>${version}</a>`
+            })
+            versionsDiv.append(groupDiv)
+        }
+    }
+
+    const parseAvailableVersions = (availableVersions) => {
+        const new_versions = {}
+        for (v in availableVersions['versions']) {
+            mainVersion = parseInt(v.split('.'))
+            if (!(mainVersion in new_versions)) {
+                new_versions[mainVersion] = [];
+            }
+            new_versions[mainVersion].push(v);
+        }
+        return new_versions
+    }
+
+    getVersions()
+
+
+</script>
+
+</html>

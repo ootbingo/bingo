@@ -20,6 +20,12 @@
                         <h1>Ocarina of Time Bingo</h1>
                         <div id="newcards"></div>
                         <div style="clear:both;"></div>
+                        <div style="margin-top:16px">
+                            <a class="option" href="../lib/settings/settings-page.html">Settings</a>
+                            <a class="option" href="../lib/item-tracker/settings-page.html">Tracker Setup</a>
+                            <a class="option" href="/bingo">Other Versions</a>
+                        </div>
+                        <div style="clear:both;"></div>
                         <h2>About</h2>
 
                         <p>This is a "Bingo" board for Ocarina of Time races.</p>
@@ -115,7 +121,11 @@
                                 <td class="row5 col5 tlbr" id="slot25"></td>
                             </tr>
                             <tr>
-                                <td class="popout" id="bltr">BL-TR</td>
+                                <td class="popout short" id="bltr">BL-TR</td>
+                            </tr>
+                            <tr>
+                                <td id="board-popout" class="short">BOARD</td>
+                                <td id="bingo-info" class="bingo-info short" colspan=5></td>
                             </tr>
                         </table>
                     </div>
@@ -126,7 +136,7 @@
     <script src="../lib/seedrandom-min.js" type="text/javascript"></script>
     <script src="goal-list.js" type="text/javascript"></script>
     <script src="generator.js" type="text/javascript"></script>
-    <script src="../lib/layout-settings/default-layout-settings.js" type="text/javascript"></script>
+    <script src="../lib/settings/default-settings.js" type="text/javascript"></script>
     <script src="../lib/bingosetup.js" type="text/javascript"></script>
 </body>
 
