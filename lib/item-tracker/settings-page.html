@@ -108,9 +108,10 @@
   <h2>Individual goal settings</h2>
   <div id="settings"></div>
 </body>
-<script src="../../v9.5/goal-list.js"></script>
+<script src="../../v10.1/goal-list.js"></script>
 <script src="./tracker-data.js"></script>
 <script src="./tracker-default.js"></script>
+<script src="../settings/default-settings.js" type="text/javascript"></script>
 <script>
   const renderRadio = ({ name, value, checked }) => `
       <label>
@@ -146,23 +147,60 @@
 
   const settingsDiv = document.getElementById('settings');
 
+  const retrieveCaseInsensitive = (obj, target) => {
+    for (key in obj) {
+      if (key.toLowerCase() === target.toLowerCase()) {
+        return obj[key]
+      }
+    }
+  }
+
+  const writeCaseInsensitive = (obj, target, value) => {
+    for (key in obj) {
+      if (key.toLowerCase() === target.toLowerCase()) {
+        console.log('update!')
+        obj[key] = value
+        return
+      }
+    }
+    obj[target] = value
+  }
+
+  const maybeSettings = localStorage.getItem('bingo-settings');
+  const settings = maybeSettings ? JSON.parse(maybeSettings) : defaultSettings;
+
+  const lang = settings.language || 'name';
+
+  console.log(goals)
   goals.forEach(goal => {
-    const goalTrackerData = window.trackerData.find(({ regex }) => goal.name.match(regex));
+    var goalTrackerData;
+    var goalName;
+    if (lang === 'jp') {
+      var goalName = goal.jp;
+      goalTrackerData = window.trackerData.find(({ regexJP }) => goalName.match(regexJP));
+    } else {
+      var goalName = goal.name;
+      goalTrackerData = window.trackerData.find(({ regex }) => goalName.match(regex));
+    }
+
     if (!goalTrackerData) {
       return;
     }
 
+
     const optionsDiv = document.createElement('div');
     optionsDiv.classList.add('goal');
     optionsDiv.innerHTML = `
-      <div class="goal-name">${goal.name}</div>
+      <div class="goal-name">${goalName}</div>
       <div class="mode">
-        ${['none', ...Object.keys(goalTrackerData.options)].map(mode => renderRadio({ name: goal.name, value: mode, checked: (storageData.settings[goal.name] || window.trackerDefaults[goal.name]) === mode })).join('')}
+        ${['none', ...Object.keys(goalTrackerData.options)].map(mode => renderRadio({ name: goalName, value: mode, checked: (retrieveCaseInsensitive(storageData.settings, goalName) || retrieveCaseInsensitive(window.trackerDefaults, goalName)) === mode })).join('')}
       </div>
       `;
     settingsDiv.appendChild(optionsDiv);
     optionsDiv.querySelectorAll('input').forEach(radio => radio.addEventListener('change', () => {
-      storageData.settings[goal.name] = radio.value;
+      console.log(JSON.stringify(storageData.settings))
+      writeCaseInsensitive(storageData.settings, goalName, radio.value)
+      console.log(JSON.stringify(storageData.settings))
       localStorage.setItem('tracker', JSON.stringify(storageData));
     }));
   });
