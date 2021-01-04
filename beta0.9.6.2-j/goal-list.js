@@ -6353,7 +6353,7 @@ var bingoList = {
             {
                 "difficulty": 7,
                 "id": "both-heart-pieces-in-death-mountain-crater",
-                "jp": "デスマウンテン火口のハートのかけら２つ",
+                "jp": "デスマウンテン火口のハートのかけら2つ",
                 "name": "Both heart pieces in Death Mountain Crater",
                 "skill": 0,
                 "subtypes": {
@@ -6398,7 +6398,7 @@ var bingoList = {
             {
                 "difficulty": 8,
                 "id": "both-child-kokiri-forest-area-skulltulas",
-                "jp": "コキリの森エリアの黄金のスタルチュラ３匹",
+                "jp": "コキリの森エリアの黄金のスタルチュラ3匹",
                 "name": "Both Child Kokiri Forest area Skulltulas",
                 "skill": 0,
                 "subtypes": {
@@ -8100,7 +8100,7 @@ var bingoList = {
             {
                 "difficulty": 32,
                 "id": "both-heart-pieces-in-lost-woods",
-                "jp": "迷いの森のハートのかけら２つ",
+                "jp": "迷いの森のハートのかけら2つ",
                 "name": "Both heart pieces in Lost Woods",
                 "skill": 0,
                 "subtypes": {
@@ -8227,7 +8227,7 @@ var bingoList = {
             {
                 "difficulty": 42,
                 "id": "two-fairy-spells",
-                "jp": "魔法のアイテム２つ",
+                "jp": "魔法のアイテム2つ",
                 "name": "Two Fairy Spells",
                 "skill": 0,
                 "subtypes": {
