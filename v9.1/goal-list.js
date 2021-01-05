@@ -1075,7 +1075,7 @@ var bingoList = {
             {
                 "difficulty": 13,
                 "id": "obtain-all-8-small-keys-in-fire-temple",
-                "jp": "炎の神殿の小さな鍵の宝箱を８つ全て開ける",
+                "jp": "炎の神殿の小さな鍵の宝箱を8つ全て開ける",
                 "name": "Obtain all 8 Small Keys in Fire Temple",
                 "rowtypes": {
                     "bottle": 0.5,
@@ -2514,7 +2514,7 @@ var bingoList = {
             {
                 "difficulty": 20,
                 "id": "free-all-9-gorons-in-fire-temple",
-                "jp": "炎の神殿で９人のゴロンを全員救う",
+                "jp": "炎の神殿で9人のゴロンを全員救う",
                 "name": "Free all 9 gorons in Fire Temple",
                 "rowtypes": {
                     "bottle": 0.5,
@@ -2609,7 +2609,7 @@ var bingoList = {
             {
                 "difficulty": 20,
                 "id": "obtain-all-5-small-keys-in-shadow-temple",
-                "jp": "闇の神殿の小さな鍵５つ取得",
+                "jp": "闇の神殿の小さな鍵5つ取得",
                 "name": "Obtain all 5 Small Keys in Shadow Temple",
                 "rowtypes": {
                     "bottle": 0.0,
@@ -2770,7 +2770,7 @@ var bingoList = {
             {
                 "difficulty": 22,
                 "id": "1-unused-small-key-in-each-adult-dungeon",
-                "jp": "全ての大人のダンジョンから未使用の鍵最低１つずつ",
+                "jp": "全ての大人のダンジョンから未使用の鍵最低1つずつ",
                 "name": "1 unused small key in each Adult Dungeon",
                 "rowtypes": {
                     "bottle": 0.5,
@@ -3005,7 +3005,7 @@ var bingoList = {
             {
                 "difficulty": 23,
                 "id": "both-heart-pieces-in-lost-woods",
-                "jp": "迷いの森のハートのかけら２つ",
+                "jp": "迷いの森のハートのかけら2つ",
                 "name": "Both heart pieces in Lost Woods",
                 "rowtypes": {
                     "bottle": 0.0,
@@ -3414,7 +3414,7 @@ var bingoList = {
             {
                 "difficulty": 25,
                 "id": "two-fairy-spells",
-                "jp": "魔法のアイテム２つ",
+                "jp": "魔法のアイテム2つ",
                 "name": "Two Fairy Spells",
                 "rowtypes": {
                     "bottle": 100.0,
@@ -3502,7 +3502,7 @@ var bingoList = {
             {
                 "difficulty": 3,
                 "id": "both-heart-pieces-in-death-mountain-crater",
-                "jp": "デスマウンテン火口のハートのかけら２つ",
+                "jp": "デスマウンテン火口のハートのかけら2つ",
                 "name": "Both heart pieces in Death Mountain Crater",
                 "rowtypes": {
                     "bottle": 0.0,
@@ -4032,7 +4032,7 @@ var bingoList = {
             {
                 "difficulty": 6,
                 "id": "all-3-kokiri-forest-area-skulltulas",
-                "jp": "コキリの森エリアの黄金のスタルチュラ３匹",
+                "jp": "コキリの森エリアの黄金のスタルチュラ3匹",
                 "name": "All 3 Kokiri Forest area Skulltulas",
                 "rowtypes": {
                     "bottle": 100.0,
@@ -6819,7 +6819,7 @@ var bingoList = {
             {
                 "difficulty": 35,
                 "id": "both-heart-pieces-in-lost-woods",
-                "jp": "迷いの森のハートのかけら２つ",
+                "jp": "迷いの森のハートのかけら2つ",
                 "name": "Both heart pieces in Lost Woods",
                 "skill": 0.0,
                 "subtypes": {
@@ -6961,7 +6961,7 @@ var bingoList = {
             {
                 "difficulty": 46,
                 "id": "two-fairy-spells",
-                "jp": "魔法のアイテム２つ",
+                "jp": "魔法のアイテム2つ",
                 "name": "Two Fairy Spells",
                 "skill": 0.0,
                 "subtypes": {
@@ -7188,7 +7188,7 @@ var bingoList = {
             {
                 "difficulty": 7,
                 "id": "both-heart-pieces-in-death-mountain-crater",
-                "jp": "デスマウンテン火口のハートのかけら２つ",
+                "jp": "デスマウンテン火口のハートのかけら2つ",
                 "name": "Both heart pieces in Death Mountain Crater",
                 "skill": 0.0,
                 "subtypes": {
@@ -7246,7 +7246,7 @@ var bingoList = {
             {
                 "difficulty": 8,
                 "id": "both-child-kokiri-forest-area-skulltulas",
-                "jp": "コキリの森エリアの黄金のスタルチュラ３匹",
+                "jp": "コキリの森エリアの黄金のスタルチュラ3匹",
                 "name": "Both Child Kokiri Forest area Skulltulas",
                 "skill": 0.0,
                 "subtypes": {

@@ -1864,7 +1864,7 @@ var bingoList = {
         {
             "difficulty": 16,
             "id": "open-all-8-small-key-chests-in-fire-temple",
-            "jp": "炎の神殿の小さな鍵の宝箱を８つ全て開ける",
+            "jp": "炎の神殿の小さな鍵の宝箱を8つ全て開ける",
             "name": "Open all 8 Small Key chests in Fire Temple",
             "rowtypes": {
                 "bottle": 0.5,
@@ -2207,7 +2207,7 @@ var bingoList = {
         {
             "difficulty": 19,
             "id": "free-all-9-gorons-in-fire-temple",
-            "jp": "炎の神殿で９人のゴロンを全員救う",
+            "jp": "炎の神殿で9人のゴロンを全員救う",
             "name": "Free all 9 gorons in Fire Temple",
             "rowtypes": {
                 "bottle": 0.5,
@@ -2388,7 +2388,7 @@ var bingoList = {
         {
             "difficulty": 2,
             "id": "both-heart-pieces-in-death-mountain-crater",
-            "jp": "デスマウンテン火口のハートのかけら２つ",
+            "jp": "デスマウンテン火口のハートのかけら2つ",
             "name": "Both heart pieces in Death Mountain Crater",
             "rowtypes": {
                 "bottle": 0.0,
@@ -2645,7 +2645,7 @@ var bingoList = {
         {
             "difficulty": 20,
             "id": "open-all-5-small-key-chests-in-shadow-temple",
-            "jp": "闇の神殿の小さな鍵５つ取得",
+            "jp": "闇の神殿の小さな鍵5つ取得",
             "name": "Open all 5 Small Key chests in Shadow Temple",
             "rowtypes": {
                 "bottle": 0.0,
@@ -2844,7 +2844,7 @@ var bingoList = {
         {
             "difficulty": 22,
             "id": "both-heart-pieces-in-lost-woods",
-            "jp": "迷いの森のハートのかけら２つ",
+            "jp": "迷いの森のハートのかけら2つ",
             "name": "Both heart pieces in Lost Woods",
             "rowtypes": {
                 "bottle": 0.0,
@@ -3205,7 +3205,7 @@ var bingoList = {
         {
             "difficulty": 25,
             "id": "two-fairy-spells",
-            "jp": "魔法のアイテム２つ",
+            "jp": "魔法のアイテム2つ",
             "name": "Two Fairy Spells",
             "rowtypes": {
                 "bottle": 100.0,
@@ -3314,7 +3314,7 @@ var bingoList = {
         {
             "difficulty": 25,
             "id": "at-least-1-unused-key-in-each-adult-dungeon",
-            "jp": "全ての大人のダンジョンから未使用の鍵最低１つずつ",
+            "jp": "全ての大人のダンジョンから未使用の鍵最低1つずつ",
             "name": "At least 1 unused key in each Adult Dungeon",
             "rowtypes": {
                 "bottle": 0.5,
@@ -4009,7 +4009,7 @@ var bingoList = {
         {
             "difficulty": 6,
             "id": "all-3-kokiri-forest-area-skulltulas",
-            "jp": "コキリの森エリアの黄金のスタルチュラ３匹",
+            "jp": "コキリの森エリアの黄金のスタルチュラ3匹",
             "name": "All 3 Kokiri Forest area Skulltulas",
             "rowtypes": {
                 "bottle": 100.0,

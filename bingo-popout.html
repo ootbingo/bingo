@@ -40,6 +40,11 @@
       -ms-user-select: none;
     }
 
+    .jp {
+      font-size: 17px;
+      line-height: 1.4;
+    }
+
     table.modern td {
       box-shadow: none;
     }
@@ -78,6 +83,7 @@
   </style>
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <link href="./lib/item-tracker/item-tracker.css" rel="stylesheet">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
 
 <body>
@@ -87,7 +93,8 @@
   <script type="text/javascript">
 
     const maybeSettings = localStorage.getItem('bingo-settings');
-    const settings = maybeSettings ? JSON.parse(maybeSettings) : defaultSettings
+    var settings = maybeSettings ? JSON.parse(maybeSettings) : {}
+    settings = {...defaultSettings, ...settings}
 
     const data = decodeURIComponent(document.location.hash).substring(1).split('=');
     const line = data[0];
@@ -102,16 +109,26 @@
       table.classList.add("modern");
     }
 
-    document.querySelectorAll('td').forEach(el => el.addEventListener('click', () => {
-      if (el.classList.contains('greensquare')) {
-        el.classList.add('redsquare');
-        el.classList.remove('greensquare');
-      } else if (el.classList.contains('redsquare')) {
-        el.classList.remove('redsquare');
-      } else {
-        el.classList.add('greensquare');
+    const searchParams = new URLSearchParams(window.location.search);
+    const langJP = searchParams.get('lang') || name
+
+    document.querySelectorAll('td').forEach(el => {
+      if (langJP === 'jp') {
+        el.classList += 'jp'
       }
-    }));
+      el.addEventListener('click', () => {
+        if (el.classList.contains('greensquare')) {
+          el.classList.add('redsquare');
+          el.classList.remove('greensquare');
+        } else if (el.classList.contains('redsquare')) {
+          el.classList.remove('redsquare');
+        } else {
+          el.classList.add('greensquare');
+        }
+      })
+    });
+
+
   </script>
   <script defer src="./lib/item-tracker/tracker-loader.js"></script>
 </body>

@@ -61,7 +61,8 @@
 <script>
 
     const storageItem = localStorage.getItem('bingo-settings');
-    const storageData = storageItem ? JSON.parse(storageItem) : defaultSettings;
+    let storageData = storageItem ? JSON.parse(storageItem) : {};
+    storageData = {...defaultSettings, ...storageData}
 
     function checkNumConstraints(obj) {
         if (obj.min && parseInt(obj.value) < parseInt(obj.min)) {
