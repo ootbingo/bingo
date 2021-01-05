@@ -93,7 +93,8 @@
   <script type="text/javascript">
 
     const maybeSettings = localStorage.getItem('bingo-settings');
-    const settings = maybeSettings ? JSON.parse(maybeSettings) : defaultSettings
+    var settings = maybeSettings ? JSON.parse(maybeSettings) : {}
+    settings = {...defaultSettings, ...settings}
 
     const data = decodeURIComponent(document.location.hash).substring(1).split('=');
     const line = data[0];
