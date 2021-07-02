@@ -50,6 +50,16 @@
             <input id="rowPopoutHeight" class="num-input" type="number" min=320 max=1500 maxlength=4
                 oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
         </label>
+
+        <label for=rowPopoutFontSize" class="setting">Popout font size:
+            <input id="rowPopoutFontSize" class="num-input" type="number" min=12 max=50 maxlength=2
+                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+        </label>
+
+        <label for=rowPopoutIconSize" class="setting">Popout tracker icon size:
+            <input id="rowPopoutIconSize" class="num-input" type="number" min=20 max=60 maxlength=2
+                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+        </label>
     </form>
 
     <div id="save-button" class="button">Save and go back</div>
@@ -62,7 +72,7 @@
 
     const storageItem = localStorage.getItem('bingo-settings');
     let storageData = storageItem ? JSON.parse(storageItem) : {};
-    storageData = {...defaultSettings, ...storageData}
+    storageData = { ...defaultSettings, ...storageData }
 
     function checkNumConstraints(obj) {
         if (obj.min && parseInt(obj.value) < parseInt(obj.min)) {

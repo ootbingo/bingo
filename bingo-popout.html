@@ -94,7 +94,7 @@
 
     const maybeSettings = localStorage.getItem('bingo-settings');
     var settings = maybeSettings ? JSON.parse(maybeSettings) : {}
-    settings = {...defaultSettings, ...settings}
+    settings = { ...defaultSettings, ...settings }
 
     const data = decodeURIComponent(document.location.hash).substring(1).split('=');
     const line = data[0];
@@ -108,6 +108,22 @@
     if (settings.boardTheme === "modern") {
       table.classList.add("modern");
     }
+
+    document.body.style.fontSize = settings.rowPopoutFontSize + "px";
+
+    trackerIcons = document.getElementsByClassName('tokenicon');
+    trackerBoxes = document.getElementsByClassName('tokenlabel');
+    window.addEventListener("load", function (event) {
+      for (var i = 0; i < trackerIcons.length; i++) {
+        trackerIcons.item(i).style.height = settings.rowPopoutIconSize + "px";
+      }
+      for (var i = 0; i < trackerBoxes.length; i++) {
+        trackerBoxes.item(i).style.height = settings.rowPopoutIconSize + "px";
+      }
+    });
+
+
+
 
     const searchParams = new URLSearchParams(window.location.search);
     const langJP = searchParams.get('lang') || name
@@ -129,8 +145,12 @@
     });
 
 
+
+
+
   </script>
-  <script defer src="./lib/item-tracker/tracker-loader.js"></script>
+    <script defer src="./lib/item-tracker/tracker-loader.js"></script>
+
 </body>
 
 </html>

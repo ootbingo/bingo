@@ -92,9 +92,20 @@
       })
     }
 
+
+
+
     loadScript(`${popoutOpts.version}/goal-list.js`)
       .then(() => loadScript(`${popoutOpts.version}/generator.js`))
       .then(() => loadScript(`lib/bingosetup.js`))
+      .then(() => {
+
+        //const settings = maybeSettings ? JSON.parse(maybeSettings) : {}
+        //settings = { ...defaultSettings, ...settings }
+
+        document.body.style.fontSize = "25" + "px";
+        document.body.style.lineHeight = ("25" * 1.3) + "px";
+      })
 
   </script>
 </body>
