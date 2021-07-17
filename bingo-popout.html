@@ -99,6 +99,10 @@
 
       const tableHTML = items.map(item => `<tr><td>${item}</td></tr>`).join('');
       table.innerHTML = `<th>${line}</th>${tableHTML}`;
+
+      if (settings.boardTheme === "modern") {
+      table.classList.add("modern");
+    }
     }
 
     const setFontSize = (fontSizeSetting) => {
@@ -157,12 +161,9 @@
     const data = decodeURIComponent(document.location.hash).substring(1).split('=');
     insertGoalData(data);
 
-    if (settings.boardTheme === "modern") {
-      table.classList.add("modern");
-    }
-
     setFontSize(settings.rowPopoutFontSize);
     setIconSize(settings.rowPopoutIconSize);
+    addSquareColorEvents();
 
   </script>
   <script defer src="./lib/item-tracker/tracker-loader.js"></script>
