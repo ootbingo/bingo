@@ -99,6 +99,10 @@
 
       const tableHTML = items.map(item => `<tr><td>${item}</td></tr>`).join('');
       table.innerHTML = `<th>${line}</th>${tableHTML}`;
+
+      if (settings.boardTheme === "modern") {
+        table.classList.add("modern");
+      }
     }
 
     const setFontSize = (fontSizeSetting) => {
@@ -112,7 +116,6 @@
 
     const setIconSize = (iconSizeSetting) => {
       const iconSize = iconSizeSetting + 'px';
-      console.log(iconSize)
 
       trackerTokens = document.getElementsByClassName('token-icon');
       tokenBoxes = document.getElementsByClassName('token-label');
@@ -120,7 +123,6 @@
 
       window.addEventListener("load", function (event) {
         for (var i = 0; i < trackerTokens.length; i++) {
-          console.log(iconSize)
           trackerTokens.item(i).style.height = iconSize;
         }
         for (var i = 0; i < tokenBoxes.length; i++) {
@@ -157,12 +159,9 @@
     const data = decodeURIComponent(document.location.hash).substring(1).split('=');
     insertGoalData(data);
 
-    if (settings.boardTheme === "modern") {
-      table.classList.add("modern");
-    }
-
     setFontSize(settings.rowPopoutFontSize);
     setIconSize(settings.rowPopoutIconSize);
+    addSquareColorEvents();
 
   </script>
   <script defer src="./lib/item-tracker/tracker-loader.js"></script>
