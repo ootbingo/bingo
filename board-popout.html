@@ -93,14 +93,14 @@
     }
 
     const applyFontSize = () => {
-      console.log(settings.boardPopoutFontSize)
-      const lineHeight = parseInt(settings.boardPopoutFontSize) * 1.3;
-      document.body.style.fontSize = `${settings.boardPopoutFontSize}px`;
+      let fontSize = parseInt(settings.boardPopoutFontSize)
+      if (popoutOpts.lang == 'jp') {
+        fontSize = fontSize - 2
+      }
+      const lineHeight = fontSize * 1.3;
+      document.body.style.fontSize = `${fontSize}px`;
       document.body.style.lineHeight = `${lineHeight}px`;
     }
-
-
-
 
     loadScript(`${popoutOpts.version}/goal-list.js`)
       .then(() => loadScript(`${popoutOpts.version}/generator.js`))

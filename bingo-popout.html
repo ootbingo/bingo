@@ -92,69 +92,77 @@
   <script src="lib/settings/default-settings.js" type="text/javascript"></script>
   <script type="text/javascript">
 
+    const insertGoalData = (data) => {
+      const line = data[0];
+      const items = data[1].split(';;;');
+      const table = document.querySelector('table');
+
+      const tableHTML = items.map(item => `<tr><td>${item}</td></tr>`).join('');
+      table.innerHTML = `<th>${line}</th>${tableHTML}`;
+    }
+
+    const setFontSize = (fontSizeSetting) => {
+      let fontSize = fontSizeSetting;
+      if (isJP) {
+        fontSize = (parseInt(fontSizeSetting) - 2).toString
+      }
+      fontSize = fontSize + 'px';
+      document.body.style.fontSize = fontSize;
+    }
+
+    const setIconSize = (iconSizeSetting) => {
+      const iconSize = iconSizeSetting + 'px';
+      console.log(iconSize)
+
+      trackerTokens = document.getElementsByClassName('token-icon');
+      tokenBoxes = document.getElementsByClassName('token-label');
+      trackerCounters = document.getElementsByClassName('counter-icon');
+
+      window.addEventListener("load", function (event) {
+        for (var i = 0; i < trackerTokens.length; i++) {
+          console.log(iconSize)
+          trackerTokens.item(i).style.height = iconSize;
+        }
+        for (var i = 0; i < tokenBoxes.length; i++) {
+          tokenBoxes.item(i).style.height = iconSize;
+        }
+        for (var i = 0; i < trackerCounters.length; i++) {
+          trackerCounters.item(i).style.height = iconSize;
+        }
+      });
+    }
+
+    const addSquareColorEvents = () => {
+      document.querySelectorAll('td').forEach(el => {
+        el.addEventListener('click', () => {
+          if (el.classList.contains('greensquare')) {
+            el.classList.add('redsquare');
+            el.classList.remove('greensquare');
+          } else if (el.classList.contains('redsquare')) {
+            el.classList.remove('redsquare');
+          } else {
+            el.classList.add('greensquare');
+          }
+        });
+      });
+    }
+
     const maybeSettings = localStorage.getItem('bingo-settings');
     var settings = maybeSettings ? JSON.parse(maybeSettings) : {}
     settings = { ...defaultSettings, ...settings }
 
+    const searchParams = new URLSearchParams(window.location.search);
+    const isJP = (searchParams.get('lang') || name) === 'jp'
+
     const data = decodeURIComponent(document.location.hash).substring(1).split('=');
-    const line = data[0];
-    const items = data[1].split(';;;');
-    const table = document.querySelector('table');
-
-    const tableHTML = items.map(item => `<tr><td>${item}</td></tr>`).join('');
-    table.innerHTML = `<th>${line}</th>${tableHTML}`;
-
+    insertGoalData(data);
 
     if (settings.boardTheme === "modern") {
       table.classList.add("modern");
     }
 
-    document.body.style.fontSize = settings.rowPopoutFontSize + "px";
-
-    trackerTokens = document.getElementsByClassName('token-icon');
-    tokenBoxes = document.getElementsByClassName('token-label');
-    trackerCounters = document.getElementsByClassName('counter-icon');
-    window.addEventListener("load", function (event) {
-      for (var i = 0; i < trackerTokens.length; i++) {
-        console.log("trackericons")
-        trackerTokens.item(i).style.height = settings.rowPopoutIconSize + "px";
-      }
-      for (var i = 0; i < tokenBoxes.length; i++) {
-        console.log("trackerlabels")
-        tokenBoxes.item(i).style.height = settings.rowPopoutIconSize + "px";
-      }
-      for (var i = 0; i < trackerCounters.length; i++) {
-        console.log("trackerCounters")
-        trackerCounters.item(i).style.height = settings.rowPopoutIconSize + "px";
-      }
-    });
-
-
-    const searchParams = new URLSearchParams(window.location.search);
-    const langJP = searchParams.get('lang') || name
-
-    document.querySelectorAll('td').forEach(el => {
-      if (langJP === 'jp' &&  settings.rowPopoutFontSize === defaultSettings.rowPopoutFontSize) {
-        console.log("test")
-        el.classList += 'jp'
-      }
-      el.addEventListener('click', () => {
-        if (el.classList.contains('greensquare')) {
-          el.classList.add('redsquare');
-          el.classList.remove('greensquare');
-        } else if (el.classList.contains('redsquare')) {
-          el.classList.remove('redsquare');
-        } else {
-          el.classList.add('greensquare');
-        }
-      })
-    });
-
-
-
-
-
-
+    setFontSize(settings.rowPopoutFontSize);
+    setIconSize(settings.rowPopoutIconSize);
 
   </script>
   <script defer src="./lib/item-tracker/tracker-loader.js"></script>
