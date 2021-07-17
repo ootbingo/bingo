@@ -111,25 +111,31 @@
 
     document.body.style.fontSize = settings.rowPopoutFontSize + "px";
 
-    trackerIcons = document.getElementsByClassName('tokenicon');
-    trackerBoxes = document.getElementsByClassName('tokenlabel');
+    trackerTokens = document.getElementsByClassName('token-icon');
+    tokenBoxes = document.getElementsByClassName('token-label');
+    trackerCounters = document.getElementsByClassName('counter-icon');
     window.addEventListener("load", function (event) {
-      for (var i = 0; i < trackerIcons.length; i++) {
-        trackerIcons.item(i).style.height = settings.rowPopoutIconSize + "px";
+      for (var i = 0; i < trackerTokens.length; i++) {
+        console.log("trackericons")
+        trackerTokens.item(i).style.height = settings.rowPopoutIconSize + "px";
       }
-      for (var i = 0; i < trackerBoxes.length; i++) {
-        trackerBoxes.item(i).style.height = settings.rowPopoutIconSize + "px";
+      for (var i = 0; i < tokenBoxes.length; i++) {
+        console.log("trackerlabels")
+        tokenBoxes.item(i).style.height = settings.rowPopoutIconSize + "px";
+      }
+      for (var i = 0; i < trackerCounters.length; i++) {
+        console.log("trackerCounters")
+        trackerCounters.item(i).style.height = settings.rowPopoutIconSize + "px";
       }
     });
-
-
 
 
     const searchParams = new URLSearchParams(window.location.search);
     const langJP = searchParams.get('lang') || name
 
     document.querySelectorAll('td').forEach(el => {
-      if (langJP === 'jp') {
+      if (langJP === 'jp' &&  settings.rowPopoutFontSize === defaultSettings.rowPopoutFontSize) {
+        console.log("test")
         el.classList += 'jp'
       }
       el.addEventListener('click', () => {
@@ -143,6 +149,8 @@
         }
       })
     });
+
+
 
 
 
