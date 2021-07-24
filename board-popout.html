@@ -123,7 +123,7 @@
     }
 
     loadScript(`${popoutOpts.version}/goal-list.js`)
-      .then(() => loadScript(`${popoutOpts.version}/generator.js`))
+      .then(() => loadScript(`./${popoutOpts.version}/generator.js`))
       .then(() => loadScript(`./lib/bingosetup.js`))
       .then(() => {
         if (settings.boardBlackoutTracker === 'enabled' && popoutOpts.mode === 'blackout') {
