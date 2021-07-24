@@ -92,10 +92,48 @@
       })
     }
 
-    loadScript(`${popoutOpts.version}/goal-list.js`)
-      .then(() => loadScript(`${popoutOpts.version}/generator.js`))
-      .then(() => loadScript(`lib/bingosetup.js`))
+    const applyFontSize = () => {
+      let fontSize = parseInt(settings.boardPopoutFontSize)
+      if (popoutOpts.lang == 'jp') {
+        fontSize = fontSize - 2
+      }
+      const lineHeight = fontSize * 1.3;
+      document.body.style.fontSize = `${fontSize}px`;
+      document.body.style.lineHeight = `${lineHeight}px`;
+    }
 
+    const applyIconSize = () => {
+      const iconSize = settings.rowPopoutIconSize + 'px';
+
+      trackerTokens = document.getElementsByClassName('token-icon');
+      tokenBoxes = document.getElementsByClassName('token-label');
+      trackerCounters = document.getElementsByClassName('counter-icon');
+
+      window.addEventListener("load", function (event) {
+        for (var i = 0; i < trackerTokens.length; i++) {
+          trackerTokens.item(i).style.height = iconSize;
+        }
+        for (var i = 0; i < tokenBoxes.length; i++) {
+          tokenBoxes.item(i).style.height = iconSize;
+        }
+        for (var i = 0; i < trackerCounters.length; i++) {
+          trackerCounters.item(i).style.height = iconSize;
+        }
+      });
+    }
+
+    loadScript(`${popoutOpts.version}/goal-list.js`)
+      .then(() => loadScript(`./${popoutOpts.version}/generator.js`))
+      .then(() => loadScript(`./lib/bingosetup.js`))
+      .then(() => {
+        if (settings.boardBlackoutTracker === 'enabled' && popoutOpts.mode === 'blackout') {
+          loadScript("./lib/item-tracker/tracker-loader.js");
+        }
+      })
+      .then(() => {
+        applyFontSize();
+        applyIconSize();
+      })
   </script>
 </body>
 

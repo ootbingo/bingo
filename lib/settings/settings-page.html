@@ -13,7 +13,8 @@
     <h1>Settings</h1>
 
     <form>
-        <h2>Board</h2>
+
+        <h2>General</h2>
 
         <label for="language" class="setting">Language:
             <select id="language" width=800px>
@@ -29,25 +30,55 @@
             </select>
         </label>
 
-        <label for="boardPopoutWidth" class="setting">Popout width:
+        <h2>Board popouts</h2>
+
+        <label for="boardPopoutWidth" class="setting">Width:
             <input id="boardPopoutWidth" class="num-input" type="number" min=500 max=1000 maxlength=4
                 oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
         </label>
 
-        <label for=boardPopoutHeight" class="setting">Popout height:
+        <label for=boardPopoutHeight" class="setting">Height:
             <input id="boardPopoutHeight" class="num-input" type="number" min=450 max=1500 maxlength=4
                 oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
         </label>
 
-        <h2>Row</h2>
+        <label for=boardPopoutFontSize" class="setting">Font size:
+            <input id="boardPopoutFontSize" class="num-input" type="number" min=8 max=25 maxlength=2
+                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+        </label>
 
-        <label for="rowPopoutWidth" class="setting">Popout width:
+        <label for="boardBlackoutTracker" class="setting">Tracker for blackouts:
+            <select id="boardBlackoutTracker">
+                <option value="enabled">Enabled</option>
+                <option value="disabled">Disabled</option>
+            </select>
+        </label>
+
+        <label for=boardPopoutIconSize" class="setting">Tracker icon size:
+            <input id="boardPopoutIconSize" class="num-input" type="number" min=12 max=28 maxlength=2
+                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+        </label>
+        
+
+        <h2>Row popouts</h2>
+
+        <label for="rowPopoutWidth" class="setting">Width:
             <input id="rowPopoutWidth" class="num-input" type="number" min=200 max=1000 maxlength=4
                 oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
         </label>
 
-        <label for=rowPopoutHeight" class="setting">Popout height:
+        <label for=rowPopoutHeight" class="setting">Height:
             <input id="rowPopoutHeight" class="num-input" type="number" min=320 max=1500 maxlength=4
+                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+        </label>
+
+        <label for=rowPopoutFontSize" class="setting">Font size:
+            <input id="rowPopoutFontSize" class="num-input" type="number" min=12 max=50 maxlength=2
+                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+        </label>
+
+        <label for=rowPopoutIconSize" class="setting">Tracker icon size:
+            <input id="rowPopoutIconSize" class="num-input" type="number" min=20 max=60 maxlength=2
                 oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
         </label>
     </form>
@@ -62,7 +93,7 @@
 
     const storageItem = localStorage.getItem('bingo-settings');
     let storageData = storageItem ? JSON.parse(storageItem) : {};
-    storageData = {...defaultSettings, ...storageData}
+    storageData = { ...defaultSettings, ...storageData }
 
     function checkNumConstraints(obj) {
         if (obj.min && parseInt(obj.value) < parseInt(obj.min)) {

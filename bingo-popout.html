@@ -93,41 +93,75 @@
   <script type="text/javascript">
 
     const maybeSettings = localStorage.getItem('bingo-settings');
-    var settings = maybeSettings ? JSON.parse(maybeSettings) : {}
-    settings = {...defaultSettings, ...settings}
+    let settings = maybeSettings ? JSON.parse(maybeSettings) : {}
+    settings = { ...defaultSettings, ...settings }
 
-    const data = decodeURIComponent(document.location.hash).substring(1).split('=');
-    const line = data[0];
-    const items = data[1].split(';;;');
-    const table = document.querySelector('table');
+    const insertGoalData = (data) => {
+      const line = data[0];
+      const items = data[1].split(';;;');
+      const table = document.querySelector('table');
 
-    const tableHTML = items.map(item => `<tr><td>${item}</td></tr>`).join('');
-    table.innerHTML = `<th>${line}</th>${tableHTML}`;
+      const tableHTML = items.map(item => `<tr><td>${item}</td></tr>`).join('');
+      table.innerHTML = `<th>${line}</th>${tableHTML}`;
 
+      if (settings.boardTheme === "modern") {
+        table.classList.add("modern");
+      }
+    }
 
-    if (settings.boardTheme === "modern") {
-      table.classList.add("modern");
+    const setFontSize = (fontSizeSetting) => {
+      let fontSize = fontSizeSetting;
+      if (isJP) {
+        fontSize = (parseInt(fontSizeSetting) - 2).toString
+      }
+      fontSize = fontSize + 'px';
+      document.body.style.fontSize = fontSize;
+    }
+
+    const setIconSize = (iconSizeSetting) => {
+      const iconSize = iconSizeSetting + 'px';
+
+      trackerTokens = document.getElementsByClassName('token-icon');
+      tokenBoxes = document.getElementsByClassName('token-label');
+      trackerCounters = document.getElementsByClassName('counter-icon');
+
+      window.addEventListener("load", function (event) {
+        for (let i = 0; i < trackerTokens.length; i++) {
+          trackerTokens.item(i).style.height = iconSize;
+        }
+        for (let i = 0; i < tokenBoxes.length; i++) {
+          tokenBoxes.item(i).style.height = iconSize;
+        }
+        for (let i = 0; i < trackerCounters.length; i++) {
+          trackerCounters.item(i).style.height = iconSize;
+        }
+      });
+    }
+
+    const addSquareColorEvents = () => {
+      document.querySelectorAll('td').forEach(el => {
+        el.addEventListener('click', () => {
+          if (el.classList.contains('greensquare')) {
+            el.classList.add('redsquare');
+            el.classList.remove('greensquare');
+          } else if (el.classList.contains('redsquare')) {
+            el.classList.remove('redsquare');
+          } else {
+            el.classList.add('greensquare');
+          }
+        });
+      });
     }
 
     const searchParams = new URLSearchParams(window.location.search);
-    const langJP = searchParams.get('lang') || name
+    const isJP = (searchParams.get('lang') || name) === 'jp'
 
-    document.querySelectorAll('td').forEach(el => {
-      if (langJP === 'jp') {
-        el.classList += 'jp'
-      }
-      el.addEventListener('click', () => {
-        if (el.classList.contains('greensquare')) {
-          el.classList.add('redsquare');
-          el.classList.remove('greensquare');
-        } else if (el.classList.contains('redsquare')) {
-          el.classList.remove('redsquare');
-        } else {
-          el.classList.add('greensquare');
-        }
-      })
-    });
+    const data = decodeURIComponent(document.location.hash).substring(1).split('=');
+    insertGoalData(data);
 
+    setFontSize(settings.rowPopoutFontSize);
+    setIconSize(settings.rowPopoutIconSize);
+    addSquareColorEvents();
 
   </script>
   <script defer src="./lib/item-tracker/tracker-loader.js"></script>
