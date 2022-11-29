@@ -9,70 +9,91 @@ function loadScript(src) {
     })
 }
 
-loadScript(`../v10.1/goal-list.js`)
+loadScript(`../v10.2/goal-list.js`)
     .then(() => loadScript(`../lib/item-tracker/tracker-data.js`))
+    .then(() => loadScript(`../lib/item-tracker/tracker-default.js`))
     .then(() => {
-        test_if_en_and_jp_tracker_match_on_tracker_data()
+        testIfEnAndJpTrackerMatchOnTrackerData()
+        testIfTrackerDefaultNamesExistInGoalList()
     })
 
-function test_if_en_and_jp_tracker_match_on_tracker_data() {
-    const getGoals = () => {
-        const goals = [];
-        for (let i = 1; i <= 25; i++) {
-            goals.push(...bingoList.normal[i]);
-        }
-        goals.sort((a, b) => a.name < b.name ? -1 : 1);
-        return goals
-    }
-
+function testIfEnAndJpTrackerMatchOnTrackerData() {
     const goals = getGoals()
-    var mismatches = 0;
+    let mismatches = 0;
 
-    for (var g = 0; g < goals.length; g++) {
-        goal = goals[g]
+    for (const goal of goals) {
 
-        for (let i = 0; i < window.trackerData.length; i++) {
-            var matchingData = window.trackerData[i];
-            var match = matchingData.regex.exec(goal.name);
-            if (match !== null) {
-                matchRegex = matchingData.regex;
+        let goalTrackerData = null;
+        let goalMatch = null;
+        for (const trackerData of window.trackerData) {
+            goalMatch = trackerData.regex.exec(goal.name);
+            if (goalMatch !== null) {
+                goalTrackerData = trackerData
                 break;
-            } else {
-                matchRegex = 'none';
             }
         }
 
-        for (let i = 0; i < window.trackerData.length; i++) {
-            var matchingDataJP = window.trackerData[i];
-            var matchJP = matchingDataJP.regexJP.exec(goal.jp);
-            if (matchJP !== null) {
-                matchRegexJP = matchingDataJP.regex;
+        let goalTrackerDataJP = null;
+        let goalMatchJP = null;
+        for (const trackerData of window.trackerData) {
+            goalMatchJP = trackerData.regexJP.exec(goal.jp);
+            if (goalMatchJP !== null) {
+                goalTrackerDataJP = trackerData;
                 break;
-            } else {
-                matchRegexJP = 'none';
             }
         }
 
-        matches = matchingData.regexJP.exec(goal);
-
-        if (matchRegexJP !== matchRegex) {
-            console.log(`mismatch tracker-data: english: ${matchRegex} - jp: ${matchRegexJP},    for goal: ${goal.name}`);
+        if (goalTrackerDataJP?.regex !== goalTrackerData?.regex) {
+            console.log(`mismatch tracker-data: english: ${goalTrackerData?.regex} - jp: ${goalTrackerDataJP?.regex},    for goal: ${goal.name}`);
             mismatches++;
         }
 
-        if (matchRegex === 'none' || matchRegexJP === 'none') {
+        if (goalTrackerData === null || goalTrackerDataJP === null) {
             continue;
         }
 
-        if ('counter' in matchingData.options && !('denominator' in matchingData.options.counter) && (+match[1] !== +matchJP[1])) {
-            console.log(`mismatch denominator: english: ${+match[1]} - jp: ${+matchJP[1]},      for goal: ${goal.name}`)
+        if ('counter' in goalTrackerData.options && !('denominator' in goalTrackerData.options.counter) && (+goalMatch[1] !== +goalMatchJP[1])) {
+            console.log(`mismatch denominator: english: ${+goalMatch[1]} - jp: ${+goalMatchJP[1]},      for goal: ${goal.name}`)
             mismatches++;
-            console.log(matchingDataJP)
         }
     }
-    if (mismatches == 0) {
+
+    if (mismatches === 0) {
         console.log("Passed test: no mismatches between EN and JP tracker data found!")
     } else {
         console.log(`Failed test: found ${mismatches} mismatches between EN and JP tracker data.`)
     }
+}
+
+
+function testIfTrackerDefaultNamesExistInGoalList() {
+    let missingCount = 0;
+
+    const goals = getGoals();
+    const goalNames = goals.map(goal => goal.name);
+    const goalNamesJp = goals.map(goal => goal.jp);
+
+    const trackerGoalNames = Object.keys(window.trackerDefaults);
+
+    for (const trackerGoalName of trackerGoalNames) {
+        if (!goalNames.includes(trackerGoalName) && !goalNamesJp.includes(trackerGoalName)) {
+            missingCount++;
+            console.log(`Tracker goal name '${trackerGoalName}' missing in goal list, goal was possibly removed or renamed`)
+        }
+    }
+
+    if (missingCount === 0) {
+        console.log("Passed test: all tracker goal names in tracker-default.js also exist in the goal list!")
+    } else {
+        console.log(`Failed test: found ${missingCount} tracker goal names that do not exist in the goal list.`)
+    }
+}
+
+function getGoals() {
+    const goals = [];
+    for (let i = 1; i <= 25; i++) {
+        goals.push(...bingoList.normal[i]);
+    }
+    goals.sort((a, b) => a.name < b.name ? -1 : 1);
+    return goals;
 }
