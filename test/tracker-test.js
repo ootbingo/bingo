@@ -17,6 +17,7 @@ loadScript(`../versions/v10/v10.3/goal-list.js`)
       testIfTrackerDefaultNamesExistInGoalList()
     })
 
+
 function testIfEnAndJpTrackerMatchOnTrackerData() {
   const goals = getGoals()
   let mismatches = 0;
