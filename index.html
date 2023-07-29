@@ -32,7 +32,7 @@
         #go-back {
             width: 75px;
         }
-        
+
     </style>
 </head>
 
@@ -62,7 +62,7 @@
     const addLatestVersionButton = (availableVersions) => {
         const versionDiv = document.getElementById('latest-version')
         const version = availableVersions['default_version']
-        versionDiv.innerHTML += `<a class="button" href='v${version}/bingo.html'>${version}</a>`
+        versionDiv.innerHTML += `<a class="button" href='bingo.html?version=${version}'>${version}</a>`
     }
 
     const addVersionButtons = (availableVersions) => {
@@ -72,7 +72,7 @@
             const groupDiv = document.createElement('div');
             groupDiv.className = 'version-group'
             groupedVersions[group].forEach(version => {
-                groupDiv.innerHTML += `<a class="button" href='v${version}/bingo.html'>${version}</a>`
+                groupDiv.innerHTML += `<a class="button" href='bingo.html?version=${version}'>${version}</a>`
             })
             versionsDiv.append(groupDiv)
         }
