@@ -9,7 +9,7 @@ function loadScript(src) {
   })
 }
 
-loadScript(`../versions/v10/v10.3/goal-list.js`)
+loadScript(`../versions/v10/v10.3.1/goal-list.js`)
     .then(() => loadScript(`../lib/item-tracker/tracker-data.js`))
     .then(() => loadScript(`../lib/item-tracker/tracker-default.js`))
     .then(() => {
