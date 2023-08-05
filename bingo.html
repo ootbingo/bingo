@@ -139,6 +139,7 @@
   </main>
 </div>
 <script src="lib/seedrandom-min.js" type="text/javascript"></script>
+<script src="lib/helpers.js" type="text/javascript"></script>
 <script>
 
   const version = new URLSearchParams(window.location.search).get("version");
@@ -146,26 +147,13 @@
     window.location.replace('latest-version.html');
   }
 
-  const addScript = async (filename) => new Promise((resolve, reject) => {
-    const script = document.createElement("script");
-    script.src = filename;
-    script.type = "text/javascript";
-    script.onload = resolve;
-    script.onerror = reject;
-    document.body.appendChild(script);
-  });
-
   const loadBingoScripts = async () => {
-
-    const allVersions = await fetch("api/v1/available_versions.json")
-        .then(r => r.json());
-
-    const path = allVersions.versions[version];
+    const path = await getVersionPath(version);
     if (path) {
-      await addScript(path + "/goal-list.js");
-      await addScript(path + "/generator.js");
-      await addScript("lib/settings/default-settings.js");
-      await addScript("lib/bingosetup.js");
+      await loadScript(path + "/goal-list.js");
+      await loadScript(path + "/generator.js");
+      await loadScript("lib/settings/default-settings.js");
+      await loadScript("lib/bingosetup.js");
     }
   }
 

@@ -72,25 +72,15 @@
 </div>
 <script src="lib/seedrandom-min.js" type="text/javascript"></script>
 <script src="lib/settings/default-settings.js" type="text/javascript"></script>
+<script src="lib/helpers.js" type="text/javascript"></script>
 <script type='text/javascript'>
   const popoutParams = new URLSearchParams(window.location.search);
   const popoutOpts = {
     seed: popoutParams.get('seed') || Math.ceil(999999 * Math.random()).toString(),
     mode: popoutParams.get('mode') || 'normal',
     lang: popoutParams.get('lang') || 'name',
-    version: popoutParams.get('version') || 'v10.3.1' /*todo: latest version as default*/
+    version: popoutParams.get('version')
   };
-
-  const loadScript = src => {
-    return new Promise((resolve, reject) => {
-      const script = document.createElement('script')
-      script.type = 'text/javascript'
-      script.onload = resolve
-      script.onerror = reject
-      script.src = src
-      document.head.append(script)
-    })
-  }
 
   const applyFontSize = () => {
     let fontSize = parseInt(settings.boardPopoutFontSize)
@@ -122,13 +112,11 @@
     });
   }
 
-  const versionNumber = popoutOpts.version.replace(/^v/, "");
 
   const loadBoard = async () => {
+    const versionNumber = (popoutOpts.version || await getLatestVersionNumber()).replace(/^v/, "");
 
-    const path = await fetch("api/v1/available_versions.json")
-        .then(r => r.json())
-        .then(allVersions => allVersions.versions[versionNumber]);
+    const path = await getVersionPath(versionNumber);
 
     await loadScript(`${path}/goal-list.js`)
         .then(() => loadScript(`${path}/generator.js`))

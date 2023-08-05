@@ -38,7 +38,6 @@
   </style>
 </head>
 
-
 <body>
 <h1>Bingo Versions</h1>
 <h2>Latest version</h2>
@@ -46,22 +45,9 @@
 <h2>All versions</h2>
 <div id="versions"></div>
 </body>
-<script>
-  /*'api/v1/available_versions.json'*/
-  const getVersions = () => {
-    fetch('api/v1/available_versions.json')
-        .then(response => {
-          return response.json();
-        })
-        .then(json => {
-          addLatestVersionButton(json);
-          addVersionButtons(json);
-        })
-        .catch(error => {
-          console.log(error);
-        })
-  }
 
+<script src="lib/helpers.js" type="text/javascript"></script>
+<script>
   const addLatestVersionButton = (availableVersions) => {
     const versionDiv = document.getElementById('latest-version')
     const version = availableVersions['default_version']
@@ -93,8 +79,13 @@
     return new_versions
   }
 
-  getVersions()
+  const getVersions = async () => {
+    const versions = await getAvailableVersions();
+    addLatestVersionButton(versions);
+    addVersionButtons(versions);
+  }
 
+  getVersions()
 
 </script>
 
