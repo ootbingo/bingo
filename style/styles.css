@@ -105,6 +105,7 @@ ul {
   margin-top: 2px;
   margin-bottom: 2px;
 }
+
 ul li {
   list-style-type: square;
   list-style-position: inside;
@@ -139,6 +140,10 @@ td {
   text-align: right;
 }
 
+#bingoPage #newcards {
+  height: 28px;
+}
+
 #bingoPage .newcard,
 #bingoPage .option {
   background-color: #424242;
@@ -162,7 +167,7 @@ td {
 }
 
 #bingoPage .newcard:hover,
-#bingoPage .option:hover  {
+#bingoPage .option:hover {
   background-color: #3c70df;
   background-image: linear-gradient(to bottom, #3c70df, #235cd4);
   border-width: 1px 0px 1px 1px;
@@ -183,7 +188,7 @@ td {
 }
 
 #bingoPage .newcard:last-child,
-#bingoPage .option:last-child  {
+#bingoPage .option:last-child {
   margin-right: 0;
 }
 
