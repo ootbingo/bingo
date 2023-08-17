@@ -150,7 +150,11 @@
 
   const saveButton = document.getElementById('save-button')
   saveButton.addEventListener('click', () => {
-    history.back()
+    let prevUrl = document.referrer;
+    if (!prevUrl.includes('/bingo/bingo.html')) {
+      prevUrl = '/bingo/bingo.html'
+    }
+    window.location.href = prevUrl;
   })
 
 </script>
