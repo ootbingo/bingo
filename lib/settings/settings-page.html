@@ -2,148 +2,156 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="../../style/settings-styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet">
-    <link rel="shortcut icon" type="image/x-icon" href="../../img/favicon.ico">
-    <title>Ocarina of Time Bingo - Settings</title>
+  <link href="../../style/settings-styles.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet">
+  <link href="../../img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <title>Ocarina of Time Bingo - Settings</title>
 </head>
 
 <body>
 
-    <h1>Settings</h1>
+<h1>Settings</h1>
 
-    <form>
+<form>
 
-        <h2>General</h2>
+  <h2>General</h2>
 
-        <label for="language" class="setting">Language:
-            <select id="language" width=800px>
-                <option value="en">English</option>
-                <option value="jp">Japanese</option>
-            </select>
-        </label>
+  <label class="setting" for="language">Language:
+    <select id="language" width=800px>
+      <option value="en">English</option>
+      <option value="jp">Japanese</option>
+    </select>
+  </label>
 
-        <label for="boardTheme" class="setting">Layout theme:
-            <select id="boardTheme">
-                <option value="classic">Classic</option>
-                <option value="modern">Modern</option>
-            </select>
-        </label>
+  <label class="setting" for="boardTheme">Layout theme:
+    <select id="boardTheme">
+      <option value="classic">Classic</option>
+      <option value="modern">Modern</option>
+    </select>
+  </label>
 
-        <h2>Board popouts</h2>
+  <h2>Board popouts</h2>
 
-        <label for="boardPopoutWidth" class="setting">Width:
-            <input id="boardPopoutWidth" class="num-input" type="number" min=500 max=1000 maxlength=4
-                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
-        </label>
+  <label class="setting" for="boardPopoutWidth">Width:
+    <input class="num-input" id="boardPopoutWidth" max=1000 maxlength=4 min=500
+           oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+           type="number">
+  </label>
 
-        <label for=boardPopoutHeight" class="setting">Height:
-            <input id="boardPopoutHeight" class="num-input" type="number" min=450 max=1500 maxlength=4
-                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
-        </label>
+  <label class="setting" for="boardPopoutHeight">Height:
+    <input class="num-input" id="boardPopoutHeight" max=1500 maxlength=4 min=450
+           oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+           type="number">
+  </label>
 
-        <label for=boardPopoutFontSize" class="setting">Font size:
-            <input id="boardPopoutFontSize" class="num-input" type="number" min=8 max=25 maxlength=2
-                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
-        </label>
+  <label class="setting" for="boardPopoutFontSize">Font size:
+    <input class="num-input" id="boardPopoutFontSize" max=25 maxlength=2 min=8
+           oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+           type="number">
+  </label>
 
-        <label for="boardBlackoutTracker" class="setting">Tracker for blackouts:
-            <select id="boardBlackoutTracker">
-                <option value="enabled">Enabled</option>
-                <option value="disabled">Disabled</option>
-            </select>
-        </label>
+  <label class="setting" for="boardBlackoutTracker">Tracker for blackouts:
+    <select id="boardBlackoutTracker">
+      <option value="enabled">Enabled</option>
+      <option value="disabled">Disabled</option>
+    </select>
+  </label>
 
-        <label for=boardPopoutIconSize" class="setting">Tracker icon size:
-            <input id="boardPopoutIconSize" class="num-input" type="number" min=12 max=28 maxlength=2
-                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
-        </label>
-        
+  <label class="setting" for="boardPopoutIconSize">Tracker icon size:
+    <input class="num-input" id="boardPopoutIconSize" max=28 maxlength=2 min=12
+           oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+           type="number">
+  </label>
 
-        <h2>Row popouts</h2>
 
-        <label for="rowPopoutWidth" class="setting">Width:
-            <input id="rowPopoutWidth" class="num-input" type="number" min=200 max=1000 maxlength=4
-                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
-        </label>
+  <h2>Row popouts</h2>
 
-        <label for=rowPopoutHeight" class="setting">Height:
-            <input id="rowPopoutHeight" class="num-input" type="number" min=320 max=1500 maxlength=4
-                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
-        </label>
+  <label class="setting" for="rowPopoutWidth">Width:
+    <input class="num-input" id="rowPopoutWidth" max=1000 maxlength=4 min=200
+           oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+           type="number">
+  </label>
 
-        <label for=rowPopoutFontSize" class="setting">Font size:
-            <input id="rowPopoutFontSize" class="num-input" type="number" min=12 max=50 maxlength=2
-                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
-        </label>
+  <label class="setting" for="rowPopoutHeight">Height:
+    <input class="num-input" id="rowPopoutHeight" max=1500 maxlength=4 min=320
+           oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+           type="number">
+  </label>
 
-        <label for=rowPopoutIconSize" class="setting">Tracker icon size:
-            <input id="rowPopoutIconSize" class="num-input" type="number" min=20 max=60 maxlength=2
-                oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
-        </label>
-    </form>
+  <label class="setting" for="rowPopoutFontSize">Font size:
+    <input class="num-input" id="rowPopoutFontSize" max=50 maxlength=2 min=12
+           oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+           type="number">
+  </label>
 
-    <div id="save-button" class="button">Save and go back</div>
-    <div id="reset-button" class="button">Reset all to default</div>
+  <label class="setting" for="rowPopoutIconSize">Tracker icon size:
+    <input class="num-input" id="rowPopoutIconSize" max=60 maxlength=2 min=20
+           oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+           type="number">
+  </label>
+</form>
+
+<div class="button" id="save-button">Save and go back</div>
+<div class="button" id="reset-button">Reset all to default</div>
 
 </body>
 
 <script src="./default-settings.js" type="text/javascript"></script>
 <script>
 
-    const storageItem = localStorage.getItem('bingo-settings');
-    let storageData = storageItem ? JSON.parse(storageItem) : {};
-    storageData = { ...defaultSettings, ...storageData }
+  const storageItem = localStorage.getItem('bingo-settings');
+  let storageData = storageItem ? JSON.parse(storageItem) : {};
+  storageData = {...defaultSettings, ...storageData}
 
-    function checkNumConstraints(obj) {
-        if (obj.min && parseInt(obj.value) < parseInt(obj.min)) {
-            obj.value = obj.min
-        }
-        if (obj.max && parseInt(obj.value) > parseInt(obj.max)) {
-            obj.value = obj.max
-        }
+  function checkNumConstraints(obj) {
+    if (obj.min && parseInt(obj.value) < parseInt(obj.min)) {
+      obj.value = obj.min
     }
-
-    function resetAllValues() {
-        for (setting in defaultSettings) {
-            const settingStr = setting
-            const settingObject = document.getElementById(settingStr);
-
-            storageData[settingStr] = defaultSettings[settingStr];
-            localStorage.setItem('bingo-settings', JSON.stringify(storageData));
-            settingObject.value = storageData[settingStr]
-        }
+    if (obj.max && parseInt(obj.value) > parseInt(obj.max)) {
+      obj.value = obj.max
     }
+  }
 
-    function addSettingEventListeners() {
-        for (setting in defaultSettings) {
-            const settingStr = setting
-            const settingObject = document.getElementById(settingStr);
-            settingObject.addEventListener('change', () => {
-                if (settingObject.type === 'number') {
-                    checkNumConstraints(settingObject)
-                }
-                storageData[settingStr] = settingObject.value;
-                localStorage.setItem('bingo-settings', JSON.stringify(storageData));
-            });
-            settingObject.value = storageData[settingStr]
-        }
+  function resetAllValues() {
+    for (setting in defaultSettings) {
+      const settingStr = setting
+      const settingObject = document.getElementById(settingStr);
+
+      storageData[settingStr] = defaultSettings[settingStr];
+      localStorage.setItem('bingo-settings', JSON.stringify(storageData));
+      settingObject.value = storageData[settingStr]
     }
+  }
 
-    addSettingEventListeners();
-
-    const resetButton = document.getElementById('reset-button')
-    resetButton.addEventListener('click', () => {
-        const resetValues = confirm("Are you sure you want to reset all the fields to the default value?");
-        if (resetValues) {
-            resetAllValues()
+  function addSettingEventListeners() {
+    for (setting in defaultSettings) {
+      const settingStr = setting
+      const settingObject = document.getElementById(settingStr);
+      settingObject.addEventListener('change', () => {
+        if (settingObject.type === 'number') {
+          checkNumConstraints(settingObject)
         }
-    })
+        storageData[settingStr] = settingObject.value;
+        localStorage.setItem('bingo-settings', JSON.stringify(storageData));
+      });
+      settingObject.value = storageData[settingStr]
+    }
+  }
 
-    const saveButton = document.getElementById('save-button')
-    saveButton.addEventListener('click', () => {
-        history.back()
-    })
+  addSettingEventListeners();
+
+  const resetButton = document.getElementById('reset-button')
+  resetButton.addEventListener('click', () => {
+    const resetValues = confirm("Are you sure you want to reset all the fields to the default value?");
+    if (resetValues) {
+      resetAllValues()
+    }
+  })
+
+  const saveButton = document.getElementById('save-button')
+  saveButton.addEventListener('click', () => {
+    history.back()
+  })
 
 </script>
 
