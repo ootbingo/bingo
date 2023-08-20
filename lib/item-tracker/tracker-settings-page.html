@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
   <link href="../../style/settings-styles.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet">
   <link href="../../img/favicon.ico" rel="shortcut icon" type="image/x-icon">
@@ -105,13 +106,13 @@
 <div class="button" id="reset-button">Reset all goal settings to default</div>
 <div id="tracker-settings"></div>
 </body>
-<script src="../../versions/v10/v10.3.1/goal-list.js"></script>
 <script src="./tracker-data.js"></script>
 <script src="./tracker-default.js"></script>
 <script src="../settings/default-settings.js" type="text/javascript"></script>
+<script src="../helpers.js" type="text/javascript"></script>
 <script>
-  
-  const getGoals = () => {
+
+  const getGoals = (bingoList) => {
     const goals = [];
     for (let i = 1; i <= 25; i++) {
       goals.push(...bingoList.normal[i]);
@@ -120,12 +121,21 @@
     return goals
   }
 
-  const addCheckboxEventListener = (checkbox, setting) => {
+  const addCheckboxEventListener = (checkbox, setting, storageData) => {
     checkbox.addEventListener('change', () => {
       storageData[setting] = checkbox.checked;
       localStorage.setItem('tracker', JSON.stringify(storageData));
     });
     checkbox.checked = storageData[setting];
+  }
+
+  const addResetEventListener = (resetButton, storageData) => {
+    resetButton.addEventListener('click', () => {
+      const resetValues = confirm("Are you sure you want to reset all the tracker goal settings (for both English and Japanese goals) to the default value?");
+      if (resetValues) {
+        resetAllValues(storageData)
+      }
+    })
   }
 
   const retrieveCaseInsensitive = (obj, target) => {
@@ -152,7 +162,7 @@
         <div class="mode-option">${value}</div>
       </label>`;
 
-  const addGoalSetting = (goalTrackerData, goal, div) => {
+  const addGoalSetting = (goalTrackerData, goal, div, storageData) => {
     const optionsDiv = document.createElement('div');
     optionsDiv.classList.add('goal');
     optionsDiv.innerHTML = `
@@ -172,55 +182,55 @@
     }));
   }
 
-
-  const goals = getGoals()
-
-  const storageItem = localStorage.getItem('tracker');
-  const storageData = storageItem ? JSON.parse(storageItem) : {
-    enabled: true,
-    total: false,
-    settings: {},
-  };
-
-  addCheckboxEventListener(document.getElementById('tracker-enabled'), 'enabled')
-  addCheckboxEventListener(document.getElementById('total-amount'), 'total')
-
-  const maybeSettings = localStorage.getItem('bingo-settings');
-  let settings = maybeSettings ? JSON.parse(maybeSettings) : {}
-  settings = {...defaultSettings, ...settings}
-  const lang = settings.language || 'name';
-
-  const settingsDiv = document.getElementById('tracker-settings');
-  goals.forEach(goal => {
-    let goalTrackerData;
-    let goalName;
-    if (lang === 'jp') {
-      goalName = goal.jp;
-      goalTrackerData = window.trackerData.find(({regexJP}) => goalName.match(regexJP));
-    } else {
-      goalName = goal.name;
-      goalTrackerData = window.trackerData.find(({regex}) => goalName.match(regex));
-    }
-    if (!goalTrackerData) {
-      return;
-    }
-    addGoalSetting(goalTrackerData, goalName, settingsDiv)
-  });
-
-  const resetAllValues = () => {
+  const resetAllValues = (storageData) => {
     storageData.settings = {};
     localStorage.setItem('tracker', JSON.stringify(storageData));
     location.reload();
   }
 
-  const resetButton = document.getElementById('reset-button')
-  resetButton.addEventListener('click', () => {
-    const resetValues = confirm("Are you sure you want to reset all the tracker goal settings (for both English and Japanese goals) to the default value?");
-    if (resetValues) {
-      resetAllValues()
-    }
-  })
+  const setupSettingsPage = async () => {
+    const storageItem = localStorage.getItem('tracker');
+    const storageData = storageItem ? JSON.parse(storageItem) : {
+      enabled: true,
+      total: false,
+      settings: {},
+    };
 
+    addCheckboxEventListener(document.getElementById('tracker-enabled'), 'enabled', storageData)
+    addCheckboxEventListener(document.getElementById('total-amount'), 'total', storageData)
+    addResetEventListener(document.getElementById('reset-button'), storageData)
+
+    const maybeSettings = localStorage.getItem('bingo-settings');
+    let settings = maybeSettings ? JSON.parse(maybeSettings) : {}
+    settings = {...defaultSettings, ...settings}
+    const lang = settings.language || 'name';
+
+    const settingsDiv = document.getElementById('tracker-settings');
+
+    const path = await getLatestVersionPath();
+
+    await loadScript(`../../${path}/goal-list.js`);
+
+    const goals = getGoals(bingoList)
+
+    goals.forEach(goal => {
+      let goalTrackerData;
+      let goalName;
+      if (lang === 'jp') {
+        goalName = goal.jp;
+        goalTrackerData = window.trackerData.find(({regexJP}) => goalName.match(regexJP));
+      } else {
+        goalName = goal.name;
+        goalTrackerData = window.trackerData.find(({regex}) => goalName.match(regex));
+      }
+      if (!goalTrackerData) {
+        return;
+      }
+      addGoalSetting(goalTrackerData, goalName, settingsDiv, storageData)
+    });
+  }
+
+  setupSettingsPage();
 
 </script>
 

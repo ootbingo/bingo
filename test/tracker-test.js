@@ -1,18 +1,6 @@
-function loadScript(src) {
-  return new Promise((resolve, reject) => {
-    const script = document.createElement('script')
-    script.type = 'text/javascript'
-    script.onload = resolve
-    script.onerror = reject
-    script.src = src
-    document.head.append(script)
-  })
-}
-
-loadScript('../lib/helpers.js')
-    .then(async () => loadScript(`../${await getLatestVersionPath()}/goal-list.js`))
-    .then(() => loadScript(`../lib/item-tracker/tracker-data.js`))
+loadScript(`../lib/item-tracker/tracker-data.js`)
     .then(() => loadScript(`../lib/item-tracker/tracker-default.js`))
+    .then(async () => loadScript(`../${await getLatestVersionPath()}/goal-list.js`))
     .then(() => {
       testIfEnAndJpTrackerMatchOnTrackerData()
       testIfTrackerDefaultNamesExistInGoalList()
