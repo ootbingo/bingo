@@ -20,7 +20,8 @@
     "10.1": "v10.1",
     "10.2": "v10.2",
     "10.3": "versions/v10/v10.3",
-    "10.3.1": "versions/v10/v10.3.1"
+    "10.3.1": "versions/v10/v10.3.1",
+    "10.3.2": "versions/v10/v10.3.2"
   },
-  "default_version": "10.3.1"
+  "default_version": "10.3.2"
 }
