@@ -26,6 +26,10 @@
             <a class="option" href=".">Other Versions</a>
           </div>
           <div style="clear:both;"></div>
+          <div style="margin-top:16px">
+            <span class="option" id="filename">File Name</span>
+          </div>
+          <div style="clear:both;"></div>
           <h2>About</h2>
 
           <p>This is a "Bingo" board for Ocarina of Time races.</p>
@@ -158,6 +162,19 @@
   }
 
   loadBingoScripts();
+</script>
+<script>
+
+  function getRandomLetter() {
+    return String.fromCharCode(Math.floor( (( Math.random() * 100 ) % 26) + 65));
+  }
+
+  const filename = document.querySelector("#filename");
+
+  filename.addEventListener("click", function() {
+    filename.textContent = getRandomLetter().concat(getRandomLetter()) 
+  })
+
 </script>
 </body>
 
