@@ -122,7 +122,7 @@
         .then(() => loadScript(`${path}/generator.js`))
         .then(() => loadScript(`./lib/bingosetup.js`))
         .then(() => {
-          if (settings.boardBlackoutTracker === 'enabled' && popoutOpts.mode === 'blackout') {
+          if (settings.boardBlackoutTracker && popoutOpts.mode === 'blackout') {
             loadScript("./lib/item-tracker/tracker-loader.js");
           }
         })

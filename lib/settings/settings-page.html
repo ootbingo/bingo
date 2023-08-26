@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
   <link href="../../style/settings-styles.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet">
   <link href="../../img/favicon.ico" rel="shortcut icon" type="image/x-icon">
@@ -16,48 +17,49 @@
 
   <h2>General</h2>
 
-  <label class="setting" for="language">Language:
-    <select id="language" width=800px>
+  <label class="setting" for="language">Language
+    <select class="dropdown" id="language" width=800px>
       <option value="en">English</option>
       <option value="jp">Japanese</option>
     </select>
   </label>
 
-  <label class="setting" for="boardTheme">Layout theme:
-    <select id="boardTheme">
+  <label class="setting" for="boardTheme">Layout theme
+    <select class="dropdown" id="boardTheme">
       <option value="classic">Classic</option>
       <option value="modern">Modern</option>
     </select>
   </label>
 
+  <label class="setting" for="fileName">Display file name
+    <input class="checkbox" id="fileName" type="checkbox">
+  </label>
+
   <h2>Board popouts</h2>
 
-  <label class="setting" for="boardPopoutWidth">Width:
+  <label class="setting" for="boardPopoutWidth">Width
     <input class="num-input" id="boardPopoutWidth" max=1000 maxlength=4 min=500
            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
            type="number">
   </label>
 
-  <label class="setting" for="boardPopoutHeight">Height:
+  <label class="setting" for="boardPopoutHeight">Height
     <input class="num-input" id="boardPopoutHeight" max=1500 maxlength=4 min=450
            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
            type="number">
   </label>
 
-  <label class="setting" for="boardPopoutFontSize">Font size:
+  <label class="setting" for="boardPopoutFontSize">Font size
     <input class="num-input" id="boardPopoutFontSize" max=25 maxlength=2 min=8
            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
            type="number">
   </label>
 
-  <label class="setting" for="boardBlackoutTracker">Tracker for blackouts:
-    <select id="boardBlackoutTracker">
-      <option value="enabled">Enabled</option>
-      <option value="disabled">Disabled</option>
-    </select>
+  <label class="setting" for="boardBlackoutTracker">Tracker for blackouts
+    <input class="checkbox" id="boardBlackoutTracker" type="checkbox">
   </label>
 
-  <label class="setting" for="boardPopoutIconSize">Tracker icon size:
+  <label class="setting" for="boardPopoutIconSize">Tracker icon size
     <input class="num-input" id="boardPopoutIconSize" max=28 maxlength=2 min=12
            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
            type="number">
@@ -66,25 +68,25 @@
 
   <h2>Row popouts</h2>
 
-  <label class="setting" for="rowPopoutWidth">Width:
+  <label class="setting" for="rowPopoutWidth">Width
     <input class="num-input" id="rowPopoutWidth" max=1000 maxlength=4 min=200
            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
            type="number">
   </label>
 
-  <label class="setting" for="rowPopoutHeight">Height:
+  <label class="setting" for="rowPopoutHeight">Height
     <input class="num-input" id="rowPopoutHeight" max=1500 maxlength=4 min=320
            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
            type="number">
   </label>
 
-  <label class="setting" for="rowPopoutFontSize">Font size:
+  <label class="setting" for="rowPopoutFontSize">Font size
     <input class="num-input" id="rowPopoutFontSize" max=50 maxlength=2 min=12
            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
            type="number">
   </label>
 
-  <label class="setting" for="rowPopoutIconSize">Tracker icon size:
+  <label class="setting" for="rowPopoutIconSize">Tracker icon size
     <input class="num-input" id="rowPopoutIconSize" max=60 maxlength=2 min=20
            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
            type="number">
@@ -122,7 +124,11 @@
 
       storageData[settingStr] = defaultSettings[settingStr];
       localStorage.setItem('bingo-settings', JSON.stringify(storageData));
-      settingObject.value = storageData[settingStr]
+      if (settingObject.type === 'checkbox') {
+        settingObject.checked = storageData[settingStr]
+      } else {
+        settingObject.value = storageData[settingStr]
+      }
     }
   }
 
@@ -134,10 +140,15 @@
         if (settingObject.type === 'number') {
           checkNumConstraints(settingObject)
         }
-        storageData[settingStr] = settingObject.value;
+        storageData[settingStr] = settingObject.type === 'checkbox' ? settingObject.checked : settingObject.value;
         localStorage.setItem('bingo-settings', JSON.stringify(storageData));
       });
-      settingObject.value = storageData[settingStr]
+      if (settingObject.type === 'checkbox') {
+        settingObject.checked = storageData[settingStr]
+      } else {
+        settingObject.value = storageData[settingStr]
+
+      }
     }
   }
 
