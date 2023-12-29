@@ -11,6 +11,8 @@ function testIfEnAndJpTrackerMatchOnTrackerData() {
   const goals = getGoals()
   let mismatches = 0;
 
+  console.log(`Test results tracker of version ${bingoList.info.version} (normal):`)
+
   for (const goal of goals) {
 
     let goalTrackerData = null;
