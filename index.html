@@ -34,16 +34,15 @@
     #go-back {
       width: 75px;
     }
-
   </style>
 </head>
 
 <body>
-<h1>Bingo Versions</h1>
-<h2>Latest version</h2>
-<div class="version-group" id="latest-version"></div>
-<h2>All versions</h2>
-<div id="versions"></div>
+  <h1>Bingo Versions</h1>
+  <h2>Latest version</h2>
+  <div class="version-group" id="latest-version"></div>
+  <h2>All versions</h2>
+  <div id="versions"></div>
 </body>
 
 <script src="lib/helpers.js" type="text/javascript"></script>
@@ -61,7 +60,12 @@
       const groupDiv = document.createElement('div');
       groupDiv.className = 'version-group'
       groupedVersions[group].forEach(version => {
-        groupDiv.innerHTML += `<a class="button" href='bingo.html?version=${version}'>${version}</a>`
+        if (version == "1" || version == "1.1") {
+          groupDiv.innerHTML += `<a class="button" href='v${version}/bingo.html'>${version}</a>`
+        }
+        else {
+          groupDiv.innerHTML += `<a class="button" href='bingo.html?version=${version}'>${version}</a>`
+        }
       })
       versionsDiv.append(groupDiv)
     }
