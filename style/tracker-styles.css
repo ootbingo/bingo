@@ -1,0 +1,120 @@
+.tokens label {
+  cursor: pointer;
+  display: flex;
+  aspect-ratio: 1;
+  height: 100%;
+  background-size: cover;
+  filter: grayscale(1);
+  opacity: 0.6;
+}
+
+.tokens label.hidden {
+  display: flex;
+}
+
+.tokens label:has(input:checked) {
+  filter: initial;
+  opacity: 1;
+}
+
+.tokens {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  max-height: var(--tracker-token-size);
+}
+
+.tokens:first-of-type {
+  margin-top: 0.25lh;
+}
+
+.tokens input {
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.tokens img {
+  filter: grayscale(1);
+  opacity: 0.6;
+  height: var(--tracker-token-size);
+  transition: 0.3s ease;
+}
+
+.tokens input:checked ~ img {
+  filter: initial;
+  opacity: 1;
+}
+
+.bingo-board .tokens,
+.bingo-board .counter {
+  display: none;
+}
+
+.board-tracker-show-for-blackout-mode .bingo-board.blackout .counter,
+.board-tracker-show-for-blackout-mode .bingo-board.blackout .tokens,
+.board-tracker-show-for-normal-mode .bingo-board.short .counter,
+.board-tracker-show-for-normal-mode .bingo-board.short .tokens,
+.board-tracker-show-for-normal-mode .bingo-board.normal .counter,
+.board-tracker-show-for-normal-mode .bingo-board.normal .tokens {
+  display: flex;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--tracker-counter-text-size);
+  margin-top: 0.25lh;
+}
+
+.counter button {
+  background: initial;
+  border: initial;
+  outline: initial;
+  cursor: pointer;
+  padding: initial;
+  margin-right: 4px;
+}
+
+.counter img {
+  height: var(--tracker-counter-icon-size);
+}
+
+.counter .count::before {
+  content: attr(data-state);
+}
+
+.counter .number-wrapper {
+  height: 1lh;
+  width: 1ch;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.counter .rotate-wrapper {
+  transform-style: preserve-3d;
+  position: relative;
+  transition: 0.3s ease;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.counter .number {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.denominator {
+  display: none;
+}
+
+.tracker-show-counter-denominator .denominator {
+  display: initial;
+}

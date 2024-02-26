@@ -29,3 +29,5 @@ Temporary Items
 # IDE
 .vscode/
 .vs/
+
+server/node_modules

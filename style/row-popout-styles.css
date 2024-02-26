@@ -1,0 +1,43 @@
+.row-popout {
+  --header-font: var(--row-popout-header-font);
+  --header-line-height: var(--row-popout-header-line-height);
+  --header-height: var(--row-popout-header-height);
+  --header-text-size: var(--row-popout-header-text-size);
+  --header-text-color: var(--row-popout-header-text-color);
+  --header-padding: var(--row-popout-header-padding);
+  --header-border-color: var(--row-popout-header-border-color);
+  --header-background-color: var(--row-popout-header-background-color);
+  --header-hover-border-color: var(--row-popout-header-hover-border-color);
+  --header-hover-background-color: var(--row-popout-header-hover-background-color);
+  --header-hover-text-color: var(--row-popout-header-hover-text-color);
+
+  --cell-font: var(--row-popout-cell-font);
+  --cell-line-height: var(--row-popout-cell-line-height);
+  --cell-text-size: var(--row-popout-cell-text-size);
+  --cell-text-color: var(--row-popout-cell-text-color);
+  --cell-height: var(--row-popout-cell-height);
+  --cell-width: var(--row-popout-cell-width);
+  --cell-padding: var(--row-popout-cell-padding);
+  --cell-border-width: var(--row-popout-cell-border-width);
+  --cell-border-color: var(--row-popout-cell-border-color);
+  --cell-background-color: var(--row-popout-cell-background-color);
+  --cell-green-background-color: var(--row-popout-cell-green-background-color);
+  --cell-red-background-color: var(--row-popout-cell-red-background-color);
+  --cell-hover-background-color: var(--row-popout-cell-hover-background-color);
+  --cell-hover-text-color: var(--row-popout-cell-hover-text-color);
+  --cell-hover-green-background-color: var(--row-popout-cell-hover-green-background-color);
+  --cell-hover-red-background-color: var(--row-popout-cell-hover-red-background-color);
+
+  --tracker-token-size: var(--row-popout-tracker-token-size);
+  --tracker-counter-icon-size: var(--row-popout-tracker-counter-icon-size);
+  --tracker-counter-text-size: var(--row-popout-tracker-counter-text-size);
+}
+
+.row-popout.table {
+  display: grid;
+  grid-template-rows: var(--header-height) repeat(5, var(--cell-height));
+}
+
+.row-popout .goal:not(:last-child) {
+  border-bottom: var(--cell-border-width) solid var(--cell-border-color);
+}

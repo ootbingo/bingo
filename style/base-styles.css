@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@font-face {
+  font-family: "Oracles (in-game)";
+  src: url("/bingo/fonts/ZeldaOracles.ttf");
+}
+
+@font-face {
+  font-family: "Link's Awakening (in-game)";
+  src: url("/bingo/fonts/ZeldaDXTTBRK.ttf");
+}
+
+@font-face {
+  font-family: "The Legend of Zelda (title)";
+  src: url("/bingo/fonts/Zapf International Bold.ttf");
+}
+
+@font-face {
+  font-family: "Ocarina of Time (title)";
+  src: url("/bingo/fonts/Triforce.ttf");
+}
+
+@font-face {
+  font-family: "Breath of the Wild (title damaged)";
+  src: url("/bingo/fonts/The Wild Breath of Zelda.otf");
+}
+
+@font-face {
+  font-family: "Twilight Princess (in-game)";
+  src: url("/bingo/fonts/Rodin-Regular.ttf");
+}
+
+@font-face {
+  font-family: "The Wind Waker (in-game)";
+  src: url("/bingo/fonts/RocknRollOne-Regular.ttf");
+}
+
+@font-face {
+  font-family: "A Link to the Past (in-game)";
+  src: url("/bingo/fonts/ReturnOfGanon.ttf");
+}
+
+@font-face {
+  font-family: "The Wind Waker (in-game headers)";
+  src: url("/bingo/fonts/ReggaeOne-Regular.ttf");
+}
+
+@font-face {
+  font-family: "The Legend of Zelda (in-game)";
+  src: url("/bingo/fonts/nintendo-nes-font.ttf");
+}
+
+@font-face {
+  font-family: "Breath of the Wild (title)";
+  src: url("/bingo/fonts/HyliaSerifBeta-Regular.otf");
+}
+
+@font-face {
+  font-family: "Ocarina of Time (in-game bosses)";
+  src: url("/bingo/fonts/FOT-KokinEdo Std EB.otf");
+}
+
+@font-face {
+  font-family: "Ocarina of Time (in-game)";
+  src: url("/bingo/fonts/FOT-ChiaroStd-B_0.otf");
+}
+
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+  font-weight: normal;
+  background: black;
+}
+
+h1 {
+  font-size: 1.8em;
+  font-weight: normal;
+}
+h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+}
+h3 {
+  font-size: 1em;
+  font-weight: normal;
+}
+
+* {
+  box-sizing: border-box;
+}

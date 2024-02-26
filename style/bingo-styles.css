@@ -1,0 +1,99 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--header-font);
+  line-height: var(--header-line-height);
+  text-align: center;
+  user-select: none;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: var(--header-text-size);
+  border: 1px solid var(--header-border-color);
+  background: var(--header-background-color);
+  color: var(--header-text-color);
+  text-wrap: balance;
+}
+.header:hover {
+  border-color: var(--header-hover-border-color);
+  background: var(--header-hover-background-color);
+  color: var(--header-hover-text-color);
+}
+
+.goal {
+  color: var(--cell-text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--cell-font);
+  font-size: var(--cell-text-size);
+  overflow: hidden;
+  line-height: var(--cell-line-height);
+  height: var(--cell-height);
+  width: var(--cell-width);
+  text-wrap: balance;
+  padding: var(--cell-padding);
+  text-align: center;
+  user-select: none;
+  background: var(--cell-background-color);
+  cursor: pointer;
+}
+.goal[data-state="green"] {
+  background: var(--cell-green-background-color);
+}
+.goal[data-state="red"] {
+  background: var(--cell-red-background-color);
+}
+
+.bingo:has(#row1:hover) .row1,
+.bingo:has(#row2:hover) .row2,
+.bingo:has(#row3:hover) .row3,
+.bingo:has(#row4:hover) .row4,
+.bingo:has(#row5:hover) .row5,
+.bingo:has(#col1:hover) .col1,
+.bingo:has(#col2:hover) .col2,
+.bingo:has(#col3:hover) .col3,
+.bingo:has(#col4:hover) .col4,
+.bingo:has(#col5:hover) .col5,
+.bingo:has(#tlbr:hover) .tlbr,
+.bingo:has(#bltr:hover) .bltr,
+.bingo:has(#board-popout:hover) .goal,
+.goal:hover {
+  background: var(--cell-hover-background-color);
+  color: var(--cell-hover-text-color);
+}
+
+.bingo:has(#row1:hover) .row1[data-state="green"],
+.bingo:has(#row2:hover) .row2[data-state="green"],
+.bingo:has(#row3:hover) .row3[data-state="green"],
+.bingo:has(#row4:hover) .row4[data-state="green"],
+.bingo:has(#row5:hover) .row5[data-state="green"],
+.bingo:has(#col1:hover) .col1[data-state="green"],
+.bingo:has(#col2:hover) .col2[data-state="green"],
+.bingo:has(#col3:hover) .col3[data-state="green"],
+.bingo:has(#col4:hover) .col4[data-state="green"],
+.bingo:has(#col5:hover) .col5[data-state="green"],
+.bingo:has(#tlbr:hover) .tlbr[data-state="green"],
+.bingo:has(#bltr:hover) .bltr[data-state="green"],
+.bingo:has(#board-popout:hover) .goal[data-state="green"],
+.goal[data-state="green"]:hover {
+  background: var(--cell-hover-green-background-color);
+}
+
+.bingo:has(#row1:hover) .row1[data-state="red"],
+.bingo:has(#row2:hover) .row2[data-state="red"],
+.bingo:has(#row3:hover) .row3[data-state="red"],
+.bingo:has(#row4:hover) .row4[data-state="red"],
+.bingo:has(#row5:hover) .row5[data-state="red"],
+.bingo:has(#col1:hover) .col1[data-state="red"],
+.bingo:has(#col2:hover) .col2[data-state="red"],
+.bingo:has(#col3:hover) .col3[data-state="red"],
+.bingo:has(#col4:hover) .col4[data-state="red"],
+.bingo:has(#col5:hover) .col5[data-state="red"],
+.bingo:has(#tlbr:hover) .tlbr[data-state="red"],
+.bingo:has(#bltr:hover) .bltr[data-state="red"],
+.bingo:has(#board-popout:hover) .goal[data-state="red"],
+.goal[data-state="red"]:hover {
+  background: var(--cell-hover-red-background-color);
+}

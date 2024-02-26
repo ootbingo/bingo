@@ -1,0 +1,73 @@
+.bingo-board {
+  --header-font: var(--board-header-font);
+  --header-line-height: var(--board-header-line-height);
+  --header-height: var(--board-header-height);
+  --header-text-size: var(--board-header-text-size);
+  --header-text-color: var(--board-header-text-color);
+  --header-border-color: var(--board-header-border-color);
+  --header-background-color: var(--board-header-background-color);
+  --header-hover-border-color: var(--board-header-hover-border-color);
+  --header-hover-background-color: var(--board-header-hover-background-color);
+  --header-hover-text-color: var(--board-header-hover-text-color);
+
+  --cell-font: var(--board-cell-font);
+  --cell-line-height: var(--board-cell-line-height);
+  --cell-text-size: var(--board-cell-text-size);
+  --cell-text-color: var(--board-cell-text-color);
+  --cell-height: var(--board-cell-height);
+  --cell-width: var(--board-cell-width);
+  --cell-padding: var(--board-cell-padding);
+  --cell-border-width: var(--board-cell-border-width);
+  --cell-border-color: var(--board-cell-border-color);
+  --cell-background-color: var(--board-cell-background-color);
+  --cell-green-background-color: var(--board-cell-green-background-color);
+  --cell-red-background-color: var(--board-cell-red-background-color);
+  --cell-hover-background-color: var(--board-cell-hover-background-color);
+  --cell-hover-text-color: var(--board-cell-hover-text-color);
+  --cell-hover-green-background-color: var(--board-cell-hover-green-background-color);
+  --cell-hover-red-background-color: var(--board-cell-hover-red-background-color);
+
+  --tracker-token-size: var(--board-tracker-token-size);
+  --tracker-counter-icon-size: var(--board-tracker-counter-icon-size);
+  --tracker-counter-text-size: var(--board-tracker-counter-text-size);
+}
+
+.bingo-board.table {
+  flex-shrink: 0;
+  display: grid;
+  grid-template-columns: var(--board-header-width) repeat(5, var(--cell-width));
+  grid-template-rows: var(--header-height) repeat(5, var(--cell-height)) var(--header-height) var(--header-height);
+}
+
+#board-popout {
+  grid-row: 8;
+}
+
+#bingo-info {
+  grid-area: 8 / 2 / 9 / 7;
+  display: flex;
+  gap: 16px;
+  justify-content: flex-end;
+  font-family: var(--info-font);
+  font-size: var(--info-text-size);
+  color: var(--info-text-color);
+}
+
+.bingo-board .goal {
+  border-right: var(--cell-border-width) var(--cell-border-color)
+    solid;
+  border-bottom: var(--cell-border-width) var(--cell-border-color)
+    solid;
+}
+
+.bingo-board .filename {
+  display: none;
+}
+
+.show-filename .bingo-board .filename {
+  display: initial;
+}
+
+.bingo-board strong {
+  color: var(--info-emphasis-text-color);
+}
