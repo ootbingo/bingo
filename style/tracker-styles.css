@@ -65,6 +65,7 @@
   cursor: pointer;
   padding: initial;
   margin-right: 4px;
+  display: flex;
 }
 
 .counter img {
