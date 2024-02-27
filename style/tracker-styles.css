@@ -1,3 +1,17 @@
+.bingo-board .tokens,
+.bingo-board .counter {
+  display: none;
+}
+
+.board-tracker-show-for-blackout-mode .bingo-board.blackout .counter,
+.board-tracker-show-for-blackout-mode .bingo-board.blackout .tokens,
+.board-tracker-show-for-normal-mode .bingo-board.short .counter,
+.board-tracker-show-for-normal-mode .bingo-board.short .tokens,
+.board-tracker-show-for-normal-mode .bingo-board.normal .counter,
+.board-tracker-show-for-normal-mode .bingo-board.normal .tokens {
+  display: flex;
+}
+
 .tokens label {
   cursor: pointer;
   display: flex;
@@ -6,10 +20,11 @@
   background-size: cover;
   filter: grayscale(1);
   opacity: 0.6;
+  transition: 0.2s ease;
 }
 
 .tokens label.hidden {
-  display: flex;
+  display: none;
 }
 
 .tokens label:has(input:checked) {
@@ -35,32 +50,6 @@
   pointer-events: none;
 }
 
-.tokens img {
-  filter: grayscale(1);
-  opacity: 0.6;
-  height: var(--tracker-token-size);
-  transition: 0.3s ease;
-}
-
-.tokens input:checked ~ img {
-  filter: initial;
-  opacity: 1;
-}
-
-.bingo-board .tokens,
-.bingo-board .counter {
-  display: none;
-}
-
-.board-tracker-show-for-blackout-mode .bingo-board.blackout .counter,
-.board-tracker-show-for-blackout-mode .bingo-board.blackout .tokens,
-.board-tracker-show-for-normal-mode .bingo-board.short .counter,
-.board-tracker-show-for-normal-mode .bingo-board.short .tokens,
-.board-tracker-show-for-normal-mode .bingo-board.normal .counter,
-.board-tracker-show-for-normal-mode .bingo-board.normal .tokens {
-  display: flex;
-}
-
 .counter {
   display: flex;
   align-items: center;
@@ -80,10 +69,6 @@
 
 .counter img {
   height: var(--tracker-counter-icon-size);
-}
-
-.counter .count::before {
-  content: attr(data-state);
 }
 
 .counter .number-wrapper {

@@ -517,6 +517,7 @@ export default {
     "Emphasis text color": "Emphasis text color",
     "Exodus, tob3000, Runnerguy2489, Tasselhoff, juwk, shaggy, triforce3250, 2DollarGargoyle, Link11, EggMeister":
       "Exodus, tob3000, Runnerguy2489, Tasselhoff, juwk, shaggy, triforce3250, 2DollarGargoyle, Link11, EggMeister",
+    "Failed to generate board": "Failed to generate board",
     "Filename:": "Filename:",
     Font: "Font",
     Generator: "Generator",

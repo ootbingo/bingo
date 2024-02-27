@@ -16,10 +16,6 @@ body {
   font-family: var(--info-font);
 }
 
-h1, h2, h3 {
-  color: var(--info-header-text-color);
-}
-
 .container {
   display: flex;
   width: 1000px;

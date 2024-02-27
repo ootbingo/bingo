@@ -10,10 +10,6 @@ html, body {
   line-height: var(--info-line-height);
 }
 
-h1, h2, h3 {
-  color: var(--info-header-text-color);
-}
-
 body {
   padding-bottom: 72px;
 }
