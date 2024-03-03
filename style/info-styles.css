@@ -72,3 +72,8 @@ a {
   color: #808080;
   font-size: 85%;
 }
+
+.error-404-container {
+  text-align: center;
+  font-size: 26px;
+}

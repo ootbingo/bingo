@@ -594,5 +594,7 @@ export default {
     X: "X",
     "You can click on the squares to turn them green and red. This may help you organize your route planning":
       "You can click on the squares to turn them green and red. This may help you organize your route planning",
+    "The page you are looking for does not exist": "The page you are looking for does not exist",
+    "Show All Versions": "Show All Versions",
   },
 };
