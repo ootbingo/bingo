@@ -19,6 +19,6 @@ Then navigate to http://localhost:3000/bingo/
 
 Bingo is currently only completely supported in English. There is a full translation of goals in Japanese, but the UI is still English.
 
-If you want to help translate into your language, download [the English strings file](/localization/en.js) and replace its values with your translations. If you remove strings, they will default to English. For an example of what the file should look like, see [the Japanese strings file](/localization/jp.js).
+If you want to help translate into your language, download [the English strings file](/localization/en.js) and replace its values with your translations. If you remove strings, they will default to English. For an example of what the file should look like, see [the Japanese strings file](/localization/ja.js).
 
 Once you are finished, share that file in the Discord or make a Pull Request here.

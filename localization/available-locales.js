@@ -15,5 +15,5 @@ export default [
     code: "en-CA-short",
     name: "English (CA short)",
   },
-  { code: "jp", name: "日本語" },
+  { code: "ja", name: "日本語" },
 ];

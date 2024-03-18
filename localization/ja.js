@@ -1,5 +1,5 @@
 export default {
-  locale: "jp",
+  locale: "ja",
   strings: {
     // 10.4 goals
     "1 Skulltula from each Adult Dungeon":
