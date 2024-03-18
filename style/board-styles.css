@@ -30,6 +30,7 @@
   --tracker-token-size: var(--board-tracker-token-size);
   --tracker-counter-icon-size: var(--board-tracker-counter-icon-size);
   --tracker-counter-text-size: var(--board-tracker-counter-text-size);
+  --tracker-animation-time: var(--board-tracker-animation-time);
 }
 
 .bingo-board.table {

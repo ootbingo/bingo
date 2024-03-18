@@ -15,8 +15,6 @@
   --cell-line-height: var(--row-popout-cell-line-height);
   --cell-text-size: var(--row-popout-cell-text-size);
   --cell-text-color: var(--row-popout-cell-text-color);
-  --cell-height: var(--row-popout-cell-height);
-  --cell-width: var(--row-popout-cell-width);
   --cell-padding: var(--row-popout-cell-padding);
   --cell-border-width: var(--row-popout-cell-border-width);
   --cell-border-color: var(--row-popout-cell-border-color);
@@ -31,11 +29,19 @@
   --tracker-token-size: var(--row-popout-tracker-token-size);
   --tracker-counter-icon-size: var(--row-popout-tracker-counter-icon-size);
   --tracker-counter-text-size: var(--row-popout-tracker-counter-text-size);
+  --tracker-animation-time: var(--row-popout-tracker-animation-time);
 }
 
 .row-popout.table {
   display: grid;
-  grid-template-rows: var(--header-height) repeat(5, var(--cell-height));
+  grid-template-rows: var(--header-height) repeat(5, 1fr);
+  height: calc(var(--header-height) + 5 * var(--row-popout-cell-height));
+  width: var(--row-popout-cell-width);
+}
+
+body>.row-popout.table {
+  height: 100vh;
+  width: unset;
 }
 
 .row-popout .goal:not(:last-child) {
