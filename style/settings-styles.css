@@ -319,8 +319,11 @@ h2, h3 {
   flex-direction: column;
   flex: 1;
 }
-.measurer .ruler.horizontal .ruler-section div {
+.measurer .ruler.horizontal .ruler-section div:first-child {
   height: 8px;
+}
+.measurer .ruler.horizontal .ruler-section div:last-child {
+  height: 7px;
 }
 .measurer .ruler.horizontal .ruler-section:first-child div:first-child {
   border-bottom: 1px solid white;
@@ -345,8 +348,11 @@ h2, h3 {
   flex-direction: row;
   flex: 1;
 }
-.measurer .ruler.vertical .ruler-section div {
+.measurer .ruler.vertical .ruler-section div:first-child {
   width: 8px;
+}
+.measurer .ruler.vertical .ruler-section div:last-child {
+  width: 7px;
 }
 .measurer .ruler.vertical .ruler-section:first-child div:first-child {
   border-right: 1px solid white;
