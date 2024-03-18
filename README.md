@@ -4,8 +4,7 @@ Serving the current and older OoT Bingo versions through GitHub Pages
 
 ## Development
 
-Browser have restricted local development, so loading files from HTML no longer
-works. For easy development, there is a server that will staticly host your
+Browsers have restricted local development, so opening local HTML files no longer works properly. For easy development, there is a server that will staticly host your
 files. You will need to install [Node](https://nodejs.org) to run it
 
 ```
