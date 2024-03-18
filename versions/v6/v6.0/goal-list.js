@@ -244,7 +244,7 @@ bingoList[25] = [
   { name: "All 4 Market area Skulltulas", jp: '城下町エリアの黄金のスタルチュラ4匹', types: ["skulltula", "forest"], child: "no" },
   { name: "All 5 Skulltulas in Water Temple", jp: '水の神殿の黄金のスタルチュラ5匹', types: ["water"], child: "no" },
   { name: "Defeat Ganon", jp: 'ガノン撃破', types: ["ganon", "deku", "lightarrow", "atrade"], child: "yes" },
-  { name: "Biggoron窶冱 Sword", jp: "ダイゴロン刀", types: ["atrade", "sets", "claimcheck"], child: "no" },
+  { name: "Biggoron's Sword", jp: "ダイゴロン刀", types: ["atrade", "sets", "claimcheck"], child: "no" },
   { name: "At least 10 songs", jp: '歌10個以上', types: ["songs", "atrade", "zl"], child: "no" },
   { name: "Get to the end of Spirit Trial", jp: '魂の結界の最後の部屋に到達', types: ["ganon", "spirit", "quiver"], child: "no" },
   { name: "7 Maps", jp: 'マップ7つ', types: ["dungeon_item", "claimcheck"], child: "no" },
