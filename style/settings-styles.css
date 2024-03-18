@@ -284,6 +284,7 @@ h2, h3 {
 .toast {
   position: fixed;
   animation: toast 2s ease both;
+  color: black;
   bottom: 100px;
   left: auto;
   right: auto;
@@ -291,4 +292,73 @@ h2, h3 {
   z-index: 1;
   padding: 16px;
   font-size: 24px;
+}
+
+.row-popout {
+  --cell-width: var(--row-popout-cell-width);
+  --cell-height: var(--row-popout-cell-height);
+}
+
+.measurer {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  grid-template-rows: max-content max-content;
+  gap: 8px;
+}
+
+
+.measurer .ruler {
+  display: flex;
+  gap: 8px;
+}
+.measurer .ruler.horizontal {
+  flex-direction: row;
+}
+.measurer .ruler.horizontal .ruler-section {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.measurer .ruler.horizontal .ruler-section div {
+  height: 8px;
+}
+.measurer .ruler.horizontal .ruler-section:first-child div:first-child {
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
+}
+.measurer .ruler.horizontal .ruler-section:first-child div:last-child {
+  border-left: 1px solid white;
+}
+.measurer .ruler.horizontal .ruler-section:last-child div:first-child {
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+}
+.measurer .ruler.horizontal .ruler-section:last-child div:last-child {
+  border-right: 1px solid white;
+}
+
+.measurer .ruler.vertical {
+  flex-direction: column;
+}
+.measurer .ruler.vertical .ruler-section {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+.measurer .ruler.vertical .ruler-section div {
+  width: 8px;
+}
+.measurer .ruler.vertical .ruler-section:first-child div:first-child {
+  border-right: 1px solid white;
+  border-top: 1px solid white;
+}
+.measurer .ruler.vertical .ruler-section:first-child div:last-child {
+  border-top: 1px solid white;
+}
+.measurer .ruler.vertical .ruler-section:last-child div:first-child {
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+}
+.measurer .ruler.vertical .ruler-section:last-child div:last-child {
+  border-bottom: 1px solid white;
 }

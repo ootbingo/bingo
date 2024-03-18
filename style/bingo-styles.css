@@ -9,7 +9,6 @@
   cursor: pointer;
   font-weight: 400;
   font-size: var(--header-text-size);
-  border: 1px solid var(--header-border-color);
   background: var(--header-background-color);
   color: var(--header-text-color);
   text-wrap: balance;

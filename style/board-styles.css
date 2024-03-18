@@ -54,6 +54,16 @@
   color: var(--info-text-color);
 }
 
+.bingo-board {
+  border-left: 1px solid var(--header-border-color);
+  border-top: 1px solid var(--header-border-color);
+}
+
+.bingo-board .header {
+  border-right: 1px solid var(--header-border-color);
+  border-bottom: 1px solid var(--header-border-color);
+}
+
 .bingo-board .goal {
   border-right: var(--cell-border-width) var(--cell-border-color)
     solid;

@@ -491,6 +491,7 @@ export default {
     About: "About",
     "All required items must be present in the inventory in order to finish. For example, for the goal <i>Blue Potion</i>, you must not drink it":
       "All required items must be present in the inventory in order to finish. For example, for the goal <i>Blue Potion</i>, you must not drink it",
+    "Animation time": "Animation time",
     "Arbitrary Code Execution (ACE)": "Arbitrary Code Execution (ACE)",
     "BL-TR": "BL-TR",
     BOARD: "BOARD",
@@ -509,6 +510,7 @@ export default {
     COL3: "COL3",
     COL4: "COL4",
     COL5: "COL5",
+    counter: "counter",
     "Cell height": "Cell height",
     "Cell width": "Cell width",
     "Counter icon size": "Counter icon size",
@@ -517,6 +519,8 @@ export default {
     "Emphasis text color": "Emphasis text color",
     "Exodus, tob3000, Runnerguy2489, Tasselhoff, juwk, shaggy, triforce3250, 2DollarGargoyle, Link11, EggMeister":
       "Exodus, tob3000, Runnerguy2489, Tasselhoff, juwk, shaggy, triforce3250, 2DollarGargoyle, Link11, EggMeister",
+    "Export (general)": "Export (general)",
+    "Export (tracker)": "Export (tracker)",
     "Failed to generate board": "Failed to generate board",
     "Filename:": "Filename:",
     Font: "Font",
@@ -536,6 +540,8 @@ export default {
     "Hover text color": "Hover text color",
     "If Wrong Warping, any items or goals associated with the wrong warp are obtained upon completion of the Wrong Warp":
       "If Wrong Warping, any items or goals associated with the wrong warp are obtained upon completion of the Wrong Warp",
+    "Import (general)": "Import (general)",
+    "Import (tracker)": "Import (tracker)",
     "Item: When you are holding it above your head":
       "Item: When you are holding it above your head",
     "Jumpslash Quick Putaway (QPA)": "Jumpslash Quick Putaway (QPA)",
@@ -544,6 +550,7 @@ export default {
     "Max token size": "Max token size",
     "Mode:": "Mode:",
     "Normal card": "Normal card",
+    none: "none",
     "Numbers are minimums. Collecting more than enough is allowed unless otherwise stated":
       "Numbers are minimums. Collecting more than enough is allowed unless otherwise stated",
     "Obtaining the Eyeball Frog without presenting the Prescription (Hold R)":
@@ -561,7 +568,9 @@ export default {
     ROW4: "ROW4",
     ROW5: "ROW5",
     "Red background color": "Red background color",
+    Reset: "Reset",
     Rules: "Rules",
+    Save: "Save",
     "Seed:": "Seed:",
     Settings: "Settings",
     "Short card": "Short card",
@@ -573,6 +582,7 @@ export default {
     'Song: When the dialog box that says "You have learned the…" completes':
       'Song: When the dialog box that says "You have learned the…" completes',
     "Stale Reference Manipulation (SRM)": "Stale Reference Manipulation (SRM)",
+    tokens: "tokens",
     "TL-BR": "TL-BR",
     "Text color": "Text color",
     "Text size": "Text size",
@@ -594,7 +604,8 @@ export default {
     X: "X",
     "You can click on the squares to turn them green and red. This may help you organize your route planning":
       "You can click on the squares to turn them green and red. This may help you organize your route planning",
-    "The page you are looking for does not exist": "The page you are looking for does not exist",
+    "The page you are looking for does not exist":
+      "The page you are looking for does not exist",
     "Show All Versions": "Show All Versions",
   },
 };
