@@ -1,5 +1,5 @@
-.bingo-board .tokens,
-.bingo-board .counter {
+.tokens,
+.counter {
   display: none;
 }
 
@@ -8,8 +8,17 @@
 .board-tracker-show-for-normal-mode .bingo-board.short .counter,
 .board-tracker-show-for-normal-mode .bingo-board.short .tokens,
 .board-tracker-show-for-normal-mode .bingo-board.normal .counter,
-.board-tracker-show-for-normal-mode .bingo-board.normal .tokens {
+.board-tracker-show-for-normal-mode .bingo-board.normal .tokens,
+.row-popout-tracker-show .row-popout .counter,
+.row-popout-tracker-show .row-popout .tokens {
   display: flex;
+}
+
+.board-tracker-show-for-normal-mode .bingo-board.normal .goal.hide-text > span,
+.board-tracker-show-for-normal-mode .bingo-board.short .goal.hide-text > span,
+.board-tracker-show-for-blackout-mode .bingo-board.blackout .goal.hide-text > span,
+.row-popout-tracker-show .row-popout .goal.hide-text > span {
+  display: none;
 }
 
 .tokens label {
@@ -33,14 +42,13 @@
 }
 
 .tokens {
-  display: flex;
   align-items: center;
   justify-content: center;
   flex: 1;
   max-height: var(--tracker-token-size);
 }
 
-.tokens:first-of-type {
+.goal:not(.hide-text) .tokens:first-of-type {
   margin-top: 0.25lh;
 }
 
@@ -51,7 +59,6 @@
 }
 
 .counter {
-  display: flex;
   align-items: center;
   justify-content: center;
   font-size: var(--tracker-counter-text-size);

@@ -234,9 +234,12 @@ h2, h3 {
 
 .tracker-setting {
   padding: 8px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
-.tracker-setting input {
+.tracker-setting .radio input {
   opacity: 0;
   position: absolute;
   pointer-events: none;
@@ -246,10 +249,9 @@ h2, h3 {
   display: flex;
   gap: 8px;
   align-items: center;
-  padding: 8px 0;
 }
 
-.tracker-setting label > div {
+.tracker-setting .radio > div {
   width: 90px;
   padding: 3px 0;
   display: flex;
@@ -261,7 +263,7 @@ h2, h3 {
   transition: 200ms ease-in-out;
 }
 
-.tracker-setting input:checked ~ div {
+.tracker-setting .radio input:checked ~ div {
   color: rgba(0, 0, 0, 0.8);
   background: #ad920a;
 }
