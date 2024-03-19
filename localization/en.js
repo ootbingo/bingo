@@ -573,6 +573,7 @@ export default {
     Save: "Save",
     "Seed:": "Seed:",
     Settings: "Settings",
+    "Shadow opacity": "Shadow opacity",
     "Short card": "Short card",
     "Show counter denominator": "Show counter denominator",
     "Show in blackout mode": "Show in blackout mode",
