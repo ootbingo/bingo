@@ -20,6 +20,7 @@
   --cell-border-width: var(--board-cell-border-width);
   --cell-border-color: var(--board-cell-border-color);
   --cell-background-color: var(--board-cell-background-color);
+  --cell-shadow-opacity: var(--board-cell-shadow-opacity);
   --cell-green-background-color: var(--board-cell-green-background-color);
   --cell-red-background-color: var(--board-cell-red-background-color);
   --cell-hover-background-color: var(--board-cell-hover-background-color);

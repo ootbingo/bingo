@@ -19,6 +19,7 @@
   --cell-border-width: var(--row-popout-cell-border-width);
   --cell-border-color: var(--row-popout-cell-border-color);
   --cell-background-color: var(--row-popout-cell-background-color);
+  --cell-shadow-opacity: var(--row-popout-cell-shadow-opacity);
   --cell-green-background-color: var(--row-popout-cell-green-background-color);
   --cell-red-background-color: var(--row-popout-cell-red-background-color);
   --cell-hover-background-color: var(--row-popout-cell-hover-background-color);
