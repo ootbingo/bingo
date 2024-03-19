@@ -7,6 +7,7 @@
   --header-padding: var(--row-popout-header-padding);
   --header-border-color: var(--row-popout-header-border-color);
   --header-background-color: var(--row-popout-header-background-color);
+  --header-shadow-opacity: var(--row-popout-header-shadow-opacity);
   --header-hover-border-color: var(--row-popout-header-hover-border-color);
   --header-hover-background-color: var(--row-popout-header-hover-background-color);
   --header-hover-text-color: var(--row-popout-header-hover-text-color);

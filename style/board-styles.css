@@ -6,6 +6,7 @@
   --header-text-color: var(--board-header-text-color);
   --header-border-color: var(--board-header-border-color);
   --header-background-color: var(--board-header-background-color);
+  --header-shadow-opacity: var(--board-header-shadow-opacity);
   --header-hover-border-color: var(--board-header-hover-border-color);
   --header-hover-background-color: var(--board-header-hover-background-color);
   --header-hover-text-color: var(--board-header-hover-text-color);
