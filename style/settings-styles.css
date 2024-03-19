@@ -368,3 +368,15 @@ h2, h3 {
 .measurer .ruler.vertical .ruler-section:last-child div:last-child {
   border-bottom: 1px solid white;
 }
+
+.tracker-settings .bingo-board {
+  display: grid;
+  height: var(--board-cell-height);
+  width: var(--board-cell-width);
+}
+
+.tracker-settings .row-popout {
+  display: grid;
+  height: var(--row-popout-cell-height);
+  width: var(--row-popout-cell-width);
+}

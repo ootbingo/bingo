@@ -14,8 +14,6 @@
   --cell-line-height: var(--board-cell-line-height);
   --cell-text-size: var(--board-cell-text-size);
   --cell-text-color: var(--board-cell-text-color);
-  --cell-height: var(--board-cell-height);
-  --cell-width: var(--board-cell-width);
   --cell-padding: var(--board-cell-padding);
   --cell-border-width: var(--board-cell-border-width);
   --cell-border-color: var(--board-cell-border-color);
@@ -37,8 +35,15 @@
 .bingo-board.table {
   flex-shrink: 0;
   display: grid;
-  grid-template-columns: var(--board-header-width) repeat(5, var(--cell-width));
-  grid-template-rows: var(--header-height) repeat(5, var(--cell-height)) var(--header-height) var(--header-height);
+  grid-template-columns: var(--board-header-width) repeat(5, 1fr);
+  grid-template-rows: var(--board-header-height) repeat(5, 1fr) var(--header-height) var(--header-height);
+  height: calc(3 * var(--board-header-height) + 5 * var(--board-cell-height));
+  width: calc(var(--board-header-width) + 5 * var(--board-cell-width));
+}
+
+body > .bingo-board.table {
+  height: 100vh;
+  width: unset;
 }
 
 #board-popout {

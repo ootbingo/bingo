@@ -30,8 +30,6 @@
   font-size: var(--cell-text-size);
   overflow: hidden;
   line-height: var(--cell-line-height);
-  height: var(--cell-height);
-  width: var(--cell-width);
   text-wrap: balance;
   padding: var(--cell-padding);
   text-align: center;
