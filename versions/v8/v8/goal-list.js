@@ -1,6 +1,6 @@
 var bingoList = [];
 bingoList["info"] = {
-  version: "v8.0"
+  version: "v8"
 };
 bingoList[1] = [
   { name: "Bottled Fairy", jp: 'ビン(妖精)', types: ["bottle"], child: "yes" },

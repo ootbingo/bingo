@@ -10,7 +10,7 @@
 
 var bingoList = [];
 bingoList["info"] = {
-  version: "v7.0"
+  version: "v7"
 };
 bingoList[1] = [
   { name: "Bottled Fish", jp: 'ビン(魚)', types: ["bottle"], child: "yes" },

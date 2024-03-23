@@ -1,6 +1,6 @@
 var bingoList = [];
 bingoList["info"] = {
-  version: "v6.0"
+  version: "v6"
 };
 bingoList[1] = [
   { name: "Bullet Bag (50)", jp: 'デクのタネ袋(50)', types: ["bulletbag"], child: "yes" },
