@@ -499,8 +499,10 @@ export default {
     "Banned Tricks": "Banned Tricks",
     "Beat Dungeon: When you step in the blue warp and lose control or skip the cutscene":
       "Beat Dungeon: When you step in the blue warp and lose control or skip the cutscene",
-    "Beat a Boss/Enemy: When you strike the last blow":
-      "Beat a Boss/Enemy: When you strike the last blow",
+    "Defeat an Enemy: When you strike the last blow and the death animation completes. If defeating the enemy is permanent, when the associated cutscene begins":
+      "Defeat an Enemy: When you strike the last blow and the death animation completes. If defeating the enemy is permanent, when the associated cutscene begins",
+    "Defeat a Boss: When you strike the last blow and the death cutscene begins":
+        "Defeat a Boss: When you strike the last blow and the death cutscene begins",
     "Bingo Popout": "Bingo Popout",
     "Blackout card": "Blackout card",
     "Border color": "Border color",
