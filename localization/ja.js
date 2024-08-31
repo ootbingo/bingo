@@ -497,7 +497,8 @@ export default {
     "Banned Tricks": null,
     "Beat Dungeon: When you step in the blue warp and lose control or skip the cutscene":
       null,
-    "Beat a Boss/Enemy: When you strike the last blow": null,
+    "Defeat an Enemy: When you strike the last blow and the death animation completes. If defeating the enemy is permanent, when the associated cutscene begins": null,
+    "Defeat a Boss: When you strike the last blow and the death cutscene begins": null,
     "Blackout card": null,
     COL1: "列１",
     COL2: "列２",
