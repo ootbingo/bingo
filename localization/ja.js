@@ -42,6 +42,7 @@ export default {
     "30 Different Skulltulas": "スタルチュラのしるし３&#8288;０個（増殖禁止）",
     "37th Heart Piece (Child Fortress)":
       "３&#8288;７番目のハートのかけら（子供のゲルドの砦）",
+    "4 Bottles of Milk": "ロンロン牛乳4つ",
     "4 Compasses": "コンパス４つ",
     "4 Maps": "マップ４つ",
     "4 Skulltulas in Shadow Temple": "闇の神殿の黄金のスタルチュラ４匹以上",
@@ -53,6 +54,7 @@ export default {
     "5 Hearts": "ハート５つ",
     "5 Magic Beans": "魔法のマメ５つ以上",
     "5 Maps": "マップ５つ",
+    "5 Top Row Songs": "上段の歌5つ以上",
     "5 Unused Keys in Gerudo Training Grounds":
       "ゲルドの修練場の未使用の鍵５つ",
     "5 Zora area HPs": "ゾーラエリアのハートのかけら５つ以上",
@@ -124,11 +126,17 @@ export default {
       "デスマウンテンエリアの黄金のスタルチュラ８匹",
     "All 8 Kakariko area Skulltulas":
       "カカリコ村エリアの黄金のスタルチュラ８匹",
+    "All 8 Skulltulas in Bottom of the Well & Shadow Temple": "井戸の底の黄金、闇の神殿の黄金のスタルチュラ8匹",
+    "All 8 Skulltulas in Ice Cavern & Spirit Temple": "氷の洞窟の黄金、魂の神殿の黄金のスタルチュラ8匹",
     "All 8 Zora's Domain area Skulltulas":
       "ゾーラの里エリアの黄金のスタルチュラ８匹",
+    "All 9 Soft Soil Skulltulas": "フワっとした土から現れる黄金のスタルチュラ9匹",
     "Beat Dodongo's Cavern": "ドドンゴの洞窟クリア",
+    "Beat Dodongo's Cavern & Fire Temple": "ドドンゴの洞窟クリア、炎の神殿クリア",
     "Beat Jabu-Jabu's Belly": "ジャブジャブ様のお腹クリア",
+    "Beat Jabu-Jabu's Belly & Water Temple": "ジャブジャブ様のお腹クリア、水の神殿クリア",
     "Beat the Deku Tree": "デクの樹様の中クリア",
+    "Beat the Deku Tree & Forest Temple": "森の神殿クリア",
     "Beat the Fire Temple": "炎の神殿クリア",
     "Beat the Forest Temple": "森の神殿クリア",
     "Beat the Shadow Temple": "闇の神殿クリア",
