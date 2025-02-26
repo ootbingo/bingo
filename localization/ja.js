@@ -1,14 +1,17 @@
+// &#8288; represents a word joiner, to prevent line breaks between numbers
+// &#8288; はワードジョイナーを表し、数字の間での改行を防ぎます。
+
 export default {
   locale: "ja",
   strings: {
-    // 10.4 goals
+    // Current goals
     "1 Skulltula from each Adult Dungeon":
       "全ての大人ダンジョンからスタルチュラ最低１匹ずつ",
     "1 Skulltula from each Child Dungeon":
       "全ての子供ダンジョンからスタルチュラ最低１匹ずつ",
     "1 Unused Small Key in each Adult Dungeon":
       "全ての大人のダンジョンから未使用の鍵最低１つずつ",
-    "10 Songs": "歌１&#8288;０つ以上",
+    "10 Songs": "歌１&#8288;０曲以上",
     "15 Different Skulltulas": "スタルチュラのしるし１&#8288;５個（増殖禁止）",
     "2 Boss Keys": "ボス部屋の鍵２つ",
     "2 Shields": "盾２種",
@@ -17,8 +20,8 @@ export default {
     "2 Unused Keys in Gerudo Training Grounds":
       "ゲルドの修練場の未使用のカギ２つ",
     "20 Deku Sticks": "デクの棒２&#8288;０本",
-    "20 Different Skulltulas": "スタルチュラのしるし３&#8288;０個（増殖禁止）",
-    "200 Rupees": "２&#8288;００ルピー",
+    "20 Different Skulltulas": "スタルチュラのしるし２&#8288;０個（増殖禁止）",
+    "200 Rupees": "２&#8288;０&#8288;０ルピー",
     "3 Boots": "靴３種",
     "3 Boss Keys": "ボス部屋の鍵３つ",
     "3 Compasses": "コンパス３つ",
@@ -28,7 +31,7 @@ export default {
     "3 Shields & 3 Boots": "盾３種、靴３種",
     "3 Shields & 3 Tunics": "盾３種、服３種",
     "3 Skulltulas in Water Temple": "水の神殿の黄金のスタルチュラ３匹以上",
-    "3 Songs": "歌３つ以上",
+    "3 Songs": "歌３曲以上",
     "3 Swords & 3 Boots": "剣３種、靴３種",
     "3 Swords & 3 Shields": "剣３種、盾３種",
     "3 Swords & 3 Tunics": "剣３種、服３種",
@@ -42,10 +45,11 @@ export default {
     "30 Different Skulltulas": "スタルチュラのしるし３&#8288;０個（増殖禁止）",
     "37th Heart Piece (Child Fortress)":
       "３&#8288;７番目のハートのかけら（子供のゲルドの砦）",
+    "4 Bottles of Milk": "ロンロン牛乳４つ",
     "4 Compasses": "コンパス４つ",
     "4 Maps": "マップ４つ",
     "4 Skulltulas in Shadow Temple": "闇の神殿の黄金のスタルチュラ４匹以上",
-    "4 Songs": "歌４つ以上",
+    "4 Songs": "歌４曲以上",
     "4 Unused Keys in Forest Temple": "森の神殿の未使用の小さな鍵４つ",
     "4 Unused Keys in Gerudo Training Grounds":
       "ゲルドの修練場の未使用の鍵４つ",
@@ -53,6 +57,7 @@ export default {
     "5 Hearts": "ハート５つ",
     "5 Magic Beans": "魔法のマメ５つ以上",
     "5 Maps": "マップ５つ",
+    "5 Top Row Songs": "上段の歌５曲以上",
     "5 Unused Keys in Gerudo Training Grounds":
       "ゲルドの修練場の未使用の鍵５つ",
     "5 Zora area HPs": "ゾーラエリアのハートのかけら５つ以上",
@@ -63,29 +68,29 @@ export default {
     "6 Hearts": "ハート６つ",
     "6 Magic Beans": "魔法のマメ６つ以上",
     "6 Maps": "マップ６つ",
-    "6 Songs": "歌６つ以上",
+    "6 Songs": "歌６曲以上",
     "6 Unused Keys in Gerudo Training Grounds":
       "ゲルドの修練場の未使用のカギ６つ",
     "7 Compasses": "コンパス７つ",
     "7 Different Bottled Contents": "ビンに詰めたアイテム７種類",
     "7 Different Unused Keys in Gerudo Training Grounds":
       "ゲルドの修練場の未使用の鍵７つ（増殖禁止）",
-    "7 Hearts (no duping)": "ハート７つ",
+    "7 Hearts (no duping)": "ハート７つ（複製禁止）",
     "7 Magic Beans": "魔法のマメ７つ以上",
     "7 Maps": "マップ７つ",
-    "7 Songs": "歌７つ以上",
+    "7 Songs": "歌７曲以上",
     "8 Different Unused Keys in Gerudo Training Grounds":
       "ゲルドの修練場の未使用の鍵８つ（増殖禁止）",
     "8 Hearts (no duping)": "ハート８つ（複製禁止）",
     "8 Magic Beans": "魔法のマメ８つ以上",
-    "8 Songs": "歌８つ以上",
+    "8 Songs": "歌８曲以上",
     "9 Hearts (no duping)": "ハート９つ（複製禁止）",
     "9 Magic Beans": "魔法のマメ９つ以上",
     "9 Songs": "歌９つ以上",
     "99 Rupees": "９&#8288;９ルピー",
     "Adult's Wallet": "大人のサイフ",
     "All 3 Child Lake Hylia Skulltulas":
-      "ハイリア湖畔エリアの黄金のスタルチュラ３匹以上",
+      "子供時代のハイリア湖畔エリアの黄金のスタルチュラ３匹以上",
     "All 3 Elemental Arrows": "魔法矢３つ",
     "All 3 Kokiri Forest area Skulltulas":
       "コキリの森エリアの黄金のスタルチュラ３匹",
@@ -119,16 +124,22 @@ export default {
     "All 5 Skulltulas in Spirit Temple": "魂の神殿の黄金のスタルチュラ５匹",
     "All 5 Skulltulas in Water Temple": "水の神殿の黄金のスタルチュラ５匹",
     "All 7 Child Kakariko area Skulltulas":
-      "カカリコ村エリアの黄金のスタルチュラ７匹",
+      "子供時代のカカリコ村エリアの黄金のスタルチュラ７匹",
     "All 8 Death Mountain area Skulltulas":
       "デスマウンテンエリアの黄金のスタルチュラ８匹",
     "All 8 Kakariko area Skulltulas":
       "カカリコ村エリアの黄金のスタルチュラ８匹",
+    "All 8 Skulltulas in Bottom of the Well & Shadow Temple": "井戸の底と闇の神殿の黄金のスタルチュラ８匹",
+    "All 8 Skulltulas in Ice Cavern & Spirit Temple": "氷の洞窟と魂の神殿の黄金のスタルチュラ８匹",
     "All 8 Zora's Domain area Skulltulas":
       "ゾーラの里エリアの黄金のスタルチュラ８匹",
+    "All 9 Soft Soil Skulltulas": "フワっとした土から現れる黄金のスタルチュラ９匹",
     "Beat Dodongo's Cavern": "ドドンゴの洞窟クリア",
+    "Beat Dodongo's Cavern & Fire Temple": "ドドンゴの洞窟と炎の神殿クリア",
     "Beat Jabu-Jabu's Belly": "ジャブジャブ様のお腹クリア",
+    "Beat Jabu-Jabu's Belly & Water Temple": "ジャブジャブ様のお腹と水の神殿クリア",
     "Beat the Deku Tree": "デクの樹様の中クリア",
+    "Beat the Deku Tree & Forest Temple": "デクの樹様の中と森の神殿クリア",
     "Beat the Fire Temple": "炎の神殿クリア",
     "Beat the Forest Temple": "森の神殿クリア",
     "Beat the Shadow Temple": "闇の神殿クリア",
@@ -142,13 +153,13 @@ export default {
     "Bomb Bag (30)": "ボム袋（３&#8288;０）",
     Boomerang: "ブーメラン",
     "Both Child Gerudo Valley area Skulltulas":
-      "ゲルドの谷エリアの黄金のスタルチュラ２匹",
+      "子供時代のゲルドの谷エリアの黄金のスタルチュラ２匹",
     "Both Child Kokiri Forest area Skulltulas":
-      "コキリの森エリアの黄金のスタルチュラ２匹",
+      "子供時代のコキリの森エリアの黄金のスタルチュラ２匹",
     "Both Child Lost Woods area Skulltulas":
-      "迷いの森エリアの黄金のスタルチュラ２匹",
+      "子供時代の迷いの森エリアの黄金のスタルチュラ２匹",
     "Both Child Wasteland/ Colossus area Skulltulas":
-      "幻影の砂漠・巨大邪神像エリアの黄金のスタルチュラ２匹",
+      "子供時代の幻影の砂漠・巨大邪神像エリアの黄金のスタルチュラ２匹",
     "Both Gerudo Valley HPs": "ゲルドの谷のハートのかけら２つ",
     "Both Gerudo's Fortress area Skulltulas":
       "ゲルドの砦の黄金のスタルチュラ２匹",
@@ -193,14 +204,14 @@ export default {
     "Double Defense": "防御力２倍",
     "Double Magic": "魔力２倍",
     "Epona's Song": "エポナの歌",
-    "Exactly 20 Deku Sticks": "デクの棒３&#8288;０本",
+    "Exactly 20 Deku Sticks": "デクの棒２&#8288;０本",
     "Exactly 30 Deku Sticks": "デクの棒３&#8288;０本",
     "Fairy Bow": "妖精の弓",
     "Fairy Ocarina": "妖精のオカリナ",
     "Fairy Slingshot": "妖精のパチンコ",
     "Farore's Wind": "フロルの風",
     "Fill 20 Item Inventory Slots":
-      "Cアイテムのスロットを３&#8288;０箇所埋める",
+      "Cアイテムのスロットを２&#8288;０箇所埋める",
     "Fill all 4 Bottle Slots": "４つの空きビンスロットを全て埋める",
     "Fire Arrows": "炎の矢",
     "Fire Medallion": "炎のメダル",
@@ -224,7 +235,7 @@ export default {
     Hookshot: "フックショット",
     "Ice Arrows": "氷の矢",
     "Ice Cavern HP": "氷の洞窟のハートのかけら",
-    "Iron Boots": "ヘビーブーツ",
+    "Iron Boots": "ヘビィブーツ",
     "Keaton Mask": "キータンのお面",
     "Kokiri's Emerald": "コキリのヒスイ",
     "Lens of Truth": "まことのメガネ",
@@ -255,10 +266,10 @@ export default {
     "Obtain 3 Different Heart Containers": "ハートの器３つ（増殖禁止）",
     "Obtain 4 Different Heart Containers": "ハートの器４つ（増殖禁止）",
     "Obtain all 5 Small Keys in Forest Temple":
-      "森の神殿の小さな鍵の宝箱を５つ全て開ける",
-    "Obtain all 5 Small Keys in Shadow Temple": "闇の神殿の小さな鍵５つ取得",
+      "森の神殿の小さな鍵を５つ全て取得",
+    "Obtain all 5 Small Keys in Shadow Temple": "闇の神殿の小さな鍵を５つ全て取得",
     "Obtain all 8 Small Keys in Fire Temple":
-      "炎の神殿の小さな鍵の宝箱を８つ全て開ける",
+      "炎の神殿の小さな鍵を８つ全て取得",
     "Open 2 Boss Key Doors": "ボスカギの扉を２つ開ける",
     "Open 3 Boss Key Doors": "ボスカギの扉を３つ開ける",
     "Open 3 Gold Rupee Chests": "金ルピーの宝箱を３つ開ける",
@@ -273,13 +284,13 @@ export default {
     "Open the Final Door of Shadow Trial": "闇の結界の最後の部屋に到達",
     "Open the Final Door of Spirit Trial": "魂の結界の最後の部屋に到達",
     "Open the Final Door of Water Trial": "水の結界の最後の部屋に到達",
-    "Plant 3 Magic Beans": "魔法の豆を３ヶ所に埋める",
-    "Plant 4 Magic Beans": "魔法の豆を４ヶ所に埋める",
-    "Plant 5 Magic Beans": "魔法の豆を５つ植える",
-    "Plant 6 Magic Beans": "魔法の豆を６ヶ所に埋める",
-    "Plant 7 Magic Beans": "魔法の豆を７ヶ所に埋める",
+    "Plant 3 Magic Beans": "魔法のマメを３ヶ所に植える",
+    "Plant 4 Magic Beans": "魔法のマメを４ヶ所に植える",
+    "Plant 5 Magic Beans": "魔法のマメを５ヶ所に植える",
+    "Plant 6 Magic Beans": "魔法のマメを６ヶ所に植える",
+    "Plant 7 Magic Beans": "魔法のマメを７ヶ所に植える",
     "Plant bean in Death Mountain Crater":
-      "デスマウンテン火口の土にマメを植える",
+      "デスマウンテン火口に魔法のマメを植える",
     "Quiver (40)": "矢立て（４&#8288;０）",
     "Quiver (50)": "矢立て（５&#8288;０）",
     "Red Potion": "赤いクスリ",
@@ -443,7 +454,7 @@ export default {
     "Poacher's Saw": "密猟者のノコギリ",
     "Pocket Cucco": "てのりコッコ",
     Prescription: "処方箋",
-    "3 Swords": "剣３種類",
+    "3 Swords": "剣３種",
     "Defeat both Dead-Hands": "デドハンド２体撃破",
     "Never obtain Bombchus": "ボムチュウ未取得",
     "Never obtain Hookshot": "フックショット未取得",
