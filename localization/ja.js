@@ -1,7 +1,7 @@
 export default {
   locale: "ja",
   strings: {
-    // 10.4 goals
+    // Current goals
     "1 Skulltula from each Adult Dungeon":
       "全ての大人ダンジョンからスタルチュラ最低１匹ずつ",
     "1 Skulltula from each Child Dungeon":
