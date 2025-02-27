@@ -41,6 +41,7 @@ export default {
     "30 Deku Sticks": "30 Deku Sticks",
     "30 Different Skulltulas": "30 Different Skulltulas",
     "37th Heart Piece (Child Fortress)": "37th Heart Piece (Child Fortress)",
+    "4 Bottles of Milk": "4 Bottles of Milk",
     "4 Compasses": "4 Compasses",
     "4 Maps": "4 Maps",
     "4 Skulltulas in Shadow Temple": "4 Skulltulas in Shadow Temple",
@@ -52,6 +53,7 @@ export default {
     "5 Hearts": "5 Hearts",
     "5 Magic Beans": "5 Magic Beans",
     "5 Maps": "5 Maps",
+    "5 Top Row Songs": "5 Top Row Songs",
     "5 Unused Keys in Gerudo Training Grounds":
       "5 Unused Keys in Gerudo Training Grounds",
     "5 Zora area HPs": "5 Zora area HPs",
@@ -119,11 +121,17 @@ export default {
     "All 8 Death Mountain area Skulltulas":
       "All 8 Death Mountain area Skulltulas",
     "All 8 Kakariko area Skulltulas": "All 8 Kakariko area Skulltulas",
+    "All 8 Skulltulas in Bottom of the Well & Shadow Temple": "All 8 Skulltulas in Bottom of the Well & Shadow Temple",
+    "All 8 Skulltulas in Ice Cavern & Spirit Temple": "All 8 Skulltulas in Ice Cavern & Spirit Temple",
     "All 8 Zora's Domain area Skulltulas":
       "All 8 Zora's Domain area Skulltulas",
+    "All 9 Soft Soil Skulltulas": "All 9 Soft Soil Skulltulas",
     "Beat Dodongo's Cavern": "Beat Dodongo's Cavern",
+    "Beat Dodongo's Cavern & Fire Temple": "Beat Dodongo's Cavern & Fire Temple",
     "Beat Jabu-Jabu's Belly": "Beat Jabu-Jabu's Belly",
+    "Beat Jabu-Jabu's Belly & Water Temple": "Beat Jabu-Jabu's Belly & Water Temple",
     "Beat the Deku Tree": "Beat the Deku Tree",
+    "Beat the Deku Tree & Forest Temple": "Beat the Deku Tree & Forest Temple",
     "Beat the Fire Temple": "Beat the Fire Temple",
     "Beat the Forest Temple": "Beat the Forest Temple",
     "Beat the Shadow Temple": "Beat the Shadow Temple",
