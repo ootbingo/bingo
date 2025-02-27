@@ -1,7 +1,7 @@
 export default {
   locale: "en",
   strings: {
-    // 10.4 goals
+    // Current goals
     "1 Skulltula from each Adult Dungeon":
       "1 Skulltula from each Adult Dungeon",
     "1 Skulltula from each Child Dungeon":
