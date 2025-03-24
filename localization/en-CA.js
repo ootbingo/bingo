@@ -17,5 +17,6 @@ export default {
     "Hover text color": "Hover text colour",
     "Hover green background color": "Hover green background colour",
     "Hover red background color": "Hover red background colour",
+    "Star color": "Star colour",
   },
 };

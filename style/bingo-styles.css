@@ -37,12 +37,42 @@
   user-select: none;
   background: var(--cell-background-color);
   cursor: pointer;
+  position: relative;
 }
 .goal[data-state="green"] {
   background: var(--cell-green-background-color);
 }
 .goal[data-state="red"] {
   background: var(--cell-red-background-color);
+}
+
+@keyframes starPop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.goal .star {
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.2s ease;
+  position: absolute;
+  height: var(--cell-star-size);
+  width: var(--cell-star-size);
+  left: var(--cell-star-margin);
+  top: var(--cell-star-margin);
+  color: var(--cell-star-color);
+}
+
+.goal[data-starred="starred"] .star {
+  opacity: 1;
+  animation: starPop 0.4s;
 }
 
 .bingo:has(#row1:hover) .row1,

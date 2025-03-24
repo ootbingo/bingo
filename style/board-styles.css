@@ -26,11 +26,22 @@
   --cell-hover-text-color: var(--board-cell-hover-text-color);
   --cell-hover-green-background-color: var(--board-cell-hover-green-background-color);
   --cell-hover-red-background-color: var(--board-cell-hover-red-background-color);
+  --cell-star-color: var(--board-cell-star-color);
+  --cell-star-size: var(--board-cell-star-size);
+  --cell-star-margin: var(--board-cell-star-margin);
 
   --tracker-token-size: var(--board-tracker-token-size);
   --tracker-counter-icon-size: var(--board-tracker-counter-icon-size);
   --tracker-counter-text-size: var(--board-tracker-counter-text-size);
   --tracker-animation-time: var(--board-tracker-animation-time);
+}
+
+.bingo-board .goal .star {
+  display: none;
+}
+
+.board-cell-show-star .bingo-board .goal .star {
+  display: block;
 }
 
 .bingo-board.table {
