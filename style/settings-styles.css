@@ -81,6 +81,7 @@ h2, h3 {
   display: flex;
   gap: 8px;
   align-items: center;
+  cursor: pointer
 }
 
 .input {
@@ -109,6 +110,9 @@ h2, h3 {
 .color-input input {
   opacity: 0;
   position: absolute;
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
 }
 
 .color-input div {
@@ -121,6 +125,7 @@ h2, h3 {
   display: flex;
   gap: 8px;
   align-items: center;
+  cursor: pointer;
 }
 
 .save-footer {
@@ -147,6 +152,7 @@ h2, h3 {
 .file-import,
 .save-footer button {
   height: 40px;
+  min-width: 120px;
   padding: 0 16px;
   background: #222222;
   border: 1px solid white;
@@ -155,6 +161,7 @@ h2, h3 {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .file-import:hover,
@@ -211,6 +218,7 @@ h2, h3 {
   align-items: center;
   width: unset;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .select .option:hover {
@@ -224,6 +232,7 @@ h2, h3 {
   font-size: inherit;
   color: inherit;
   height: 32px;
+  cursor: pointer;
 }
 
 .tracker-settings {
