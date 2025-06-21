@@ -152,7 +152,7 @@ h2, h3 {
 .file-import,
 .save-footer button {
   height: 40px;
-  min-width: 120px;
+  min-width: 130px;
   padding: 0 16px;
   background: #222222;
   border: 1px solid white;
@@ -169,10 +169,23 @@ h2, h3 {
   background: #333333;
 }
 
-
 .file-import:active,
 .save-footer button:active {
   background: #444444;
+}
+
+.save-footer #save-settings {
+  background: #005511;
+}
+.save-footer #save-settings:hover {
+  background: #007722;
+}
+
+.save-footer #reset-settings {
+  background: #550011;
+}
+.save-footer #reset-settings:hover {
+  background: #770022;
 }
 
 .file-import input {
