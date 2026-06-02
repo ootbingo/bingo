@@ -92,7 +92,7 @@ export default {
     "9 Songs": "歌９つ以上",
     "99 Rupees": "９&#8288;９ルピー",
     "Adult's Wallet": "大人のサイフ",
-    "All 3 Child Lake Hylia Skulltulas":
+    "All 3 Child Lake area Hylia Skulltulas":
       "子供時代のハイリア湖畔エリアの黄金のスタルチュラ３匹以上",
     "All 3 Elemental Arrows": "魔法矢３つ",
     "All 3 Kokiri Forest area Skulltulas":
@@ -328,6 +328,8 @@ export default {
     // Legacy goals
     "2 Skulltulas in Lon Lon Ranch": "ロンロン牧場エリアの黄金のスタルチュラ２匹",
     "3 Lake Hylia Skulltulas": "ハイリア湖畔エリアの黄金のスタルチュラ３匹以上",
+    "All 3 Child Lake Hylia Skulltulas":
+      "子供時代のハイリア湖畔エリアの黄金のスタルチュラ３匹以上",
     "All 5 Lake Hylia Skulltulas": "ハイリア湖畔エリアの黄金のスタルチュラ５匹",
     "Get Bombchu chest in Spirit Temple": "魂の神殿のボムチュウ取得",
     "2 unused keys in Gerudo Training Grounds":
