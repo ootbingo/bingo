@@ -11,8 +11,9 @@ export default {
     "10 Songs": "10 Songs",
     "15 Different Skulltulas": "15 Different Skulltulas",
     "2 Boss Keys": "2 Boss Keys",
+    "2 Different Lake Hylia HPs": "2 Different Lake Hylia HPs",
+    "2 Lon Lon Ranch area Skulltulas": "2 Lon Lon Ranch area Skulltulas",
     "2 Shields": "2 Shields",
-    "2 Skulltulas in Lon Lon Ranch": "2 Skulltulas in Lon Lon Ranch",
     "2 Unused Keys in Gerudo Training Grounds":
       "2 Unused Keys in Gerudo Training Grounds",
     "20 Deku Sticks": "20 Deku Sticks",
@@ -21,7 +22,7 @@ export default {
     "3 Boots": "3 Boots",
     "3 Boss Keys": "3 Boss Keys",
     "3 Compasses": "3 Compasses",
-    "3 Lake Hylia Skulltulas": "3 Lake Hylia Skulltulas",
+    "3 Lake Hylia area Skulltulas": "3 Lake Hylia area Skulltulas",
     "3 Maps": "3 Maps",
     "3 Shields": "3 Shields",
     "3 Shields & 3 Boots": "3 Shields & 3 Boots",
@@ -50,6 +51,7 @@ export default {
     "4 Unused Keys in Gerudo Training Grounds":
       "4 Unused Keys in Gerudo Training Grounds",
     "5 Compasses": "5 Compasses",
+    "5 Different Soft Soil Skulltulas": "5 Different Soft Soil Skulltulas",
     "5 Hearts": "5 Hearts",
     "5 Magic Beans": "5 Magic Beans",
     "5 Maps": "5 Maps",
@@ -69,6 +71,7 @@ export default {
       "6 Unused Keys in Gerudo Training Grounds",
     "7 Compasses": "7 Compasses",
     "7 Different Bottled Contents": "7 Different Bottled Contents",
+    "7 Different Soft Soil Skulltulas": "7 Different Soft Soil Skulltulas",
     "7 Different Unused Keys in Gerudo Training Grounds":
       "7 Different Unused Keys in Gerudo Training Grounds",
     "7 Hearts (no duping)": "7 Hearts (no duping)",
@@ -85,7 +88,7 @@ export default {
     "9 Songs": "9 Songs",
     "99 Rupees": "99 Rupees",
     "Adult's Wallet": "Adult's Wallet",
-    "All 3 Child Lake Hylia Skulltulas": "All 3 Child Lake Hylia Skulltulas",
+    "All 3 Child Lake Hylia area Skulltulas": "All 3 Child Lake area Hylia Skulltulas",
     "All 3 Elemental Arrows": "All 3 Elemental Arrows",
     "All 3 Kokiri Forest area Skulltulas":
       "All 3 Kokiri Forest area Skulltulas",
@@ -108,7 +111,7 @@ export default {
       "All 4 Wasteland/ Colossus area Skulltulas",
     "All 5 Child Death Mountain area Skulltulas":
       "All 5 Child Death Mountain area Skulltulas",
-    "All 5 Lake Hylia Skulltulas": "All 5 Lake Hylia Skulltulas",
+    "All 5 Lake Hylia area Skulltulas": "All 5 Lake Hylia area Skulltulas",
     "All 5 Skulltulas in Dodongo's Cavern":
       "All 5 Skulltulas in Dodongo's Cavern",
     "All 5 Skulltulas in Fire Temple": "All 5 Skulltulas in Fire Temple",
@@ -158,8 +161,12 @@ export default {
     "Both HPs in Death Mountain Crater": "Both HPs in Death Mountain Crater",
     "Both HPs in Lost Woods": "Both HPs in Lost Woods",
     "Both Hyrule Field area Skulltulas": "Both Hyrule Field area Skulltulas",
+    "Both Hyrule Field HPs": "Both Hyrule Field HPs",
     "Both Rusty Switches in Spirit Temple":
       "Both Rusty Switches in Spirit Temple",
+    "Both Trips with Kaepora Gaebora (Owl)":
+      "Both Trips with Kaepora Gaebora (Owl)",
+    "Both Zora's Fountain HPs": "Both Zora's Fountain HPs",
     "Bottled Fairy": "Bottled Fairy",
     "Bottled Poe": "Bottled Poe",
     "Bronze Gauntlets": "Bronze Gauntlets",
@@ -167,9 +174,12 @@ export default {
     "Bullet Bag (50)": "Bullet Bag (50)",
     "Clear 10 Silver Rupee Rooms": "Clear 10 Silver Rupee Rooms",
     "Clear 4 Silver Rupee Rooms": "Clear 4 Silver Rupee Rooms",
+    "Clear 6 Silver Rupee Rooms": "Clear 6 Silver Rupee Rooms",
     "Clear 8 Silver Rupee Rooms": "Clear 8 Silver Rupee Rooms",
+    "Clear 9 Silver Rupee Rooms": "Clear 9 Silver Rupee Rooms",
     "Cow in House": "Cow in House",
     "Defeat 10 Different Stalfos": "Defeat 10 Different Stalfos",
+    "Defeat 7 Different Stalfos": "Defeat 7 Different Stalfos",
     "Defeat 4 Different Iron Knuckles": "Defeat 4 Different Iron Knuckles",
     "Defeat 5 Different Stalfos": "Defeat 5 Different Stalfos",
     "Defeat a Skull Kid": "Defeat a Skull Kid",
@@ -203,6 +213,7 @@ export default {
     "Farore's Wind": "Farore's Wind",
     "Fill 20 Item Inventory Slots": "Fill 20 Item Inventory Slots",
     "Fill all 4 Bottle Slots": "Fill all 4 Bottle Slots",
+    "Fill the Oasis in Desert Colossus": "Fill the Oasis in Desert Colossus",
     "Fire Arrows": "Fire Arrows",
     "Fire Medallion": "Fire Medallion",
     "Fire Temple Boss Key": "Fire Temple Boss Key",
@@ -212,7 +223,6 @@ export default {
     "Frog's HP": "Frog's HP",
     "Ganon's Castle Boss Key": "Ganon's Castle Boss Key",
     "Gerudo's Card": "Gerudo's Card",
-    "Get Bombchu chest in Spirit Temple": "Get Bombchu chest in Spirit Temple",
     "Giant's Knife": "Giant's Knife",
     "Giant's Wallet": "Giant's Wallet",
     "Golden Gauntlets": "Golden Gauntlets",
@@ -262,6 +272,7 @@ export default {
       "Obtain all 5 Small Keys in Shadow Temple",
     "Obtain all 8 Small Keys in Fire Temple":
       "Obtain all 8 Small Keys in Fire Temple",
+    "Ocarina of Time": "Ocarina of Time",
     "Open 2 Boss Key Doors": "Open 2 Boss Key Doors",
     "Open 3 Boss Key Doors": "Open 3 Boss Key Doors",
     "Open 3 Gold Rupee Chests": "Open 3 Gold Rupee Chests",
@@ -269,6 +280,7 @@ export default {
     "Open 50 Rupee chest in Wasteland": "Open 50 Rupee chest in Wasteland",
     "Open 50 Rupee Chest in Wasteland": "Open 50 Rupee Chest in Wasteland",
     "Open All 6 Gold Rupee Chests": "Open All 6 Gold Rupee Chests",
+    "Open Bombchu chest in Spirit Temple": "Open Bombchu chest in Spirit Temple",
     "Open Forest Temple Boss Key Door": "Open Forest Temple Boss Key Door",
     "Open the Final Door of Fire Trial": "Open the Final Door of Fire Trial",
     "Open the Final Door of Forest Trial":
@@ -299,6 +311,8 @@ export default {
     "Spirit Temple Boss Key": "Spirit Temple Boss Key",
     "Spooky Mask": "Spooky Mask",
     "Stone of Agony": "Stone of Agony",
+    "Summon Pierre (Scarecrow) in 10 Different Spots":
+      "Summon Pierre (Scarecrow) in 10 Different Spots",
     "Two Fairy Spells": "Two Fairy Spells",
     "Water Medallion": "Water Medallion",
     "Water Temple Boss Key": "Water Temple Boss Key",
@@ -307,6 +321,11 @@ export default {
     "Zora's Sapphire": "Zora's Sapphire",
 
     // Legacy goals
+    "2 Skulltulas in Lon Lon Ranch": "2 Skulltulas in Lon Lon Ranch",
+    "3 Lake Hylia Skulltulas": "3 Lake Hylia Skulltulas",
+    "All 3 Child Lake Hylia Skulltulas": "All 3 Child Lake Hylia Skulltulas",
+    "All 5 Lake Hylia Skulltulas": "All 5 Lake Hylia Skulltulas",
+    "Get Bombchu chest in Spirit Temple": "Get Bombchu chest in Spirit Temple",
     "2 unused keys in Gerudo Training Grounds":
       "2 unused keys in Gerudo Training Grounds",
     "3 unused keys in Gerudo Training Grounds":
@@ -321,7 +340,6 @@ export default {
     "Both heart pieces in Death Mountain Crater":
       "Both heart pieces in Death Mountain Crater",
     "Both heart pieces in Lost Woods": "Both heart pieces in Lost Woods",
-    "Ocarina of Time": "Ocarina of Time",
     "Open 3 gold rupee chests": "Open 3 gold rupee chests",
     "All 4 Adult Skulltulas in Zora's Domain Area":
       "All 4 Adult Skulltulas in Zora's Domain Area",

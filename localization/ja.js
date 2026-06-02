@@ -14,9 +14,10 @@ export default {
     "10 Songs": "歌１&#8288;０曲以上",
     "15 Different Skulltulas": "スタルチュラのしるし１&#8288;５個（増殖禁止）",
     "2 Boss Keys": "ボス部屋の鍵２つ",
-    "2 Shields": "盾２種",
-    "2 Skulltulas in Lon Lon Ranch":
+    "2 Different Lake Hylia HPs": "ハイリア湖畔のハートのかけら２つ",
+    "2 Lon Lon Ranch area Skulltulas":
       "ロンロン牧場エリアの黄金のスタルチュラ２匹",
+    "2 Shields": "盾２種",
     "2 Unused Keys in Gerudo Training Grounds":
       "ゲルドの修練場の未使用のカギ２つ",
     "20 Deku Sticks": "デクの棒２&#8288;０本",
@@ -25,7 +26,7 @@ export default {
     "3 Boots": "靴３種",
     "3 Boss Keys": "ボス部屋の鍵３つ",
     "3 Compasses": "コンパス３つ",
-    "3 Lake Hylia Skulltulas": "ハイリア湖畔エリアの黄金のスタルチュラ３匹以上",
+    "3 Lake Hylia area Skulltulas": "ハイリア湖畔エリアの黄金のスタルチュラ３匹以上",
     "3 Maps": "マップ３つ",
     "3 Shields": "盾３種",
     "3 Shields & 3 Boots": "盾３種、靴３種",
@@ -54,6 +55,7 @@ export default {
     "4 Unused Keys in Gerudo Training Grounds":
       "ゲルドの修練場の未使用の鍵４つ",
     "5 Compasses": "コンパス５つ",
+    "5 Different Soft Soil Skulltulas": "フワっとした土から現れる黄金のスタルチュラ５匹",
     "5 Hearts": "ハート５つ",
     "5 Magic Beans": "魔法のマメ５つ以上",
     "5 Maps": "マップ５つ",
@@ -73,6 +75,7 @@ export default {
       "ゲルドの修練場の未使用のカギ６つ",
     "7 Compasses": "コンパス７つ",
     "7 Different Bottled Contents": "ビンに詰めたアイテム７種類",
+    "7 Different Soft Soil Skulltulas": "フワっとした土から現れる黄金のスタルチュラ７匹",
     "7 Different Unused Keys in Gerudo Training Grounds":
       "ゲルドの修練場の未使用の鍵７つ（増殖禁止）",
     "7 Hearts (no duping)": "ハート７つ（複製禁止）",
@@ -115,7 +118,7 @@ export default {
       "幻影の砂漠・巨大邪神像エリアの黄金のスタルチュラ４匹",
     "All 5 Child Death Mountain area Skulltulas":
       "デスマウンテンエリアの黄金のスタルチュラ５匹",
-    "All 5 Lake Hylia Skulltulas": "ハイリア湖畔エリアの黄金のスタルチュラ５匹",
+    "All 5 Lake Hylia area Skulltulas": "ハイリア湖畔エリアの黄金のスタルチュラ５匹",
     "All 5 Skulltulas in Dodongo's Cavern":
       "ドドンゴの洞窟の黄金のスタルチュラ５匹",
     "All 5 Skulltulas in Fire Temple": "炎の神殿の黄金のスタルチュラ５匹",
@@ -168,7 +171,11 @@ export default {
     "Both HPs in Lost Woods": "迷いの森のハートのかけら２つ",
     "Both Hyrule Field area Skulltulas":
       "ハイラル平原エリアの黄金のスタルチュラ２匹",
+    "Both Hyrule Field HPs": "ハイラル平原のハートのかけら２つ",
     "Both Rusty Switches in Spirit Temple": "魂の神殿の錆びたスイッチ２つ",
+    "Both Trips with Kaepora Gaebora (Owl)":
+      "２ヶ所でケポラ・ゲポラに運んでもらう",
+    "Both Zora's Fountain HPs": "ゾーラの泉のハートのかけら２つ",
     "Bottled Fairy": "ビン（妖精）",
     "Bottled Poe": "ビン（ポウ）",
     "Bronze Gauntlets": "銅のグローブ",
@@ -176,9 +183,12 @@ export default {
     "Bullet Bag (50)": "デクのタネ袋（５&#8288;０）",
     "Clear 10 Silver Rupee Rooms": "銀ルピー部屋を１&#8288;０箇所攻略",
     "Clear 4 Silver Rupee Rooms": "銀ルピー部屋を４箇所攻略",
+    "Clear 6 Silver Rupee Rooms": "銀ルピー部屋を６箇所攻略",
     "Clear 8 Silver Rupee Rooms": "銀ルピー部屋を８箇所攻略",
+    "Clear 9 Silver Rupee Rooms": "銀ルピー部屋を９箇所攻略",
     "Cow in House": "牛（リンクの家）",
     "Defeat 10 Different Stalfos": "スタルフォスを１&#8288;０体撃破",
+    "Defeat 7 Different Stalfos": "スタルフォスを７体撃破",
     "Defeat 4 Different Iron Knuckles": "アイアンナックを４体撃破",
     "Defeat 5 Different Stalfos": "スタルフォスを５体撃破",
     "Defeat a Skull Kid": "スタルキッド撃破",
@@ -213,6 +223,7 @@ export default {
     "Fill 20 Item Inventory Slots":
       "Cアイテムのスロットを２&#8288;０箇所埋める",
     "Fill all 4 Bottle Slots": "４つの空きビンスロットを全て埋める",
+    "Fill the Oasis in Desert Colossus": "巨大邪神像のオアシスの水を満たす",
     "Fire Arrows": "炎の矢",
     "Fire Medallion": "炎のメダル",
     "Fire Temple Boss Key": "炎の神殿のボス部屋の鍵",
@@ -222,7 +233,6 @@ export default {
     "Frog's HP": "カエルのハートのかけら（嵐の歌）",
     "Ganon's Castle Boss Key": "ガノン城のボス部屋の鍵",
     "Gerudo's Card": "ゲルドの会員証",
-    "Get Bombchu chest in Spirit Temple": "魂の神殿のボムチュウ取得",
     "Giant's Knife": "巨人のナイフ",
     "Giant's Wallet": "巨人のサイフ",
     "Golden Gauntlets": "金のグローブ",
@@ -270,6 +280,7 @@ export default {
     "Obtain all 5 Small Keys in Shadow Temple": "闇の神殿の小さな鍵を５つ全て取得",
     "Obtain all 8 Small Keys in Fire Temple":
       "炎の神殿の小さな鍵を８つ全て取得",
+    "Ocarina of Time": "時のオカリナ",
     "Open 2 Boss Key Doors": "ボスカギの扉を２つ開ける",
     "Open 3 Boss Key Doors": "ボスカギの扉を３つ開ける",
     "Open 3 Gold Rupee Chests": "金ルピーの宝箱を３つ開ける",
@@ -277,6 +288,7 @@ export default {
     "Open 50 Rupee chest in Wasteland":
       "幻影の砂漠の５&#8288;０ルピーの宝箱を開ける",
     "Open All 6 Gold Rupee Chests": "金ルピーの宝箱を６つ開ける",
+    "Open Bombchu chest in Spirit Temple": "魂の神殿のボムチュウ取得",
     "Open Forest Temple Boss Key Door": "森の神殿のボスカギの扉を開ける",
     "Open the Final Door of Fire Trial": "炎の結界の最後の部屋に到達",
     "Open the Final Door of Forest Trial": "森の結界の最後の部屋に到達",
@@ -304,6 +316,8 @@ export default {
     "Spirit Temple Boss Key": "魂の神殿のボス部屋の鍵",
     "Spooky Mask": "こわそなお面",
     "Stone of Agony": "もだえ石",
+    "Summon Pierre (Scarecrow) in 10 Different Spots":
+      "１０ヶ所でカカシのピエールを呼び出す",
     "Two Fairy Spells": "魔法のアイテム２つ",
     "Water Medallion": "水のメダル",
     "Water Temple Boss Key": "水の神殿のボス部屋のカギ",
@@ -312,6 +326,10 @@ export default {
     "Zora's Sapphire": "ゾーラのサファイア",
 
     // Legacy goals
+    "2 Skulltulas in Lon Lon Ranch": "ロンロン牧場エリアの黄金のスタルチュラ２匹",
+    "3 Lake Hylia Skulltulas": "ハイリア湖畔エリアの黄金のスタルチュラ３匹以上",
+    "All 5 Lake Hylia Skulltulas": "ハイリア湖畔エリアの黄金のスタルチュラ５匹",
+    "Get Bombchu chest in Spirit Temple": "魂の神殿のボムチュウ取得",
     "2 unused keys in Gerudo Training Grounds":
       "ゲルドの修練場の未使用のカギ２つ",
     "3 unused keys in Gerudo Training Grounds":
@@ -327,7 +345,6 @@ export default {
     "Both heart pieces in Death Mountain Crater":
       "デスマウンテン火口のハートのかけら２つ",
     "Both heart pieces in Lost Woods": "迷いの森のハートのかけら２つ",
-    "Ocarina of Time": "時のオカリナ",
     "Open 3 gold rupee chests": "",
     "All 4 Adult Skulltulas in Zora's Domain Area":
       "大人時代のゾーラの里エリアの黄金のスタルチュラ４匹",
