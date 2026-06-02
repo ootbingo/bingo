@@ -579,6 +579,7 @@ export default {
     ROW5: "ROW5",
     "Red background color": "Red background color",
     Reset: "Reset",
+    "Are you sure you want to reset all settings back to defaults?": "Are you sure you want to reset all settings back to defaults?",
     Rules: "Rules",
     Save: "Save",
     "Seed:": "Seed:",
