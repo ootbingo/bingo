@@ -32,6 +32,7 @@
     "10.4": "versions/v10/v10.4",
     "10.5": "versions/v10/v10.5",
     "10.5.1": "versions/v10/v10.5.1",
+    "10.6": "versions/v10/v10.6",
 
     "beta0.9.4.0": "versions/beta/beta0.9.4.0",
     "beta0.9.5.0": "versions/beta/beta0.9.5.0",
@@ -40,5 +41,5 @@
     "beta0.9.6.2-j": "versions/beta/beta0.9.6.2-j",
     "beta0.9.6.3-j": "versions/beta/beta0.9.6.3-j"
   },
-  "default_version": "10.5.1"
+  "default_version": "10.6"
 }
